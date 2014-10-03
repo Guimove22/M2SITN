@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type= "text/css" href= "style.css" ?>
+<personnel_dauphine>
+	<personne>
+		<nom>Lagaffe</nom>
+		<prenom>Gaston</prenom>
+		<bureau>
+			<service>
+				<nom>Personnel</nom>
+				<raison_administrative>Administratif</raison_administrative>
+				<couloir>D</couloir>
+				<etage>5</etage>
+			</service>
+			<numero></numero>
+			<telephone></telephone>
+		</bureau>
+	</personne>
+
+	<personne>
+		<nom>Montes</nom>
+		<prenom>Lola</prenom>
+		<bureau>
+			<service>
+				<nom>MIDO</nom>
+				<raison_administrative>Departement</raison_administrative>
+				<couloir>B</couloir>
+				<etage>5</etage>
+			</service>
+			<numero></numero>
+			<telephone></telephone>
+		</bureau>
+	</personne>
+
+	<personne>
+		<nom>Martin</nom>
+		<prenom>Henry</prenom>
+		<bureau>
+			<service>
+				<nom>MIDO</nom>
+				<raison_administrative>Departement</raison_administrative>
+				<couloir>B</couloir>
+				<etage>5</etage>
+			</service>
+			<numero></numero>
+			<telephone></telephone>
+		</bureau>
+	</personne>
+
+</personnel_dauphine>

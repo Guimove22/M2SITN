@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type= "text/css" href= "style.css" ?>
+<services>
+	<service id="1">
+		<nom>Personnel</nom>
+		<raison_administrative>Administratif</raison_administrative>
+		<couloir>D</couloir>
+		<etage>5</etage>
+	</service>
+	<service id="2">
+		<nom>MIDO</nom>
+		<raison_administrative>Departement</raison_administrative>
+		<couloir>B</couloir>
+		<etage>5</etage>
+	</service>
+</services>
