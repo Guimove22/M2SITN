@@ -10,11 +10,13 @@
 
 3.La postface du livre Orlando
 	//livre[titre[text()="Orlando"]]/postface/text()
+	//livre/titre[contains(text(),"Orlando")]/parent::node()/postface/text()
 
 4.Titre des livres où Yourcenar est référencée
-	////livre[traduction/nom[contains(text(),"Yourcenar")]]/titre/text()
+	//livre[traduction/nom[contains(text(),"Yourcenar")]]/titre/text()
 
 5. Titre des livres où Marguerite Yourcenar est référencée
+
 
 6. Les titres des livres qui ont une postface
 
