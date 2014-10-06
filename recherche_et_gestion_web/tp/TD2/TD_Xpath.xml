@@ -19,7 +19,7 @@
 		<parution>2003</parution>
 	</livre>
 	<livre id="DL02" ref="DenisLehane" achat="2004">
-		<titre><! [CDATA[Prières]]> pour la pluie, (Prayers for Rain) </titre>
+		<titre><![CDATA[Prières]]> pour la pluie, (Prayers for Rain) </titre>
 		<traduction>
 			<prenom>Isabelle</prenom>
 			<nom>Maillet</nom>

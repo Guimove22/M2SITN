@@ -41,8 +41,8 @@ De bons exemples et un outil pour faire des requetes Xpath
 	//livre/titre[contains(text(),"Vagues")]/following::node()/titre/text()
 
 11. Qui a écrit Orlando
-	/livres/auteur[    @id=//livres/livre[titre[text()="Orlando"]]/@ref       ]/child::node()/text()
-	/livres/auteur[    @id=//livres/livre[titre[contains(text(),"Orlando")]]/@ref       ]/child::node()/text()
+	/livres/auteur[@id=//livres/livre[titre[text()="Orlando"]]/@ref]/child::node()/text()
+	/livres/auteur[@id=//livres/livre[titre[contains(text(),"Orlando")]]/@ref]/child::node()/text()
 
 12. Le titre des livres écrit par Denis Lehane
 	/livres/livre[@ref=/livres/auteur[contains(prenom,"Denis") and contains(nom,"Lehane")]/@id]/titre/text()
@@ -54,14 +54,17 @@ De bons exemples et un outil pour faire des requetes Xpath
 	//node()[count(descendant::node())>=2]
 
 15. Les nœuds dont le nom contient la chaîne ‘it’
-	//node()[contains(text(),"it")]
+	//node()[contains(name(),"it")]
 
 ===========================
         Biographie
 ===========================
-Les titres de tous les livres
+1. Les titres de tous les livres
+	/biographie/livre/titre/text()
+	//livre/titre/text()
 
 2. Les titres de tous les films
+	/biographie/titre/text()
 
 3. Tous les acteurs référencés dans la biographie
 
