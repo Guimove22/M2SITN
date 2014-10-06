@@ -27,12 +27,16 @@
 	//livre[not(postface)]/titre
 
 8. Les livres achetés il y a plus de 10 ans
+	//livre[@achat<"2004"]/titre/text()
 
 9. Quel est le titre du dernier livre du document
+	//livre[position()=last()]/titre/text()
 
 10. Quel est le titre du livre qui précède immédiatement Les vagues
+	//livre/titre[contains(text(),"Vagues")]/following::node()/titre/text()
 
 11. Qui a écrit Orlando
+	/livres/auteur[@id=//livres/livre[titre[text()="Orlando"]]/@ref]/child::node()/text()
 
 12. Le titre des livres écrit par Denis Lehane
 
