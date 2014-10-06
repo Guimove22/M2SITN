@@ -1,0 +1,56 @@
+===========================
+        Livres
+===========================
+1. Titre de tous les livres 
+	/livres/livre/titre/text()
+	//titre/text()
+
+2.Les livres achetés en 2004
+	//livre[@achat="2004"]/titre/text()
+
+3.La postface du livre Orlando
+	//livre[titre[text()="Orlando"]]/postface/text()
+
+4.Titre des livres où Yourcenar est référencée
+	////livre[traduction/nom[contains(text(),"Yourcenar")]]/titre/text()
+
+5. Titre des livres où Marguerite Yourcenar est référencée
+
+6. Les titres des livres qui ont une postface
+
+7. Les titres des livres qui n’ont pas de postface
+
+8. Les livres achetés il y a plus de 10 ans
+
+9. Quel est le titre du dernier livre du document
+
+10. Quel est le titre du livre qui précède immédiatement Les vagues
+
+11. Qui a écrit Orlando
+
+12. Le titre des livres écrit par Denis Lehane
+
+13. Le titre des livres qui contient ‘on’
+
+14. Les nœuds qui ont deux ascendants
+
+15. Les nœuds dont le nom contient la chaîne ‘it’
+
+===========================
+        Biographie
+===========================
+Les titres de tous les livres
+
+2. Les titres de tous les films
+
+3. Tous les acteurs référencés dans la biographie
+
+4. Tous les réalisateurs références dans la biographie
+
+5. Tous les livres référencés
+
+6. Tous les noeuds qui ne sont pas du texte
+
+7. Les nœuds de deuxième niveau
+
+8. Le dernier acteur référencé
