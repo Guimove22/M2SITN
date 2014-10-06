@@ -39,8 +39,9 @@
 	/livres/auteur[@id=//livres/livre[titre[text()="Orlando"]]/@ref]/child::node()/text()
 
 12. Le titre des livres écrit par Denis Lehane
+	/livres/livre[@ref=/livres/auteur[contains(prenom,"Denis") and contains(nom,"Lehane")]/@id]/titre/text()
 
-13. Le titre des livres qui contient ‘on’
+13. Le titre des livres qui contiennent ‘on’
 
 14. Les nœuds qui ont deux ascendants
 
