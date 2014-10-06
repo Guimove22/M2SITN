@@ -52,6 +52,7 @@ De bons exemples et un outil pour faire des requetes Xpath
 
 14. Les nœuds qui ont deux descendants
 	//node()[count(descendant::node())>=2]
+	//node()[count(ancestor::node())>=2]
 
 15. Les nœuds dont le nom contient la chaîne ‘it’
 	//node()[contains(name(),"it")]
