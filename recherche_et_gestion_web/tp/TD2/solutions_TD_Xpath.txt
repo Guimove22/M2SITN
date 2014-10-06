@@ -1,3 +1,8 @@
+http://www.freeformatter.com/xpath-tester.html
+
+De bons exemples et un outil pour faire des requetes Xpath
+
+
 ===========================
         Livres
 ===========================
@@ -36,16 +41,20 @@
 	//livre/titre[contains(text(),"Vagues")]/following::node()/titre/text()
 
 11. Qui a écrit Orlando
-	/livres/auteur[@id=//livres/livre[titre[text()="Orlando"]]/@ref]/child::node()/text()
+	/livres/auteur[    @id=//livres/livre[titre[text()="Orlando"]]/@ref       ]/child::node()/text()
+	/livres/auteur[    @id=//livres/livre[titre[contains(text(),"Orlando")]]/@ref       ]/child::node()/text()
 
 12. Le titre des livres écrit par Denis Lehane
 	/livres/livre[@ref=/livres/auteur[contains(prenom,"Denis") and contains(nom,"Lehane")]/@id]/titre/text()
 
 13. Le titre des livres qui contiennent ‘on’
+	/livres/livre[@ref=/livres/auteur[contains(prenom,"Denis") and contains(nom,"Lehane")]/@id]/titre[contains(text(),"on")]/text()
 
-14. Les nœuds qui ont deux ascendants
+14. Les nœuds qui ont deux descendants
+	//node()[count(descendant::node())>=2]
 
 15. Les nœuds dont le nom contient la chaîne ‘it’
+	//node()[contains(text(),"it")]
 
 ===========================
         Biographie
