@@ -69,12 +69,16 @@ De bons exemples et un outil pour faire des requetes Xpath
 	/biographie/titre/text()
 
 3. Tous les acteurs référencés dans la biographie
+	//acteur/text()
 
 4. Tous les réalisateurs références dans la biographie
+	//realisateur/text()
 
 5. Tous les livres référencés
+	//livre/titre/text()
 
 6. Tous les noeuds qui ne sont pas du texte
+	//descendant::node()[text()]
 
 7. Les nœuds de deuxième niveau
 
