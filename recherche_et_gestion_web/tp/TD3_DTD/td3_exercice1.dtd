@@ -1,17 +1,18 @@
 <!DOCTYPE note
 [
-<!ELEMENT article (titre) >
+<!ELEMENT article (#PCDATA|titre|film|actrice)* >
 <!ELEMENT actrice (prenom,nom) >
 <!ELEMENT film (titre) >
+<!ELEMENT titre (#PCDATA|actrice?)* >
 
-<!ELEMENT prenom (#PCDATA) >
-<!ELEMENT titre (#PCDATA) >
 <!ELEMENT nom (#PCDATA) >
+<!ELEMENT prenom (#PCDATA) >
 
-<!ATTLIST article source (#PCDATA) >
+
+<!ATTLIST article source CDATA #REQUIRED >
 <!ATTLIST titre 
-			realisateur #IMPLIED,
-			date #IMPLIED, 
-			sujet #IMPLIED >
+			realisateur CDATA #IMPLIED,
+			date NMTOKEN #IMPLIED, 
+			sujet CDATA #IMPLIED >
 
 ]>

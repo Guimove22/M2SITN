@@ -1,17 +1,28 @@
-<!DOCTYPE note
+<!DOCTYPE recette
 [
-<!ELEMENT article (titre) >
-<!ELEMENT actrice (prenom,nom) >
-<!ELEMENT film (titre) >
-
-<!ELEMENT prenom (#PCDATA) >
-<!ELEMENT titre (#PCDATA) >
+<!ELEMENT recette (nom, portion,preparation,cuisson,ingredients,guide) >
 <!ELEMENT nom (#PCDATA) >
+<!ELEMENT portion (#PCDATA) >
+
+<!ELEMENT preparation (titre) >
+
+<!ELEMENT cuisson (#PCDATA) >
+<!ELEMENT ingredients (i+) >
+<!ELEMENT i (nom,nombre) >
+<!ELEMENT guide (#PCDATA|renvoi|cuisson)* >
+<!ELEMENT renvoi (#PCDATA) >
+
+
 
 <!ATTLIST article source (#PCDATA) >
-<!ATTLIST titre 
-			realisateur #IMPLIED,
-			date #IMPLIED, 
-			sujet #IMPLIED >
+<!ATTLIST preparation 
+			value #REQUIRED,
+			unit #REQUIRED, >
+<!ATTLIST cuisson 
+			value #REQUIRED,
+			unit #REQUIRED>
+
+<!ATTLIST renvoi 
+			ref #REQUIRED>
 
 ]>
