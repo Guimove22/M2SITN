@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article SYSTEM "td3_exercice1.dtd">
+<article source= "Elle Magasine">
+	<titre> 
+		<actrice>
+			<prenom>Cate</prenom>
+			<nom>Blanchett</nom >
+		</actrice>
+		Suivez cette blonde 
+	</titre>
+	Elle prête sa beauté diaphane et son naturel australien à une légende hollywoodienne et ça marche! Dans 
+	<film>
+			<titre realisateur= "Martin Scorcese" date= "02-02-2005 " sujet="vie de Howard Hugues avant ses 40 ans" > Aviator </titre> 
+	</film> 
+	<actrice>
+		<prenom>Cate</prenom>ç
+		<nom>Blanchett</nom >
+	</actrice>
+		est plus que convaincante en 
+	<actrice>
+		<prenom>Catherine</prenom>
+		<nom>Hepburn</nom >
+	</actrice> 
+	la brune explosive des années 40.
+</article>
+
+
+
+
+

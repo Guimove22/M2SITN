@@ -1,0 +1,17 @@
+<!DOCTYPE note
+[
+<!ELEMENT article (titre) >
+<!ELEMENT actrice (prenom,nom) >
+<!ELEMENT film (titre) >
+
+<!ELEMENT prenom (#PCDATA) >
+<!ELEMENT titre (#PCDATA) >
+<!ELEMENT nom (#PCDATA) >
+
+<!ATTLIST article source (#PCDATA) >
+<!ATTLIST titre 
+			realisateur #IMPLIED,
+			date #IMPLIED, 
+			sujet #IMPLIED >
+
+]>
