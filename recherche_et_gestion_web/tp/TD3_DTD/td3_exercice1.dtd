@@ -3,7 +3,7 @@
 <!ELEMENT article (#PCDATA|titre|film|actrice)* >
 <!ELEMENT actrice (prenom,nom) >
 <!ELEMENT film (titre) >
-<!ELEMENT titre (#PCDATA|actrice?)* >
+<!ELEMENT titre (#PCDATA|actrice)* >
 
 <!ELEMENT nom (#PCDATA) >
 <!ELEMENT prenom (#PCDATA) >
@@ -11,8 +11,8 @@
 
 <!ATTLIST article source CDATA #REQUIRED >
 <!ATTLIST titre 
-			realisateur CDATA #IMPLIED,
-			date NMTOKEN #IMPLIED, 
+			realisateur CDATA #IMPLIED
+			date NMTOKEN #IMPLIED
 			sujet CDATA #IMPLIED >
-
+]>
 ]>

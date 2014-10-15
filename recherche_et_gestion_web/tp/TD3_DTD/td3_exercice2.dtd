@@ -14,15 +14,16 @@
 
 
 
-<!ATTLIST article source (#PCDATA) >
+<!ATTLIST article source CDATA #REQUIRED >
 <!ATTLIST preparation 
-			value #REQUIRED,
-			unit #REQUIRED, >
+			value CDATA #REQUIRED
+			unit CDATA #REQUIRED >
+			
 <!ATTLIST cuisson 
-			value #REQUIRED,
-			unit #REQUIRED>
+			value CDATA #REQUIRED
+			unit CDATA #REQUIRED>
 
 <!ATTLIST renvoi 
-			ref #REQUIRED>
+			ref CDATA #REQUIRED>
 
 ]>

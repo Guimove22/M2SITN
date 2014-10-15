@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE recette SYSTEM "td3_exercice2.dtd">
+<!DOCTYPE recette [
+
+<!ELEMENT recette (nom, portion,preparation,cuisson,ingredients,guide) >
+<!ELEMENT nom (#PCDATA) >
+<!ELEMENT portion (#PCDATA) >
+
+<!ELEMENT preparation (titre) >
+
+<!ELEMENT cuisson (#PCDATA) >
+<!ELEMENT ingredients (i+) >
+<!ELEMENT i (nom,nombre) >
+<!ELEMENT guide (#PCDATA|renvoi|cuisson)* >
+<!ELEMENT renvoi (#PCDATA) >
+
+
+
+<!ATTLIST article source CDATA #REQUIRED >
+<!ATTLIST preparation 
+			value CDATA #REQUIRED
+			unit CDATA #REQUIRED >
+			
+<!ATTLIST cuisson 
+			value CDATA #REQUIRED
+			unit CDATA #REQUIRED>
+
+<!ATTLIST renvoi 
+			ref CDATA #REQUIRED>]>
 <recette>
 	<nom>Œufs à la coque</nom>
 	<portion>4</portion>
