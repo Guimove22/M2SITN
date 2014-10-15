@@ -45,6 +45,8 @@ De bons exemples et un outil pour faire des requetes Xpath
 	/livres/auteur[@id=//livres/livre[titre[text()="Orlando"]]/@ref]/child::node()/text()
 	/livres/auteur[@id=//livres/livre[titre[contains(text(),"Orlando")]]/@ref]/child::node()/text()
 
+	//auteur[@id=//livre[contains(titre,"Orlando")]/@ref]/*/text()
+
 12. Le titre des livres écrit par Denis Lehane
 	/livres/livre[@ref=/livres/auteur[contains(prenom,"Denis") and contains(nom,"Lehane")]/@id]/titre/text()
 
