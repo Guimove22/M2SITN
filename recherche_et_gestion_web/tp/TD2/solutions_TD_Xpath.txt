@@ -57,6 +57,8 @@ De bons exemples et un outil pour faire des requetes Xpath
 	//node()[count(descendant::node())>=2]
 	//node()[count(ancestor::node())>=2]
 
+	//*[count (ancestor::*)=2]/*
+
 15. Les nœuds dont le nom contient la chaîne ‘it’
 	//node()[contains(name(),"it")]
 
