@@ -1,6 +1,6 @@
 <!DOCTYPE recette
 [
-<!ELEMENT recette (nom, portion,preparation,cuisson,ingredients,guide) >
+<!ELEMENT recette (nom, portion,preparation,cuisson*,ingredients+,guide) >
 <!ELEMENT nom (#PCDATA) >
 <!ELEMENT portion (#PCDATA) >
 

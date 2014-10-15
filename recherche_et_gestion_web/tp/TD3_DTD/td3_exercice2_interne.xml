@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE recette [
 
-<!ELEMENT recette (nom, portion,preparation,cuisson,ingredients,guide) >
+<!ELEMENT recette (nom, portion,preparation,cuisson*,ingredients+,guide) >
 <!ELEMENT nom (#PCDATA) >
 <!ELEMENT portion (#PCDATA) >
 
@@ -25,7 +25,9 @@
 			unit CDATA #REQUIRED>
 
 <!ATTLIST renvoi 
-			ref CDATA #REQUIRED>]>
+			ref CDATA #REQUIRED>
+
+]>
 <recette>
 	<nom>Œufs à la coque</nom>
 	<portion>4</portion>
