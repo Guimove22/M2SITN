@@ -2,12 +2,13 @@ http://www.freeformatter.com/xpath-tester.html
 
 De bons exemples et un outil pour faire des requetes Xpath
 
-
+/child::biographie/*[text()]
 ===========================
         Livres
 ===========================
 1. Titre de tous les livres 
 	/livres/livre/titre/text()
+	//livre/text()
 	//titre/text()
 
 2.Les livres achetés en 2004
@@ -78,3 +79,4 @@ De bons exemples et un outil pour faire des requetes Xpath
 7. Les nœuds de deuxième niveau
 
 8. Le dernier acteur référencé
+	//acteur[last()]
