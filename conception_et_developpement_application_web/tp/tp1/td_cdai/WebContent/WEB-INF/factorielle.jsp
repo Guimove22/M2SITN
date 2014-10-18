@@ -23,6 +23,8 @@ td, th /* Mettre une bordure sur les td ET les th */
             <% 
             
             String attribut = (String) request.getAttribute("fact");
+            Factorielle f = new Factorielle();
+            if(Factorielle.isNumeric(attribut)){
             out.print("<table>");
 	            out.print("<thead>");
 		            out.print("<tr>");
@@ -33,7 +35,7 @@ td, th /* Mettre une bordure sur les td ET les th */
             out.print("<tbody >");
             int len = Integer.parseInt(attribut);
              for(int i=0;i<len+1;i++){
-            	Factorielle f = new Factorielle();
+            	
                     
             	
                         out.print("<tr style=\"border: 1px solid black;\">");
@@ -45,7 +47,9 @@ td, th /* Mettre une bordure sur les td ET les th */
              out.print("</tbody>");
              out.print("</table>");
 
-            
+            }else{
+            	out.print("Veuillez saisir un nombre entier positif");
+            }
             %>
         
    </body>
