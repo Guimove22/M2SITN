@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE recette SYSTEM "td3_exercice2.dtd">
+<!DOCTYPE recette SYSTEM "recette.dtd">
 <recette>
 	<nom>Œufs à la coque</nom>
 	<portion>4</portion>
