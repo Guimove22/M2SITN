@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone= "no" ?> 
+<!DOCTYPE message SYSTEM "/Users/Axel/Documents/M2_SITN/M2SITN/recherche_et_gestion_web/tp/TD4/conditionnelle.dtd">
+
+<message>
+	<jugement flag= " true " />
+	<signature> Gaston Lagaffe </signature>
+</message>

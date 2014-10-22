@@ -1,0 +1,17 @@
+<!ENTITY DENNIS "Dennis Lehane est écrivain américain d'origine irlandaise, né le 4 août 1965 à Dorchester dans le Massachusetts. Un de ses romans,
+    <livre>
+        <titre>Mystic river</titre>
+        <parution>2001</parution>
+    </livre>, a inspiré le film oscarisé du même nom (<titre>Mystic River</titre>), réalisé par <realisateur>Clint Eastwood </realisateur> avec
+   	<acteur>Sean Penn </acteur> et <acteur> Tim Robbins </acteur>.
+	Un des romans de la série
+	<nom>Mickael Kenzie</nom> et
+	<nom>Angela Gennaro</nom>, deux détectives privés de
+	<ville>Boston</ville>,
+	<livre>
+	    <titre>Gone Baby Gone</titre>
+		<parution>1998</parution>
+	</livre> a inspiré le film éponyme <titre>Gone Baby Gone </titre> réalisé par <realisateur>Ben Affleck</realisateur> et dont le personnage principal est
+	tenu par son propre frère,<acteur> Casey Affleck </acteur>. "
+
+ >

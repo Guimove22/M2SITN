@@ -1,0 +1,10 @@
+<?xml version= "1.1" standalone= "no" ?> 
+<!DOCTYPE message SYSTEM "/Users/Axel/Documents/M2_SITN/M2SITN/recherche_et_gestion_web/tp/TD4/conditionnelle.dtd" [
+	<!ENTITY % rejet " INCLUDE "> 
+	<!ENTITY % acceptation " IGNORE ">
+]>
+<message>
+	<jugement flag = " false " />
+	<raison> non pertinent </raison> 
+	<signature> Gaston Lagaffe </signature>
+</message>

@@ -1,0 +1,21 @@
+<!ENTITY  % PREP_CUI "EMPTY">
+<!ENTITY  % VALUE_UNIT 'value NMTOKEN #REQUIRED unit  (sec|min|h) "sec" CDATA #REQUIRED' > 
+<!ENTITY renvoi SYSTEM "renvoi.xml">
+
+<!ELEMENT recette (nom, portion,preparation,cuisson*,ingredients+,guide)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT portion (#PCDATA)>
+<!ELEMENT preparation %PREP_CUI;>
+<!ELEMENT cuisson %PREP_CUI;>
+<!ELEMENT nbre (#PCDATA)>
+<!ELEMENT ingredients (i+)>
+<!ELEMENT i (nom,nombre)>
+<!ELEMENT guide (#PCDATA|renvoi|cuisson)* > 
+<!ELEMENT renvoi (#PCDATA)>
+
+<!ATTLIST nom id ID #IMPLIED>
+<!ATTLIST article source CDATA #REQUIRED>
+<!ATTLIST cuisson %VALUE_UNIT;>
+<!ATTLIST preparation %VALUE_UNIT;>
+<!ATTLIST renvoi ref IDREF #REQUIRED>
+

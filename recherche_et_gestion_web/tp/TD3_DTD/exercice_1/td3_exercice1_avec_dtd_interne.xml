@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE article [
-<!ELEMENT article (#PCDATA|titre|film|actrice)* >
-<!ELEMENT actrice (prenom,nom) >
-<!ELEMENT film (titre) >
-<!ELEMENT titre (#PCDATA|actrice)* >
+<!ELEMENT article (#PCDATA|titre|film|actrice)*>
+<!ELEMENT actrice (prenom,nom)>
+<!ELEMENT film (titre)>
+<!ELEMENT titre (#PCDATA|actrice)*>
 
-<!ELEMENT nom (#PCDATA) >
-<!ELEMENT prenom (#PCDATA) >
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
 
 
-<!ATTLIST article source CDATA #REQUIRED >
+<!ATTLIST article source CDATA #REQUIRED>
 <!ATTLIST titre 
-			realisateur CDATA #IMPLIED
+			realisateur NMTOKENS #IMPLIED
 			date NMTOKEN #IMPLIED
-			sujet CDATA #IMPLIED >
+			sujet CDATA #IMPLIED>
 ]>
 
 

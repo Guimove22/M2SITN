@@ -1,20 +1,22 @@
 <!DOCTYPE recette
 [
-<!ELEMENT recette (nom, portion,preparation,cuisson*,ingredients+,guide) >
-<!ELEMENT nom (#PCDATA) >
-<!ELEMENT portion (#PCDATA) >
+	<!ELEMENT recette (nom, portion,preparation,cuisson*,ingredients+,guide) >
+	<!ELEMENT nom (#PCDATA) >
+	<!ELEMENT portion (#PCDATA) >
+	<!ELEMENT preparation EMPTY >
+	<!ELEMENT cuisson EMPTY >
+	<!ELEMENT nbre (#PCDATA) >
+	<!ELEMENT ingredients (i+) >
+	<!ELEMENT i (nom,nombre) >
+	<!ELEMENT guide (#PCDATA|renvoi|cuisson)* >
+	<!ELEMENT renvoi (#PCDATA) >
 
-<!ELEMENT preparation (titre) >
-
-<!ELEMENT cuisson (#PCDATA) >
-<!ELEMENT ingredients (i+) >
-<!ELEMENT i (nom,nombre) >
-<!ELEMENT guide (#PCDATA|renvoi|cuisson)* >
-<!ELEMENT renvoi (#PCDATA) >
+	<!ATTLIST nom id ID #IMPLIED >
+	<!ATTLIST article source CDATA #REQUIRED >
+	
+	<!ATTLIST renvoi ref IDREF #REQUIRED>
 
 
-
-<!ATTLIST article source CDATA #REQUIRED >
 <!ATTLIST preparation 
 			value CDATA #REQUIRED
 			unit CDATA #REQUIRED >
@@ -23,7 +25,5 @@
 			value CDATA #REQUIRED
 			unit CDATA #REQUIRED>
 
-<!ATTLIST renvoi 
-			ref CDATA #REQUIRED>
 
 ]>

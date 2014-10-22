@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!ENTITY % rejet " IGNORE ">
+<!ENTITY % acceptation " INCLUDE ">
+
+<![%acceptation; [
+	<!ELEMENT message ( jugement, signature )>
+]]>
+
+<![%rejet; [
+	<!ELEMENT message ( jugement, raison, signature )> 
+	<!ELEMENT raison ( #PCDATA )>
+]]>
+
+<!ELEMENT jugement EMPTY>
+<!ATTLIST jugement flag ( false | true ) " false " >
+<!ELEMENT signature ( #PCDATA )>

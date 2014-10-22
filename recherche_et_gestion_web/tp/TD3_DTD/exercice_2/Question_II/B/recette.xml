@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE recette [
 
-<!ELEMENT recette (nom, portion,preparation,cuisson*,ingredients+,guide) >
+<!ELEMENT recette (nom+, portion,preparation,cuisson*,ingredients+,guide) >
 <!ELEMENT nom (#PCDATA) >
 <!ELEMENT portion (#PCDATA) >
 
-<!ELEMENT preparation (titre) >
+<!ELEMENT preparation EMPTY >
 
 <!ELEMENT cuisson (#PCDATA) >
 <!ELEMENT ingredients (i+) >
