@@ -14,5 +14,3 @@
 
 <!ELEMENT image EMPTY>
 <!ATTLIST image source %img; #REQUIRED>
-￼
-
