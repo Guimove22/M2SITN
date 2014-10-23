@@ -1,33 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE recette [
-
-<!ELEMENT recette (nom, portion,preparation,cuisson*,ingredients+,guide) >
-<!ELEMENT nom (#PCDATA) >
-<!ELEMENT portion (#PCDATA) >
-
-<!ELEMENT preparation (titre) >
-
-<!ELEMENT cuisson (#PCDATA) >
-<!ELEMENT ingredients (i+) >
-<!ELEMENT i (nom,nombre) >
-<!ELEMENT guide (#PCDATA|renvoi|cuisson)* >
-<!ELEMENT renvoi (#PCDATA) >
-
-<!ENTITY  % PREP_CUI " value  CDATA #REQUIRED  unit (sec|min|h) CDATA #REQUIRED">
-<!ATTLIST preparation %PREP_CUI;>
-
-<!ENTITY  VALUE_UNIT "value CDATA #REQUIRED
-					 unit (sec|min|h) CDATA #REQUIRED" > 
-
-<!ENTITY renvoi SYSTEM "renvoi.xml">
-<!ENTITY guide SYSTEM "guide.xml">
-
-<!ATTLIST article source CDATA #REQUIRED >
-<!ATTLIST cuisson %VALUE_UNIT; >
-<!ATTLIST renvoi 
-			ref CDATA #REQUIRED>
-
-]>
+<!DOCTYPE recette SYSTEM "recette.dtd">
 
 <recette>
 	<nom>Œufs à la coque</nom>
