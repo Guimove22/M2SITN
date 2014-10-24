@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!ENTITY % pasLien " IGNORE ">
+<!ENTITY % lien " INCLUDE ">
+
+<![%lien; [
+	<!ENTITY % img " CDATA ">
+]]>
+
+<![%pasLien; [
+	<!ENTITY % img " ENTITY ">
+	<!ENTITY LEHANNE SYSTEM "/Users/Axel/Desktop/Coucou.jpg" NDATA JPEG >
+]]>
+
+
+<!ELEMENT image EMPTY>
+<!ATTLIST image source %source; #REQUIRED
+			width NMTOKEN #IMPLIED
+			height NMTOKEN #IMPLIED>
+
+<!ENTITY % value_type () >
+<!ELEMENT liste (element+)>
+<!ATTLIST liste type %value_type>
+
+<!ELEMENT sujet (#PCDATA)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT realisateur (#PCDATA)>
+<!ELEMENT livre (#PCDATA)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT parution (#PCDATA)>
+<!ELEMENT acteur (#PCDATA)>

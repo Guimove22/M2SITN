@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="exercice1.css"?>
+<personnel_dauphine>
+    <employe>
+        <nom>Lagaffe</nom>
+        <prenom>Gaston</prenom>
+        <bureau service="service1">
+            <numero_bureau></numero_bureau>
+            <telephone></telephone>
+        </bureau>
+    </employe>
+    <employe>
+        <nom>Montes</nom>
+        <prenom>Lola</prenom>
+        <bureau service="service2">
+            <numero_bureau></numero_bureau>
+            <telephone></telephone>
+        </bureau>
+    </employe>
+    <employe>
+        <nom>Martin</nom>
+        <prenom>Henry</prenom>
+        <bureau service="service2">
+            <numero_bureau></numero_bureau>
+            <telephone></telephone>
+        </bureau>
+    </employe>
+    <service id="service1" raison-administrative="Administratif">
+        <nom>Service du personnel</nom>
+        <couloir>B</couloir>
+        <etage>5</etage>
+    </service>
+    <service id="service2" raison-administrative="Département">
+        <nom>Département MIDO</nom>
+        <couloir>B</couloir>
+        <etage>5</etage>
+    </service>
+</personnel_dauphine>

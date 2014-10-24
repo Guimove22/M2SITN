@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type= "text/css" href= "style.css" ?>
+<livres>
+
+	<livre id="JA01" ref="JaneAusten">
+		<titre>Persuasion</titre>
+		<traducteur>André Belamich</traducteur>
+		<editeur>Christian Bourgeois Éditeur</editeur>
+		<parution>1980</parution>
+		<postface></postface>		
+	</livre>
+
+	<livre id="DL01" ref="DenisLehane">
+		<titre>Gone Baby Gone</titre>
+		<traducteur>Isabelle Mallet</traducteur>
+		<editeur>Rivages/Thriller</editeur>
+		<parution>2003</parution>
+		<postface></postface>		
+	</livre>
+
+	<livre id="DL02" ref="DenisLehane">
+		<titre>Prières peur la pluie, Prayers for rain</titre>
+		<traducteur></traducteur>
+		<editeur>Rivages/Thriller</editeur>
+		<parution>2004</parution>
+		<postface></postface>		
+	</livre>
+
+	<livre id="VW01" ref="VirginiaWool">
+		<titre>Les Vagues (The Waves)</titre>
+		<traducteur>Marguerite Yourcenar</traducteur>
+		<editeur>Stock</editeur>
+		<parution>1937</parution>
+		<postface></postface>		
+	</livre>
+
+	<livre id="VW02" ref="VirginiaWool">
+		<titre>Orlando</titre>
+		<traducteur>Charles Mauron</traducteur>
+		<editeur>Stock</editeur>
+		<parution>1974</parution>
+		<postface>Orlando, ce sont les mille et une vie dont nous disposons, que nous étouffons et qu'Orlando seul libère, car il lui est donné vivre trois siècles en ayant toujours trente ans.</postface>		
+	</livre>	
+</livres>
