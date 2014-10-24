@@ -28,16 +28,17 @@
 				</ul>
 
 				
-				<xsl:template name="ligne">
-					<td> <i> <xsl:value-of select="concat(@id, ' :')" /> </i> </td>
-					<td> <xsl:copy-of select="./titre" /></td> 
-				</xsl:template>
+				
 								
 
 
 			</body>
 		</html>
 	</xsl:template>
+	<xsl:template name="ligne">
+					<td> <i> <xsl:value-of select="concat(@id, ' :')" /> </i> </td>
+					<td> <xsl:copy-of select="./titre" /></td> 
+				</xsl:template>
 </xsl:stylesheet>
 
 
