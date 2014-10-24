@@ -8,11 +8,31 @@
 			<head> 
 				<title> titre du document resultat </title>
 			</head>
-			<body >
+			<body>
 				
 				
-				 <xsl:apply-templates select="personnel_dauphine/personne/nom" />
+				 
+			 
+
+				<ul>
+					<xsl:for-each select="personnel_dauphine/personne">
+					 	
+					 	<li>
+					 		<div>
+					 			<p><xsl:value-of select="nom" /></p>
+					 			<p><xsl:value-of select="prenom" /></p>
+					 		</div>
+					 	</li>
+				<!-- traitement du noeud livre courant -->
+					</xsl:for-each>
+				</ul>
+
 				
+				<xsl:template name="ligne">
+					<td> <i> <xsl:value-of select="concat(@id, ' :')" /> </i> </td>
+					<td> <xsl:copy-of select="./titre" /></td> 
+				</xsl:template>
+								
 
 
 			</body>
