@@ -3,8 +3,8 @@
     Document   : dauphine.xsl
     Created on : 24 octobre 2014, 14:37
     Author     : yanndalmat
-    Description:
-        Purpose of transformation follows.
+    Adapted by : axel richier
+    Description: Purpose of transformation follows.
 -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html"/>
@@ -22,13 +22,13 @@
                         <th>prénom</th>
                         <th>Bureau</th>
                       </tr>
-                      <xsl:for-each select="personnel_dauphine/employe">
+                      <xsl:for-each select="personnel_dauphine/personne">
                       <tr>
                         <td><xsl:value-of select="nom" /></td>
                         <td><xsl:value-of select="prenom" /></td>
                         <td>
-                            <xsl:variable name="var" select="bureau/@service"/>
-                            <xsl:apply-templates select="parent::node()/service[@id=$var]"/>
+                            <xsl:value-of select="bureau/@service"/>
+                            <!--<xsl:value-of select="parent::node()/service[@id=$var]"/>-->
                         </td>
                       </tr>
                       </xsl:for-each>
