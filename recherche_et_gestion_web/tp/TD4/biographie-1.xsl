@@ -8,7 +8,7 @@
   <xsl:template match="/">
      <html>
        <head>
-           <link href="biographie.css" type="text/css" rel="stylesheet"/>
+           <link href="biographie.css" type="text/css" rel="stylesheet  "/>
            <title>  <xsl:value-of select="biographie/sujet"/>  </title>
        </head>
        <body>
