@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulaire Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>Formulaire Contact</h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <h3>Saisissez vos informations</h3>
+                    <form role="form" method="POST" action="exercice3_affichage.jsp">
+                      
+                    <div class="form-group">
+                        <label for="nom_contact">Nom</label>
+                        <input type="text" name="last" class="form-control" id="nom_contact" placeholder="Nom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prenom_contact">Prénom</label>
+                        <input type="text" name="first" class="form-control" id="prenom_contact" placeholder="Prénom" required>
+                    </div>
+
+
+                    <label for="genre_contact">Genre</label>
+                    <div class="radio-inline">
+                        <label>
+                            <input type="radio" name="gender" id="gender" value="male" >
+                            M
+                        </label>
+                    </div>
+                    <div class="radio-inline">
+                        <label>
+                            <input type="radio" name="gender" id="gender" value="female">
+                            F
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Téléphone</label>
+                        <input type="tel" name="tel" class="form-control" id="tel" placeholder="Numéro de téléphone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nom">email</label>
+                        <input type="email" name="mail" class="form-control" id="email" placeholder="Email" required>
+                    </div>
+                </div>
+                 <div class="col-xs-6">
+                    <div class="form-group">
+                        <label for="address">Adresse</label>
+                        
+                        <textarea class="form-control" rows="3" name="address" class="form-control" id="address" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom_contact">Ville</label>
+                        <input type="text" name="first" class="form-control" id="prenom_contact" placeholder="Ville" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom_contact">Code Postal</label>
+                        <input type="text" name="first" class="form-control" id="prenom_contact" placeholder="Code Postal" required>
+                    </div>
+
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="Contact">
+                                Contact
+                      </label>
+                    </div>
+                      <button type="submit" class="btn btn-default">Envoyer</button>
+                      <button type="reset" class="btn btn-default">Annuler</button>
+                    </form>
+
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>
