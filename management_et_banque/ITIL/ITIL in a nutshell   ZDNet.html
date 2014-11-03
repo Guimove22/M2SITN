@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://www.zdnet.com/blog/government/itil-in-a-nutshell/1842 -->
+<html class=" js no-touch audio" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:v="http://rdf.data-vocabulary.org/#"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./ITIL in a nutshell   ZDNet_files/event"></script><script id="twitter-wjs" src="./ITIL in a nutshell   ZDNet_files/widgets.js"></script><script id="facebook-jssdk" src="./ITIL in a nutshell   ZDNet_files/all.js" async=""></script><script src="./ITIL in a nutshell   ZDNet_files/yad.js" async=""></script><script src="./ITIL in a nutshell   ZDNet_files/yad.js" async=""></script><script type="text/javascript" async="async">s_c_il[1].cdw=s_c_il[1].d.write;s_c_il[1].cdwb="";s_c_il[1].d.write=function(m){s_c_il[1].cdwb+=m};
+(function(){var g=function(e,h,f,g){
+this.get=function(a){for(var a=a+"=",c=document.cookie.split(";"),b=0,e=c.length;b<e;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return null};
+this.set=function(a,c){var b="",b=new Date;b.setTime(b.getTime()+6048E5);b="; expires="+b.toGMTString();document.cookie=a+"="+c+b+"; path=/; "};
+this.check=function(){var a=this.get(f);if(a)a=a.split(":");else if(100!=e)"v"==h&&(e=Math.random()>=e/100?0:100),a=[h,e,0],this.set(f,a.join(":"));else return!0;var c=a[1];if(100==c)return!0;switch(a[0]){case "v":return!1;case "r":return c=a[2]%Math.floor(100/c),a[2]++,this.set(f,a.join(":")),!c}return!0};
+this.go=function(){if(this.check()){var a=document.createElement("script");a.type="text/javascript";a.src=g+ "&t=" + (new Date()).getTime();document.body&&document.body.appendChild(a)}};
+this.start=function(){var a=this;window.addEventListener?window.addEventListener("load",function(){a.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){a.go()})}};
+try{(new g(100,"r","QSI_S_ZN_3xeBFJDuSs0SRW5","//zn_3xebfjduss0srw5-cbs.siteintercept.qualtrics.com/WRSiteInterceptEngine/?Q_ZID=ZN_3xeBFJDuSs0SRW5&Q_LOC="+encodeURIComponent(window.location.href))).start()}catch(i){}})();
+s_c_il[1].d.write=s_c_il[1].cdw;s_c_il[1].crl(3,1)</script><script type="text/javascript" async="async">s_c_il[1].cdw=s_c_il[1].d.write;s_c_il[1].cdwb="";s_c_il[1].d.write=function(m){s_c_il[1].cdwb+=m};
+var ef_event_type="pageview";
+var ef_pageview_properties = "";
+var ef_segment = "12969";
+var ef_search_segment = "";
+var ef_userid="4083";
+var ef_pixel_host="pixel.everesttech.net";
+var ef_fb_is_app = 0;
+var ef_allow_3rd_party_pixels = 1;
+effp();
+s_c_il[1].d.write=s_c_il[1].cdw;s_c_il[1].crl(2,1)</script><script type="text/javascript" async="async" src="./ITIL in a nutshell   ZDNet_files/st.v2.js"></script><script type="text/javascript" async="async">s_c_il[1].cdw=s_c_il[1].d.write;s_c_il[1].cdwb="";s_c_il[1].d.write=function(m){s_c_il[1].cdwb+=m};
+s.maxDelay=750
+s.loadModule("Integrate")
+
+s.Integrate.onLoad=function(s,m){
+
+	/* BEGIN: ClickTale */
+	s.Integrate.add("ClickTale");
+	s.Integrate.ClickTale.sessionVar="eVar68";
+	s.Integrate.ClickTale.setVars=function(s,p){
+		if(typeof ClickTaleGetUID=='function'){
+			//s[p.sessionVar]=ClickTaleGetUID()
+			s[p.sessionVar]=s.readCookie(ClickTaleUIDCookieName)
+		}
+	}
+	s.Integrate.ClickTale.delay();
+	/* END: ClickTale */
+	
+}
+s.readCookie=function(n)
+{
+   var nameEQ = n + "=";
+   var ca = document.cookie.split(';');
+   for(var i=0;i < ca.length;i++)
+   {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+   }
+   return null;
+}
+
+/* IMPORTANT: The following Module may already be included and does not need to be added to the s_code twice */
+
+/****************************** MODULES *****************************/
+/* Module: Integrate */
+s.m_Integrate_c="var m=s.m_i('Integrate');m.add=function(n,o){var m=this,p;if(!o)o='s_Integrate_'+n;if(!m.s.wd[o])m.s.wd[o]=new Object;m[n]=new Object;p=m[n];p._n=n;p._m=m;p._c=0;p._d=0;p.disable=0;p"
++".get=m.get;p.delay=m.delay;p.ready=m.ready;p.beacon=m.beacon;p.script=m.script;m.l[m.l.length]=n};m._g=function(t){var m=this,s=m.s,i,p,f=(t?'use':'set')+'Vars',tcf;for(i=0;i<m.l.length;i++){p=m[m."
++"l[i]];if(p&&!p.disable&&p[f]){if(s.apv>=5&&(!s.isopera||s.apv>=7)){tcf=new Function('s','p','f','var e;try{p[f](s,p)}catch(e){}');tcf(s,p,f)}else p[f](s,p)}}};m._t=function(){this._g(1)};m._fu=func"
++"tion(p,u){var m=this,s=m.s,v,x,y,z,tm=new Date;if(u.toLowerCase().substring(0,4) != 'http')u='http://'+u;if(s.ssl)u=s.rep(u,'http:','https:');p.RAND=Math&&Math.random?Math.floor(Math.random()*10000"
++"000000000):tm.getTime();p.RAND+=Math.floor(tm.getTime()/10800000)%10;x=0;while(x>=0){x=u.indexOf('[',x);if(x>=0){y=u.indexOf(']',x);if(y>x){z=u.substring(x+1,y);if(z.length>2&&z.substring(0,2)=='s."
++"'){v=s[z.substring(2)];if(!v)v=''}else{v=''+p[z];if(!(v==p[z]||parseFloat(v)==p[z]))z=0}if(z)u=u.substring(0,x)+s.rep(escape(v),'+','%2B')+u.substring(y+1);x=y}}}return u};m.get=function(u,v){var p"
++"=this,m=p._m;if(!p.disable){if(!v)v='s_'+m._in+'_Integrate_'+p._n+'_get_'+p._c;p._c++;p.VAR=v;p._d++;m.s.loadModule('Integrate:'+v,m._fu(p,u),0,1,p._n)}};m.delay=function(){var p=this;if(p._d<=0)p."
++"_d=1};m.ready=function(){var p=this,m=p._m;p._d=0;if(!p.disable)m.s.dlt()};m._d=function(){var m=this,i,p;for(i=0;i<m.l.length;i++){p=m[m.l[i]];if(p&&!p.disable&&p._d>0)return 1}return 0};m._x=func"
++"tion(d,n){var p=this[n],x;if(!p.disable){for(x in d)if(x&&(!Object||!Object.prototype||!Object.prototype[x]))p[x]=d[x];p._d--}};m.beacon=function(u){var p=this,m=p._m,s=m.s,imn='s_i_'+m._in+'_Integ"
++"rate_'+p._n+'_'+p._c,im;if(!p.disable&&s.d.images&&s.apv>=3&&(!s.isopera||s.apv>=7)&&(s.ns6<0||s.apv>=6.1)){p._c++;im=s.wd[imn]=new Image;im.src=m._fu(p,u)}};m.script=function(u){var p=this,m=p._m;"
++"if(!p.disable)m.s.loadModule(0,m._fu(p,u),0,1)};m.l=new Array;if(m.onLoad)m.onLoad(s,m)";
+s.m_i("Integrate");
+s_c_il[1].d.write=s_c_il[1].cdw;s_c_il[1].crl(0,1)</script><script src="./ITIL in a nutshell   ZDNet_files/saved_resource" id="vr-script-002" async=""></script><script async="" src="./ITIL in a nutshell   ZDNet_files/vrs.js"></script><script async="" type="text/javascript" src="./ITIL in a nutshell   ZDNet_files/gpt.js"></script><script type="text/javascript" async="async" src="./ITIL in a nutshell   ZDNet_files/cnetzdnetglobalsite.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:image" content="http://cdn-static.zdnet.com/i/author/zdnet-staff.png">
+<meta property="news_keywords" content="">
+<meta itemprop="datePublished" content="2005-10-17T20:54:09Z">
+<meta itemprop="dateModified" content="2005-10-17T21:20:06Z">
+<meta itemprop="dateCreated" content="2005-10-17T20:54:09Z">
+<meta itemprop="image" content="http://cdn-static.zdnet.com/i/author/zdnet-staff.png">
+<meta itemprop="url" content="http://www.zdnet.com/blog/government/itil-in-a-nutshell/1842">
+<meta name="type" value="text">
+<meta name="application-name" content="ITIL in a nutshell | ZDNet">
+<meta name="msapplication-TileColor" content="#24486B">
+<meta name="msapplication-TileImage" content="/images/base/logo-144x144.png">
+<meta property="og:title" content="ITIL in a nutshell | ZDNet">
+<meta property="og:url" content="http://www.zdnet.com/blog/government/itil-in-a-nutshell/1842">
+<meta name="description" content="If you haven&#39;t heard about it yet you soon will. Here&#39;s the dope on the IT Infrastructure Library.">
+<meta property="og:description" content="If you haven&#39;t heard about it yet you soon will. Here&#39;s the dope on the IT Infrastructure Library.">
+<meta property="og:site_name" content="ZDNet">
+<title>ITIL in a nutshell | ZDNet</title>
+<link rel="stylesheet" href="http://www.zdnet.com/css/scaffolding.css?1414728890">
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link rel="stylesheet" href="/css/scaffolding.768.css?1414728890" media="screen">
+<link rel="stylesheet" href="/css/scaffolding.1024.css?1414728890" media="screen">
+<![endif]-->
+<link rel="stylesheet" href="http://www.zdnet.com/css/scaffolding.768.css?1414728890" media="screen and (min-width:768px)">
+<link rel="stylesheet" href="http://www.zdnet.com/css/scaffolding.1024.css?1414728890" media="screen and (min-width:1024px)">
+<link rel="stylesheet" href="http://www.zdnet.com/css/print.css?1414728890" media="print">
+<link rel="canonical" href="./ITIL in a nutshell   ZDNet_files/ITIL in a nutshell   ZDNet.html">
+<script src="./ITIL in a nutshell   ZDNet_files/modernizr-custom.2.5.3.js"></script>
+<script src="./ITIL in a nutshell   ZDNet_files/328981956.js"></script>
+<script src="./ITIL in a nutshell   ZDNet_files/recaptcha_ajax.js"></script>
+<script src="./ITIL in a nutshell   ZDNet_files/s_code.js" type="text/javascript"></script><script src="./ITIL in a nutshell   ZDNet_files/i.js" async=""></script><script async="" type="text/javascript" src="./ITIL in a nutshell   ZDNet_files/pubads_impl_53.js"></script><script src="./ITIL in a nutshell   ZDNet_files/init1.js" type="text/javascript"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fbpluginrecommendationsbarleft,.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}.fbpluginrecommendationsbarleft{left:10px}.fbpluginrecommendationsbarright{right:10px}</style><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><script src="./ITIL in a nutshell   ZDNet_files/secureAnonymousFramework"></script><style type="text/css">* html #li_ui_li_gen_1414975112829_0 a#li_ui_li_gen_1414975112829_0-link{height:1% !important;}#li_ui_li_gen_1414975112829_0{position:relative !important;overflow:visible !important;display:block !important;}#li_ui_li_gen_1414975112829_0 span{-webkit-box-sizing:content-box !important;-moz-box-sizing:content-box !important;box-sizing:content-box !important;}#li_ui_li_gen_1414975112829_0 a#li_ui_li_gen_1414975112829_0-link{border:0 !important;height:20px !important;text-decoration:none !important;padding:0 !important;margin:0 !important;display:inline-block !important;}#li_ui_li_gen_1414975112829_0 a#li_ui_li_gen_1414975112829_0-link:link, #li_ui_li_gen_1414975112829_0 a#li_ui_li_gen_1414975112829_0-link:visited, #li_ui_li_gen_1414975112829_0 a#li_ui_li_gen_1414975112829_0-link:hover, #li_ui_li_gen_1414975112829_0 a#li_ui_li_gen_1414975112829_0-link:active{border:0 !important;text-decoration:none !important;}#li_ui_li_gen_1414975112829_0 a#li_ui_li_gen_1414975112829_0-link:after{content:"." !important;display:block !important;clear:both !important;visibility:hidden !important;line-height:0 !important;height:0 !important;}#li_ui_li_gen_1414975112829_0 #li_ui_li_gen_1414975112829_0-logo{background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-position:0px -276px !important;background-repeat:no-repeat !important;background-size:initial !important;cursor:pointer !important;border:0 !important;text-indent:-9999em !important;overflow:hidden !important;padding:0 !important;margin:0 !important;position:absolute !important;left:0px !important;top:0px !important;display:block !important;width:20px !important;height:20px !important;float:right !important;border-radius:0 !important;-webkit-border-radius:0 !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-webkit-border-top-right-radius:2px !important;-webkit-border-bottom-right-radius:2px !important;}#li_ui_li_gen_1414975112829_0.hovered #li_ui_li_gen_1414975112829_0-logo{background-position:-20px -276px !important;}#li_ui_li_gen_1414975112829_0.clicked #li_ui_li_gen_1414975112829_0-logo, #li_ui_li_gen_1414975112829_0.down #li_ui_li_gen_1414975112829_0-logo{background-position:-40px -276px !important;}.IN-shadowed #li_ui_li_gen_1414975112829_0 #li_ui_li_gen_1414975112829_0-logo{}#li_ui_li_gen_1414975112829_0 #li_ui_li_gen_1414975112829_0-title{color:#333 !important;cursor:pointer !important;display:block !important;white-space:nowrap !important;float:left !important;margin-left:1px !important;vertical-align:top !important;overflow:hidden !important;text-align:center !important;height:18px !important;padding:0 4px 0 23px !important;border:1px solid #000 !important;border-top-color:#E2E2E2 !important;border-right-color:#BFBFBF !important;border-bottom-color:#B9B9B9 !important;border-left-color:#E2E2E2 !important;border-left:0 !important;text-shadow:#FFFFFF -1px 1px 0 !important;line-height:20px !important;border-radius:0 !important;-webkit-border-radius:0 !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-webkit-border-top-right-radius:2px !important;-webkit-border-bottom-right-radius:2px !important;background-color:#ECECEC !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#ECECEC)) !important; background-image: -webkit-linear-gradient(top, #FEFEFE 0%, #ECECEC 100%) !important;}#li_ui_li_gen_1414975112829_0.hovered #li_ui_li_gen_1414975112829_0-title{border:1px solid #000 !important;border-top-color:#ABABAB !important;border-right-color:#9A9A9A !important;border-bottom-color:#787878 !important;border-left-color:#04568B !important;border-left:0 !important;background-color:#EDEDED !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#EDEDED), color-stop(100%,#DEDEDE)) !important; background-image: -webkit-linear-gradient(top, #EDEDED 0%, #DEDEDE 100%) !important;}#li_ui_li_gen_1414975112829_0.clicked #li_ui_li_gen_1414975112829_0-title, #li_ui_li_gen_1414975112829_0.down #li_ui_li_gen_1414975112829_0-title{color:#666 !important;border:1px solid #000 !important;border-top-color:#B6B6B6 !important;border-right-color:#B3B3B3 !important;border-bottom-color:#9D9D9D !important;border-left-color:#49627B !important;border-left:0 !important;background-color:#DEDEDE !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#E3E3E3), color-stop(100%,#EDEDED)) !important; background-image: -webkit-linear-gradient(top, #E3E3E3 0%, #EDEDED 100%) !important;}.IN-shadowed #li_ui_li_gen_1414975112829_0 #li_ui_li_gen_1414975112829_0-title{}.IN-shadowed #li_ui_li_gen_1414975112829_0.hovered #li_ui_li_gen_1414975112829_0-title{}.IN-shadowed #li_ui_li_gen_1414975112829_0.clicked #li_ui_li_gen_1414975112829_0-title, .IN-shadowed #li_ui_li_gen_1414975112829_0.down #li_ui_li_gen_1414975112829_0-title{}#li_ui_li_gen_1414975112829_0 #li_ui_li_gen_1414975112829_0-title-text, #li_ui_li_gen_1414975112829_0 #li_ui_li_gen_1414975112829_0-title-text *{color:#333 !important;font-size:11px !important;font-family:Arial, sans-serif !important;font-weight:bold !important;font-style:normal !important;-webkit-font-smoothing:antialiased !important;display:inline-block !important;background:transparent none !important;vertical-align:top !important;height:18px !important;line-height:20px !important;float:none !important;}#li_ui_li_gen_1414975112829_0 #li_ui_li_gen_1414975112829_0-title-text strong{font-weight:bold !important;}#li_ui_li_gen_1414975112829_0 #li_ui_li_gen_1414975112829_0-title-text em{font-style:italic !important;}#li_ui_li_gen_1414975112829_0.hovered #li_ui_li_gen_1414975112829_0-title-text, #li_ui_li_gen_1414975112829_0.hovered #li_ui_li_gen_1414975112829_0-title-text *{color:#000 !important;}#li_ui_li_gen_1414975112829_0.clicked #li_ui_li_gen_1414975112829_0-title-text, #li_ui_li_gen_1414975112829_0.down #li_ui_li_gen_1414975112829_0-title-text, #li_ui_li_gen_1414975112829_0.clicked #li_ui_li_gen_1414975112829_0-title-text *, #li_ui_li_gen_1414975112829_0.down #li_ui_li_gen_1414975112829_0-title-text *{color:#666 !important;}#li_ui_li_gen_1414975112829_0 #li_ui_li_gen_1414975112829_0-title #li_ui_li_gen_1414975112829_0-mark{display:inline-block !important;width:0px !important;overflow:hidden !important;}.success #li_ui_li_gen_1414975112829_0 #li_ui_li_gen_1414975112829_0-title{color:#333 !important;border-top-color:#E2E2E2 !important;border-right-color:#BFBFBF !important;border-bottom-color:#B9B9B9 !important;border-left-color:#E2E2E2 !important;background-color:#ECECEC !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#ECECEC)) !important; background-image: -webkit-linear-gradient(top, #FEFEFE 0%, #ECECEC 100%) !important;}.success #li_ui_li_gen_1414975112829_0 #li_ui_li_gen_1414975112829_0-title-text, .success #li_ui_li_gen_1414975112829_0 #li_ui_li_gen_1414975112829_0-title-text *{color:#333 !important;}.IN-shadowed .success #li_ui_li_gen_1414975112829_0 #li_ui_li_gen_1414975112829_0-title{}.success #li_ui_li_gen_1414975112829_0.hovered #li_ui_li_gen_1414975112829_0-title{color:#000 !important;border-top-color:#ABABAB !important;border-right-color:#9A9A9A !important;border-bottom-color:#787878 !important;border-left-color:#04568B !important;background-color:#EDEDED !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#EDEDED), color-stop(100%,#DEDEDE)) !important; background-image: -webkit-linear-gradient(top, #EDEDED 0%, #DEDEDE 100%) !important;}.success #li_ui_li_gen_1414975112829_0.hovered #li_ui_li_gen_1414975112829_0-title-text, .success #li_ui_li_gen_1414975112829_0.hovered #li_ui_li_gen_1414975112829_0-title-text *{color:#000 !important;}.success #li_ui_li_gen_1414975112829_0.clicked #li_ui_li_gen_1414975112829_0-title, .success #li_ui_li_gen_1414975112829_0.down #li_ui_li_gen_1414975112829_0-title{color:#666 !important;border-top-color:#B6B6B6 !important;border-right-color:#B3B3B3 !important;border-bottom-color:#9D9D9D !important;border-left-color:#49627B !important;background-color:#DEDEDE !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#E3E3E3), color-stop(100%,#EDEDED)) !important; background-image: -webkit-linear-gradient(top, #E3E3E3 0%, #EDEDED 100%) !important;}.success #li_ui_li_gen_1414975112829_0.clicked #li_ui_li_gen_1414975112829_0-title-text, .success #li_ui_li_gen_1414975112829_0.down #li_ui_li_gen_1414975112829_0-title-text, .success #li_ui_li_gen_1414975112829_0.clicked #li_ui_li_gen_1414975112829_0-title-text *, .success #li_ui_li_gen_1414975112829_0.down #li_ui_li_gen_1414975112829_0-title-text *{color:#666 !important;}.IN-shadowed .success #li_ui_li_gen_1414975112829_0.clicked #li_ui_li_gen_1414975112829_0-title, .IN-shadowed .success #li_ui_li_gen_1414975112829_0.down #li_ui_li_gen_1414975112829_0-title{}#li_ui_li_gen_1414975112875_1-container.IN-top {display:inline-block !important;overflow:visible !important;position:relative !important;height:42px !important;line-height:1px !important;cursor:pointer !important;}#li_ui_li_gen_1414975112875_1.IN-top {display:inline-block !important;height:42px !important;width:57px !important;text-align:center !important;background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:-150px top !important;}#li_ui_li_gen_1414975112875_1-content.IN-top {display:inline !important;font-size:16px !important;color:#04558B !important;font-weight:bold !important;font-family:Arial, sans-serif !important;line-height:38px !important;}#li_ui_li_gen_1414975112875_1-container.IN-empty #li_ui_li_gen_1414975112875_1-inner.IN-top {background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:0px -20px !important;overflow:hidden !important;margin:5px auto 0 auto !important;width:26px !important;height:26px !important;display:block !important;}#li_ui_li_gen_1414975112875_1-container.IN-empty #li_ui_li_gen_1414975112875_1-content.IN-top {text-indent:-999px !important;display:inline-block !important;}#li_ui_li_gen_1414975112875_1-container.IN-hidden #li_ui_li_gen_1414975112875_1 {display:none !important;}* html #li_ui_li_gen_1414975112897_2 a#li_ui_li_gen_1414975112897_2-link{height:1% !important;}#li_ui_li_gen_1414975112897_2{position:relative !important;overflow:visible !important;display:block !important;}#li_ui_li_gen_1414975112897_2 span{-webkit-box-sizing:content-box !important;-moz-box-sizing:content-box !important;box-sizing:content-box !important;}#li_ui_li_gen_1414975112897_2 a#li_ui_li_gen_1414975112897_2-link{border:0 !important;height:20px !important;text-decoration:none !important;padding:0 !important;margin:0 !important;display:inline-block !important;}#li_ui_li_gen_1414975112897_2 a#li_ui_li_gen_1414975112897_2-link:link, #li_ui_li_gen_1414975112897_2 a#li_ui_li_gen_1414975112897_2-link:visited, #li_ui_li_gen_1414975112897_2 a#li_ui_li_gen_1414975112897_2-link:hover, #li_ui_li_gen_1414975112897_2 a#li_ui_li_gen_1414975112897_2-link:active{border:0 !important;text-decoration:none !important;}#li_ui_li_gen_1414975112897_2 a#li_ui_li_gen_1414975112897_2-link:after{content:"." !important;display:block !important;clear:both !important;visibility:hidden !important;line-height:0 !important;height:0 !important;}#li_ui_li_gen_1414975112897_2 #li_ui_li_gen_1414975112897_2-logo{background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-position:0px -276px !important;background-repeat:no-repeat !important;background-size:initial !important;cursor:pointer !important;border:0 !important;text-indent:-9999em !important;overflow:hidden !important;padding:0 !important;margin:0 !important;position:absolute !important;left:0px !important;top:0px !important;display:block !important;width:20px !important;height:20px !important;float:right !important;border-radius:0 !important;-webkit-border-radius:0 !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-webkit-border-top-right-radius:2px !important;-webkit-border-bottom-right-radius:2px !important;}#li_ui_li_gen_1414975112897_2.hovered #li_ui_li_gen_1414975112897_2-logo{background-position:-20px -276px !important;}#li_ui_li_gen_1414975112897_2.clicked #li_ui_li_gen_1414975112897_2-logo, #li_ui_li_gen_1414975112897_2.down #li_ui_li_gen_1414975112897_2-logo{background-position:-40px -276px !important;}.IN-shadowed #li_ui_li_gen_1414975112897_2 #li_ui_li_gen_1414975112897_2-logo{}#li_ui_li_gen_1414975112897_2 #li_ui_li_gen_1414975112897_2-title{color:#333 !important;cursor:pointer !important;display:block !important;white-space:nowrap !important;float:left !important;margin-left:1px !important;vertical-align:top !important;overflow:hidden !important;text-align:center !important;height:18px !important;padding:0 4px 0 23px !important;border:1px solid #000 !important;border-top-color:#E2E2E2 !important;border-right-color:#BFBFBF !important;border-bottom-color:#B9B9B9 !important;border-left-color:#E2E2E2 !important;border-left:0 !important;text-shadow:#FFFFFF -1px 1px 0 !important;line-height:20px !important;border-radius:0 !important;-webkit-border-radius:0 !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-webkit-border-top-right-radius:2px !important;-webkit-border-bottom-right-radius:2px !important;background-color:#ECECEC !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#ECECEC)) !important; background-image: -webkit-linear-gradient(top, #FEFEFE 0%, #ECECEC 100%) !important;}#li_ui_li_gen_1414975112897_2.hovered #li_ui_li_gen_1414975112897_2-title{border:1px solid #000 !important;border-top-color:#ABABAB !important;border-right-color:#9A9A9A !important;border-bottom-color:#787878 !important;border-left-color:#04568B !important;border-left:0 !important;background-color:#EDEDED !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#EDEDED), color-stop(100%,#DEDEDE)) !important; background-image: -webkit-linear-gradient(top, #EDEDED 0%, #DEDEDE 100%) !important;}#li_ui_li_gen_1414975112897_2.clicked #li_ui_li_gen_1414975112897_2-title, #li_ui_li_gen_1414975112897_2.down #li_ui_li_gen_1414975112897_2-title{color:#666 !important;border:1px solid #000 !important;border-top-color:#B6B6B6 !important;border-right-color:#B3B3B3 !important;border-bottom-color:#9D9D9D !important;border-left-color:#49627B !important;border-left:0 !important;background-color:#DEDEDE !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#E3E3E3), color-stop(100%,#EDEDED)) !important; background-image: -webkit-linear-gradient(top, #E3E3E3 0%, #EDEDED 100%) !important;}.IN-shadowed #li_ui_li_gen_1414975112897_2 #li_ui_li_gen_1414975112897_2-title{}.IN-shadowed #li_ui_li_gen_1414975112897_2.hovered #li_ui_li_gen_1414975112897_2-title{}.IN-shadowed #li_ui_li_gen_1414975112897_2.clicked #li_ui_li_gen_1414975112897_2-title, .IN-shadowed #li_ui_li_gen_1414975112897_2.down #li_ui_li_gen_1414975112897_2-title{}#li_ui_li_gen_1414975112897_2 #li_ui_li_gen_1414975112897_2-title-text, #li_ui_li_gen_1414975112897_2 #li_ui_li_gen_1414975112897_2-title-text *{color:#333 !important;font-size:11px !important;font-family:Arial, sans-serif !important;font-weight:bold !important;font-style:normal !important;-webkit-font-smoothing:antialiased !important;display:inline-block !important;background:transparent none !important;vertical-align:top !important;height:18px !important;line-height:20px !important;float:none !important;}#li_ui_li_gen_1414975112897_2 #li_ui_li_gen_1414975112897_2-title-text strong{font-weight:bold !important;}#li_ui_li_gen_1414975112897_2 #li_ui_li_gen_1414975112897_2-title-text em{font-style:italic !important;}#li_ui_li_gen_1414975112897_2.hovered #li_ui_li_gen_1414975112897_2-title-text, #li_ui_li_gen_1414975112897_2.hovered #li_ui_li_gen_1414975112897_2-title-text *{color:#000 !important;}#li_ui_li_gen_1414975112897_2.clicked #li_ui_li_gen_1414975112897_2-title-text, #li_ui_li_gen_1414975112897_2.down #li_ui_li_gen_1414975112897_2-title-text, #li_ui_li_gen_1414975112897_2.clicked #li_ui_li_gen_1414975112897_2-title-text *, #li_ui_li_gen_1414975112897_2.down #li_ui_li_gen_1414975112897_2-title-text *{color:#666 !important;}#li_ui_li_gen_1414975112897_2 #li_ui_li_gen_1414975112897_2-title #li_ui_li_gen_1414975112897_2-mark{display:inline-block !important;width:0px !important;overflow:hidden !important;}.success #li_ui_li_gen_1414975112897_2 #li_ui_li_gen_1414975112897_2-title{color:#333 !important;border-top-color:#E2E2E2 !important;border-right-color:#BFBFBF !important;border-bottom-color:#B9B9B9 !important;border-left-color:#E2E2E2 !important;background-color:#ECECEC !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#ECECEC)) !important; background-image: -webkit-linear-gradient(top, #FEFEFE 0%, #ECECEC 100%) !important;}.success #li_ui_li_gen_1414975112897_2 #li_ui_li_gen_1414975112897_2-title-text, .success #li_ui_li_gen_1414975112897_2 #li_ui_li_gen_1414975112897_2-title-text *{color:#333 !important;}.IN-shadowed .success #li_ui_li_gen_1414975112897_2 #li_ui_li_gen_1414975112897_2-title{}.success #li_ui_li_gen_1414975112897_2.hovered #li_ui_li_gen_1414975112897_2-title{color:#000 !important;border-top-color:#ABABAB !important;border-right-color:#9A9A9A !important;border-bottom-color:#787878 !important;border-left-color:#04568B !important;background-color:#EDEDED !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#EDEDED), color-stop(100%,#DEDEDE)) !important; background-image: -webkit-linear-gradient(top, #EDEDED 0%, #DEDEDE 100%) !important;}.success #li_ui_li_gen_1414975112897_2.hovered #li_ui_li_gen_1414975112897_2-title-text, .success #li_ui_li_gen_1414975112897_2.hovered #li_ui_li_gen_1414975112897_2-title-text *{color:#000 !important;}.success #li_ui_li_gen_1414975112897_2.clicked #li_ui_li_gen_1414975112897_2-title, .success #li_ui_li_gen_1414975112897_2.down #li_ui_li_gen_1414975112897_2-title{color:#666 !important;border-top-color:#B6B6B6 !important;border-right-color:#B3B3B3 !important;border-bottom-color:#9D9D9D !important;border-left-color:#49627B !important;background-color:#DEDEDE !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#E3E3E3), color-stop(100%,#EDEDED)) !important; background-image: -webkit-linear-gradient(top, #E3E3E3 0%, #EDEDED 100%) !important;}.success #li_ui_li_gen_1414975112897_2.clicked #li_ui_li_gen_1414975112897_2-title-text, .success #li_ui_li_gen_1414975112897_2.down #li_ui_li_gen_1414975112897_2-title-text, .success #li_ui_li_gen_1414975112897_2.clicked #li_ui_li_gen_1414975112897_2-title-text *, .success #li_ui_li_gen_1414975112897_2.down #li_ui_li_gen_1414975112897_2-title-text *{color:#666 !important;}.IN-shadowed .success #li_ui_li_gen_1414975112897_2.clicked #li_ui_li_gen_1414975112897_2-title, .IN-shadowed .success #li_ui_li_gen_1414975112897_2.down #li_ui_li_gen_1414975112897_2-title{}</style></head><body id="story" data-is-logged-in="false" data-twttr-rendered="true"><iframe id="twttrHubFrameSecure" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" name="twttrHubFrameSecure" src="./ITIL in a nutshell   ZDNet_files/hub.1c5a573e465d84666458a45e49b0a735(1).html" style="position: absolute; top: -9999em; width: 10px; height: 10px;"></iframe><iframe id="twttrHubFrame" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" name="twttrHubFrame" src="./ITIL in a nutshell   ZDNet_files/hub.1c5a573e465d84666458a45e49b0a735.html" style="position: absolute; top: -9999em; width: 10px; height: 10px;"></iframe><div id="mboxScriptContainer" style="display:none;visibility:hidden;"></div><style>.mboxDefault{visibility:hidden;}</style>
+<script src="./ITIL in a nutshell   ZDNet_files/omniture.js" type="text/javascript"></script>
+<script src="./ITIL in a nutshell   ZDNet_files/history.js" type="text/javascript"></script>
+<script src="./ITIL in a nutshell   ZDNet_files/uuid.js" type="text/javascript"></script>
+<script src="./ITIL in a nutshell   ZDNet_files/mbox.js" type="text/javascript"></script><style>.mboxDefault { visibility:hidden; }</style>
+<script src="./ITIL in a nutshell   ZDNet_files/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/frontend/js/external/jquery-1.7.1.min.js?1414728939"><\/script>')</script>
+<script type="text/javascript">
+if (typeof uuid === "undefined") {
+	var page_guid = null;
+} else {
+	var page_guid = uuid.v1();
+}
+</script>
+<!-- Start BounceX tag. Deploy at the beginning of document head. -->
+<script>
+(function(d) {
+    var e = d.createElement('script');
+    e.src = d.location.protocol + '//bounceexchange.com/tag/765/i.js';
+    e.async = true;
+    d.getElementsByTagName("head")[0].appendChild(e);
+}(document));
+</script>
+<!-- End BounceX tag -->
+
+
+<script type="text/javascript">
+		  var googletag = googletag || {};
+		  googletag.cmd = googletag.cmd || [];
+		  (function() {
+		    var gads = document.createElement("script");
+		    gads.async = true;
+		    gads.type = "text/javascript";
+		    var useSSL = "https:" == document.location.protocol;
+		    gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+		    var node =document.getElementsByTagName("script")[0];
+		    node.parentNode.insertBefore(gads, node);
+		   })();
+		  googletag.cmd.push(function() {
+		    googletag.pubads().set("adsense_background_color", "FFFFFF");
+		  });
+		</script><script type="text/javascript">
+if (typeof page_guid == "undefined") {
+	var page_guid = '95b175e11772d80efb7';
+}
+var adSlots= {};$(function() {googletag.cmd.push(function() {	if ($('#feature-sponsor').length > 0) {	adSlots["feature-sponsor"] = googletag.defineSlot("/8264/uk-zdnet/cxo", [88,31], "feature-sponsor")
+		.addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+	}	if ($('#hotspot').length > 0) {	adSlots["hotspot"] = googletag.defineSlot("/8264/uk-zdnet/cxo", [165,421], "hotspot")
+		.addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+	}	if ($('#leaderboard-top').length > 0) {	adSlots["leaderboard-top"] = googletag.defineSlot("/8264/uk-zdnet/cxo", [[728,90],[970,66],[970,250],[980,150]], "leaderboard-top")
+		.addService(googletag.pubads())
+		.setTargeting("pos", "top").setCollapseEmptyDiv(true,true);
+	}	if ($('#leaderboard-bottom').length > 0) {	adSlots["leaderboard-bottom"] = googletag.defineSlot("/8264/uk-zdnet/cxo", [[728,90],[970,66],[970,250],[980,150]], "leaderboard-bottom")
+		.addService(googletag.pubads())
+		.setTargeting("pos", "bottom").setCollapseEmptyDiv(true,true);
+	}	if ($('#marquee').length > 0) {	adSlots["marquee"] = googletag.defineSlot("/8264/uk-zdnet/cxo", [300,60], "marquee")
+		.addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+	}	if ($('#mpu-middle').length > 0) {	adSlots["mpu-middle"] = googletag.defineSlot("/8264/uk-zdnet/cxo", [300,250], "mpu-middle")
+		.addService(googletag.pubads())
+		.setTargeting("pos", "middle").setCollapseEmptyDiv(true,true);
+	}	if ($('#mpu-bottom').length > 0) {	adSlots["mpu-bottom"] = googletag.defineSlot("/8264/uk-zdnet/cxo", [300,250], "mpu-bottom")
+		.addService(googletag.pubads())
+		.setTargeting("pos", "bottom").setCollapseEmptyDiv(true,true);
+	}	if ($('#mpu-top').length > 0) {	adSlots["mpu-top"] = googletag.defineSlot("/8264/uk-zdnet/cxo", [[300,250],[300,600],[300,1050]], "mpu-top")
+		.addService(googletag.pubads())
+		.setTargeting("pos", "top").setCollapseEmptyDiv(true,true);
+	}	if ($('#resource-center').length > 0) {	adSlots["resource-center"] = googletag.defineSlot("/8264/uk-zdnet/cxo", [300,261], "resource-center")
+		.addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+	}	if ($('#skin').length > 0) {	adSlots["skin"] = googletag.defineSlot("/8264/uk-zdnet/cxo", [1600,1000], "skin")
+		.addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+	}	if ($('#sponsor-logo').length > 0) {	adSlots["sponsor-logo"] = googletag.defineSlot("/8264/uk-zdnet/cxo", [120,60], "sponsor-logo")
+		.addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+	}	if ($('#sponsored-text-link').length > 0) {	adSlots["sponsored-text-link"] = googletag.defineSlot("/8264/uk-zdnet/cxo", [401,11], "sponsored-text-link")
+		.addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+	}	if ($('#ticker').length > 0) {	adSlots["ticker"] = googletag.defineSlot("/8264/uk-zdnet/cxo", [980,45], "ticker")
+		.addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+	}	if ($('#vendor-text-link').length > 0) {	adSlots["vendor-text-link"] = googletag.defineSlot("/8264/uk-zdnet/cxo", [300,450], "vendor-text-link")
+		.addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+	}	if ($('#interstitial').length > 0) {	adSlots["interstitial"] = googletag.defineOutOfPageSlot("/8264/uk-zdnet/cxo",   "interstitial")
+		.addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+	}
+	googletag.pubads().setTargeting("buyingcycle", "discover");
+	googletag.pubads().setTargeting("cid", "6057001842");
+	googletag.pubads().setTargeting("device", "desktop");
+	googletag.pubads().setTargeting("ptype", "article");
+	googletag.pubads().setTargeting("session", "f");
+	googletag.pubads().setTargeting("firstpg", "1");
+	googletag.pubads().setTargeting("vguid", page_guid);
+	var ftag = urlHelper.getFtagValue();
+		if(ftag) {
+			googletag.pubads().setTargeting("ftag", ftag);
+		}
+		
+
+	googletag.pubads().enableAsyncRendering();
+	googletag.pubads().collapseEmptyDivs();
+	googletag.pubads().enableSingleRequest();
+	googletag.enableServices();
+});});</script>
+
+
+<script type="text/javascript" src="./ITIL in a nutshell   ZDNet_files/dw.js"></script>
+<script type="text/javascript">
+DW.pageParams = {
+	asid: '605701842',
+	astid: '136',
+	ctype: 'asset',
+	cval: '6057001842',
+	onid: '800010',
+	pgnbr: '1',
+	ptid: '8301',
+	siteid: '55',
+        pguid: page_guid
+};
+DW.regSilo = 3;
+DW.pageParams.x_breadcrumb = 800010;
+</script>
+
+<!--
+<PageMap>
+<DataObject type="content">
+<Attribute name="type" value="text"/>
+<Attribute name="id" value="6057001842"/>
+<Attribute name="title" value="ITIL in a nutshell"/>
+<Attribute name="author" value="Ramon Padilla"/>
+<Attribute name="author_ids" value="10000036"/>
+<Attribute name="summary" value="If you haven't heard about it yet you soon will. Here's the dope on the IT Infrastructure Library."/>
+<Attribute name="published" value="2005-10-17T20:54:09+0100"/>
+<Attribute name="published_timestamp" value="1129582449"/>
+<Attribute name="country" value="us"/>
+<Attribute name="page_count" value="1"/>
+<Attribute name="asia_last_30_days" value="0"/>
+<Attribute name="au_last_30_days" value="0"/>
+<Attribute name="au_last_7_days" value="0"/>
+<Attribute name="eu_last_30_days" value="0"/>
+<Attribute name="eu_last_7_days" value="0"/>
+<Attribute name="global_last_30_days" value="10"/>
+<Attribute name="global_last_7_days" value="2"/>
+<Attribute name="uk_last_30_days" value="0"/>
+<Attribute name="uk_last_7_days" value="0"/>
+<Attribute name="us_last_30_days" value="0"/>
+<Attribute name="us_last_7_days" value="0"/>
+</DataObject>
+</PageMap>
+-->
+
+
+    <!--Visual Revenue Reader Response Tracking Script (v6) -->
+    <script type="text/javascript">
+    var _vrq = _vrq || [];
+    _vrq.push(['id', 553]);
+    _vrq.push(['automate', true]);
+    _vrq.push(['track', function(){}]);
+    (function(d, a){
+    var s = d.createElement(a),
+    x = d.getElementsByTagName(a)[0];
+    s.async = true;
+    s.src = 'http://a.visualrevenue.com/vrs.js';
+    x.parentNode.insertBefore(s, x);
+    })(document, 'script');
+    </script>
+    <!-- End of VR RR Tracking Script - All rights reserved -->
+
+
+
+
+            <div id="ticker" style="display: none;"><div id="google_ads_iframe_/8264/uk-zdnet/cxo_10__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8264/uk-zdnet/cxo_10" name="google_ads_iframe_/8264/uk-zdnet/cxo_10" width="980" height="45" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/8264/uk-zdnet/cxo_10__hidden__" name="google_ads_iframe_/8264/uk-zdnet/cxo_10__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div>
+	<script type="text/javascript">
+	$(function() {		if (adSlots["ticker"]) {
+			googletag.cmd.push(function() {
+				googletag.display("ticker");
+			});
+		};
+	});
+	</script>
+
+    
+	<!-- ClickTale Top part -->
+	<script type="text/javascript">
+	    document.write(unescape("%3Cscript%20src='" +
+	                            (document.location.protocol == 'https:' ?
+	                             'https://clicktalecdn.sslcs.cdngc.net/' :
+	                             'http://cdn.clicktale.net/') +
+	                            "www09/phc/5a999966-75a6-4b89-a92c-23702f4d9c94.js'%20type='text/javascript'%3E%3C/script%3E"));
+	</script><script src="./ITIL in a nutshell   ZDNet_files/5a999966-75a6-4b89-a92c-23702f4d9c94.js" type="text/javascript"></script><iframe src="./ITIL in a nutshell   ZDNet_files/container.html" style="visibility: hidden; display: none;"></iframe><script type="text/javascript">// Copyright 2006-2014 ClickTale Ltd., US Patent Pending
+// PID: 9056
+// Generated on: 10/31/2014 9:27:39 PM (UTC 11/1/2014 2:27:39 AM)
+
+var WRInitTime=(new Date()).getTime();
+
+// Start of custom user-defined settings code
+
+// End of custom user-defined settings code
+
+</script>
+	<!-- ClickTale end of Top part -->
+
+
+<script>
+	var cacheBustingId = 43706,
+        userRegion = 'uk';
+        userTwoLetterCountry = 'fr';
+</script>
+		<div id="cookiePolicy">
+		<div class="container">
+			<p>This web site uses cookies to improve your experience. By viewing our content, you are accepting the use of cookies.
+				To find out more and change your cookie settings, please <a href="https://cbsi.secure.force.com/CBSi/articles/FAQ/Managing-Cookies-PP?template=template_privacyzd&referer=privacyzd.com" data-action="close" target="_blank">view our cookie policy</a>. <a href="" class="close" data-action="close">Close</a></p>
+		</div>
+	</div>
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./ITIL in a nutshell   ZDNet_files/ehazDpFPEnK.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./ITIL in a nutshell   ZDNet_files/ehazDpFPEnK(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<header role="banner">
+	<div class="header container">
+		<a href="http://www.zdnet.com/" class="siteLogo">ZDNet</a>
+		<div class="lvl-search">
+							
+            <div id="sponsored-text-link" style="display: none;"><div id="google_ads_iframe_/8264/uk-zdnet/cxo_9__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8264/uk-zdnet/cxo_9" name="google_ads_iframe_/8264/uk-zdnet/cxo_9" width="401" height="11" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+	<script type="text/javascript">
+	$(function() {		if (adSlots["sponsored-text-link"]) {
+			googletag.cmd.push(function() {
+				googletag.display("sponsored-text-link");
+			});
+		};
+	});
+	</script>
+
+    
+						
+			<form id="search" class="siteSearch" action="http://www.zdnet.com/search" onsubmit="Omniture.trackSearchSubmit(this, $(this).find(&#39;[name=q]&#39;).val());">
+	<fieldset class="box">
+		<input type="text" placeholder="Search ZDNet" tabindex="1" name="q" value="">
+		<input type="submit" value="Search">
+	</fieldset>
+</form>
+
+		</div>
+		<div class="lvl-nav">
+			<nav class="secondaryNav">
+									<div class="siteUtils loggedOut">
+						<a href="http://www.zdnet.com/membership/log-in/?app_id=1101&path=http%3A%2F%2Fwww.zdnet.com%2Fblog%2Fgovernment%2Fitil-in-a-nutshell%2F1842" rel="nofollow" data-member="showLogIn">Log In</a> | <a href="http://www.zdnet.com/membership/register/?app_id=1101&path=http%3A%2F%2Fwww.zdnet.com%2Fblog%2Fgovernment%2Fitil-in-a-nutshell%2F1842" rel="nofollow" data-omniture="{&quot;channel&quot;:&quot;cxo&quot;, &quot;reg_form_type&quot;:&quot;short&quot;, &quot;registration_driver&quot;:&quot;header&quot;}" data-member="showRegister">Join ZDNet</a> <span class="avatar"><img src="./ITIL in a nutshell   ZDNet_files/avatar-20x20.jpg" alt="" width="20" height="20"></span>
+					</div>
+								<ul class="bar">
+					<li>
+						<a href="http://www.zdnet.com/"><span class="icon home">Home</span></a>
+					</li>
+																		<li><a href="http://www.zdnet.com/topic/">Hot Topics</a></li>
+													<li><a href="http://www.zdnet.com/topic-reviews/">Reviews</a></li>
+													<li><a href="http://downloads.zdnet.com/">Downloads</a></li>
+													<li><a href="http://www.zdnet.com/newsletters/">Newsletters</a></li>
+													<li><a href="http://www.techrepublic.com/whitepapers?tag=wpzd">White Papers</a></li>
+															</ul>
+			</nav>
+		</div>
+	</div>
+	<nav class="primaryNav container">
+		<ul class="bar editions">
+			<li class="expandable"><a href="javascript:void(0);">UK Edition<span class="icon arrow"></span></a>
+				<nav class="menu">
+					<ul>
+						<li><span class="label">ZDNet.com is available in the following editions:</span></li>
+																				<li><a href="" data-edition="asia" class="editionSwitch">Asia</a></li>
+																											<li><a href="" data-edition="au" class="editionSwitch">Australia</a></li>
+																											<li><a href="" data-edition="eu" class="editionSwitch">Europe</a></li>
+																											<li><a href="" data-edition="in" class="editionSwitch">India</a></li>
+																											<li><a href="" data-edition="uk" class="editionSwitch">United Kingdom</a></li>
+																											<li><a href="" data-edition="us" class="editionSwitch">United States</a></li>
+																			<li><span class="label">ZDNet around the globe:</span></li>
+													<li><a href="http://www.zdnet.be/" target="_blank">ZDNet Belgium</a></li>
+													<li><a href="http://www.zdnet.com.cn/" target="_blank">ZDNet China</a></li>
+													<li><a href="http://www.zdnet.fr/" target="_blank">ZDNet France</a></li>
+													<li><a href="http://www.zdnet.de/" target="_blank">ZDNet Germany</a></li>
+													<li><a href="http://www.zdnet.co.kr/" target="_blank">ZDNet Korea</a></li>
+													<li><a href="http://japan.zdnet.com/" target="_blank">ZDNet Japan</a></li>
+											</ul>
+				</nav>
+			</li>
+		</ul>
+
+		<ul class="bar mobile">
+							<li class="nav expandable"><a class="title">Topics<span class="icon arrow"></span></a>
+					<nav class="menu">
+						<ul>
+															<li><a href="http://www.zdnet.com/topic-united-kingdom/">UK News</a></li>
+															<li><a href="http://www.zdnet.com/topic-it-budgeting-2015-planning-the-next-stage/">IT Budgeting</a></li>
+															<li><a href="http://www.zdnet.com/topic-the-state-of-it-jobs-winners-and-losers/">IT Jobs</a></li>
+															<li><a href="http://www.zdnet.com/topic-3d-printing-building-the-future/">3D Printing</a></li>
+															<li><a href="http://www.zdnet.com/topic-the-art-of-the-hybrid-cloud/">Hybrid Cloud</a></li>
+															<li><a href="http://www.zdnet.com/topic-wearables-fit-for-business/">Wearables</a></li>
+															<li><a href="http://www.zdnet.com/topic-the-rebirth-of-enterprise-software/">Enterprise Software</a></li>
+															<li><a href="http://www.zdnet.com/topic-why-business-leaders-must-be-security-leaders/">Security</a></li>
+															<li><a href="http://www.zdnet.com/topic-microservers-a-data-center-revolution/">Microservers</a></li>
+															<li><a href="http://www.zdnet.com/topic-tablets-wheres-the-productivity/">Tablets</a></li>
+															<li><a href="http://www.zdnet.com/topic-windows-xp-and-the-future-of-the-desktop/">Windows XP</a></li>
+															<li><a href="http://www.zdnet.com/topic-ces-2014-what-the-professionals-need-to-know/">CES 2014</a></li>
+															<li><a href="http://www.zdnet.com/topic-storage-fear-loss-and-innovation-in-2014/">Storage</a></li>
+															<li><a href="http://www.zdnet.com/topic-it-security-in-the-snowden-era/">IT Security</a></li>
+															<li><a href="http://www.zdnet.com/topic-the-battle-for-the-soul-of-it/">Battle for the Soul of IT</a></li>
+													</ul>
+					</nav>
+				</li>
+						<li class="nav expandable siteUtils"><a>Log In<span class="icon arrow"></span></a>
+				<nav class="menu">
+					<ul>
+													<li><a href="http://www.zdnet.com/membership/log-in/?app_id=1101&path=http%3A%2F%2Fwww.zdnet.com%2Fblog%2Fgovernment%2Fitil-in-a-nutshell%2F1842" data-member="showLogIn">Log In</a></li>
+							<li><a href="http://www.zdnet.com/membership/register/?app_id=1101&path=http%3A%2F%2Fwww.zdnet.com%2Fblog%2Fgovernment%2Fitil-in-a-nutshell%2F1842" data-omniture="{&quot;channel&quot;:&quot;cxo&quot;, &quot;reg_form_type&quot;:&quot;short&quot;, &quot;registration_driver&quot;:&quot;header&quot;}" data-member="showRegister">Join ZDNet</a></li> 
+											</ul>
+				</nav>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<div id="mantle_skin">
+			
+            <div id="skin" style="display: none;"><div id="google_ads_iframe_/8264/uk-zdnet/cxo_8__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8264/uk-zdnet/cxo_8" name="google_ads_iframe_/8264/uk-zdnet/cxo_8" width="1600" height="1000" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+	<script type="text/javascript">
+	$(function() {		if (adSlots["skin"]) {
+			googletag.cmd.push(function() {
+				googletag.display("skin");
+			});
+		};
+	});
+	</script>
+
+    
+		
+							<div id="page">
+							
+    
+	<div id="leaderTop" class="leader">
+    <div class="container">
+            <div id="leaderboard-top" style="display: none;"><div id="google_ads_iframe_/8264/uk-zdnet/cxo_1__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8264/uk-zdnet/cxo_1" name="google_ads_iframe_/8264/uk-zdnet/cxo_1" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+	<script type="text/javascript">
+	$(function() {		if (adSlots["leaderboard-top"]) {
+			googletag.cmd.push(function() {
+				googletag.display("leaderboard-top");
+			});
+		};
+	});
+	</script>
+
+    		</div>
+	</div>
+
+						<div id="content" class="container">
+
+						<div class="YAD-1e97ce0e-dfb4-3392-b2d9-b48bccbb3efb yad-empty"><iframe frameborder="0" width="100%" height="0" style="display: none;" src="./ITIL in a nutshell   ZDNet_files/yad-iframe.eca118e.html"></iframe></div>
+<script>
+	if ('http://'+ location.host == 'http://www.zdnet.com')
+	
+	{
+	    (function(a,b,c,d,e,f){a[d]||(a[d]=
+	    function(){(a[d].q=a[d].q||[]).push([arguments,+new Date])});
+	    e=b.createElement(c);f=b.getElementsByTagName(c)[0];
+	    e.src='https://s.yimg.com/uq/syndication/yad.js';e.async=true;
+	    f.parentNode.insertBefore(e,f)}(window,document,'script','yad'));
+	    yad('1e97ce0e-dfb4-3392-b2d9-b48bccbb3efb');
+	}
+    
+</script>	
+		<div class="breakingNews"><span>Must read:</span> <a href="http://www.zdnet.com/microsoft-releases-surprise-outlook-for-mac-update-new-office-due-in-2015-7000035298/">Microsoft releases surprise Outlook for Mac update, new Office due in 2015</a></div>
+
+
+
+<script type="text/javascript">
+  function showRecaptcha(element) {
+    Recaptcha.create("6LczBtgSAAAAAEfZMKzfcE9k3F4WBiurn-feXRgJ", element, {
+        theme: "red",
+        callback: Recaptcha.focus_response_field
+    });
+  }
+</script>
+
+
+
+	
+
+    
+	
+	
+	<h1 itemprop="headline-new">ITIL in a nutshell</h1>
+
+	<div id="main" data-story-id="6057001842">
+		
+	    
+		
+					<div class="navSupplement">
+				
+					<p class="relatedTopics">
+									Topic: <a href="http://www.zdnet.com/topic-cxo/">CXO</a>	
+						</p>
+
+				<ul class="followOptions">
+	<li>Follow via: </li>
+	<li><a href="http://www.zdnet.com/topic-cxo/rss.xml" title="RSS Feed" rel="nofollow"><span class="icon rss">RSS</span></a></li>
+	<li><a href="http://www.zdnet.com/membership/create-alert/?url=http%3A%2F%2Fwww.zdnet.com%2Ftopic-cxo%2Frss.xml&subject=CXO&frequency=weekly&source=http%3A%2F%2Fwww.zdnet.com%2Fblog%2Fgovernment%2Fitil-in-a-nutshell%2F1842" title="Create an Email Alert" rel="nofollow" data-member="gated" data-app_id="1101"><span class="icon alerts">Email Alert</span></a></li> 
+</ul>
+
+			</div>
+				<article itemscope="" itemtype="http://schema.org/Article" id="siu-container" class="post clear" style="position: relative;"><div class="sharebar-outer-vertical"><div class="siu-vertical-cont focus-highlight" data-toggle="fixate" style="display: block; top: 20px; z-index: 5; opacity: 0.5; position: fixed;"><div class="siu siu-vertical"><div class="grp"><div class="siu-cmnt-cont"><a class="siu-cmnt" href="http://www.zdnet.com/blog/government/itil-in-a-nutshell/1842#comments"><span class="count livefyre-commentcount" data-lf-site-id="3000030" data-lf-article-id="">1</span><span class="suffix">Comment</span></a></div><div class="siu-btn-cont siu-vote-cont"><a href="http://www.zdnet.com/vote/" class="vote siu-vote" data-action="vote" data-asset-id="zdgl_6057001842" data-asset-content-type="story" data-content-type="up"><span class="count">0</span> <span class="suffix">Votes</span></a></div></div><div class="grp siu-btns-cont"><div id="facebookButton" class="siu-btn-cont siu-facebook-btn"><div id="facebook-count" class="siu-cmnt"><div style="padding:10px;font-size:16px;">0</div></div><a class="iconSocial facebook" shareaction="facebook" href="javascript:void(0);"></a></div><div id="twitterButton" class="siu-btn-cont siu-twitter-btn"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./ITIL in a nutshell   ZDNet_files/tweet_button.d58098f8a7f0ff5a206e7f15442a6b30.en.html" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-vertical" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 57px; height: 62px;"></iframe></div><div id="linkedinButton" class="siu-btn-cont siu-linkedin-btn"><span class="IN-widget" style="line-height: 1; vertical-align: baseline; display: inline-block; text-align: center;"><span style="padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: baseline !important; font-size: 1px !important;"><span id="li_ui_li_gen_1414975112875_1-container" class="IN-top IN-empty"><span id="li_ui_li_gen_1414975112875_1" class="IN-top"><span id="li_ui_li_gen_1414975112875_1-inner" class="IN-top"><span id="li_ui_li_gen_1414975112875_1-content" class="IN-top">0</span></span></span></span></span><br><span style="padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: baseline !important; font-size: 1px !important;"><span id="li_ui_li_gen_1414975112829_0"><a id="li_ui_li_gen_1414975112829_0-link" href="javascript:void(0);"><span id="li_ui_li_gen_1414975112829_0-logo">in</span><span id="li_ui_li_gen_1414975112829_0-title"><span id="li_ui_li_gen_1414975112829_0-mark"></span><span id="li_ui_li_gen_1414975112829_0-title-text">Share</span></span></a></span></span></span><script type="IN/Share+init" data-counter="top" data-url="http://www.zdnet.com/blog/government/itil-in-a-nutshell/1842"></script></div></div><div class="grp siu-more-cont"><a class="siu-more-btn" data-toggle="pop" data-target=".siu-more" data-text-replace="more -" data-placement="right">more +</a><div class="siu-more" style="display: none;"><ul class="options"><li><a href="javascript:void(0);" class="icon i-email" shareaction="email">Email</a></li><li><a href="javascript:void(0);" class="icon i-print" shareaction="print">Print</a></li><li><a href="javascript:void(0);" class="icon i-googleplus" shareaction="googleplus">Google+</a></li><li><a href="javascript:void(0);" class="icon i-delicious" shareaction="delicious">Del.icio.us</a></li><li><a href="javascript:void(0);" class="icon i-digg" shareaction="digg">Digg</a></li><li><a href="javascript:void(0);" class="icon i-stumbleupon" shareaction="stumbleupon">StumbleUpon</a></li><li><a href="javascript:void(0);" class="icon i-reddit" shareaction="reddit">Reddit</a></li><li><a href="javascript:void(0);" class="icon i-technorati" shareaction="technorati">Technorati</a></li><li><a href="javascript:void(0);" class="icon i-pinterest" shareaction="pinterest">Pinterest</a></li><li><a href="javascript:void(0);" class="icon i-slashdot" shareaction="slashdot">Slashdot</a></li></ul></div></div></div></div></div>
+							<header class="storyHeader">
+			<h1 itemprop="headline">ITIL in a nutshell</h1>
+			<p itemprop="description" class="summary"><span>Summary:</span> If you haven't heard about it yet you soon will. Here's the dope on the IT Infrastructure Library.</p>
+			<div class="byline">
+													<div><a href="" class="thumb"><img src="./ITIL in a nutshell   ZDNet_files/zdnet-staff-60x45.png" alt="Ramon Padilla" width="60" height="45"></a></div>
+									
+		<p class="meta" itemprop="author">By Ramon Padilla for <a href="http://www.zdnet.com/blog/government/" itemprop="articleSection">ZDNet Government</a> |							<time datetime="2005-10-17" itemprop="datePublished">October 17, 2005 -- 20:54 GMT (21:54 BST)</time>
+					</p>
+														
+
+		
+        
+                        <form id="fm_e565" action="" data-member="submitNewsletterLoggedOut" data-url="/membership/newsletters-widget/" data-omniture="{&quot;channel&quot;:&quot;cxo&quot;, &quot;reg_form_type&quot;:&quot;short&quot;, &quot;registration_driver&quot;:&quot;paint newsletter reg box&quot;, &quot;location&quot;:&quot;author-byline&quot;}" class="mmode mmode-nls nls-subscribe">
+        
+                        <fieldset>
+                                <input type="hidden" value="e565:ZDNet Must Read News Alerts - UK" name="addlSubs[]" data-ecode="e565">
+                                                                <input name="triggertype" type="hidden" value="bio">
+                                <input name="ecodes" type="hidden" value="e565">
+                                <input class="button" type="submit" value="Get the ZDNet Must Read News Alerts - UK newsletter now">
+                        </fieldset>
+                </form>
+        <div style="clear:both;"></div>
+	</div>
+
+					<div id="relatedContentTabs"></div>
+			
+	    		<div class="sharebar-outer-horizontal"><div id="siu-horizontal" data-module="sharebar" data-title="ITIL in a nutshell" data-summary="If you haven&#39;t heard about it yet you soon will. Here&#39;s the dope on the IT Infrastructure Library." data-url="http://www.zdnet.com/blog/government/itil-in-a-nutshell/1842" data-short-url="http://zd.net/9FwxtT" data-action="text" data-content-id="" data-story-id="zdgl_6057001842" data-cmnt-count="1" style="display: none;"><div class="siu siu-horizontal"><div class="grp"><div class="siu-cmnt-cont"><a class="siu-cmnt" href="http://www.zdnet.com/blog/government/itil-in-a-nutshell/1842#comments"><span class="count livefyre-commentcount" data-lf-site-id="3000030" data-lf-article-id="">1</span><span class="suffix">Comment</span></a></div><div class="siu-btn-cont siu-vote-cont"><a href="http://www.zdnet.com/vote/" class="vote siu-vote" data-action="vote" data-asset-id="zdgl_6057001842" data-asset-content-type="story" data-content-type="up"><span class="count">0</span> <span class="suffix">Votes</span></a></div></div><div id="facebookButton" class="siu-btn-cont siu-facebook-btn"><div class="fb-share-button fb_iframe_widget" data-href="http://www.zdnet.com/blog/government/itil-in-a-nutshell/1842" data-type="button_count" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;href=http%3A%2F%2Fwww.zdnet.com%2Fblog%2Fgovernment%2Fitil-in-a-nutshell%2F1842&amp;locale=en_US&amp;sdk=joey&amp;type=button_count"><span style="vertical-align: bottom; width: 85px; height: 20px;"><iframe name="f1a7eaec7c" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:share_button Facebook Social Plugin" src="./ITIL in a nutshell   ZDNet_files/share_button.html" class="" style="border: none; visibility: visible; width: 85px; height: 20px;"></iframe></span></div></div><div id="twitterButton" class="siu-btn-cont siu-twitter-btn"><iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" src="./ITIL in a nutshell   ZDNet_files/tweet_button.d58098f8a7f0ff5a206e7f15442a6b30.en(1).html" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 110px; height: 20px;"></iframe></div><div id="linkedinButton" class="siu-btn-cont siu-linkedin-btn"><span class="IN-widget" style="line-height: 1; vertical-align: baseline; display: inline-block; text-align: center;"><span style="padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: baseline !important; font-size: 1px !important;"><span id="li_ui_li_gen_1414975112897_2"><a id="li_ui_li_gen_1414975112897_2-link" href="javascript:void(0);"><span id="li_ui_li_gen_1414975112897_2-logo">in</span><span id="li_ui_li_gen_1414975112897_2-title"><span id="li_ui_li_gen_1414975112897_2-mark"></span><span id="li_ui_li_gen_1414975112897_2-title-text">Share</span></span></a></span></span></span><script type="IN/Share+init" data-url="http://www.zdnet.com/blog/government/itil-in-a-nutshell/1842"></script></div><div class="grp siu-more-cont"><a class="siu-more-btn" data-toggle="pop" data-target=".siu-more" data-text-replace="more -" data-placement="bottom left reserve">more +</a><div class="siu-more" style="display: none;"><ul class="options"><li><a href="javascript:void(0);" class="icon i-email" shareaction="email">Email</a></li><li><a href="javascript:void(0);" class="icon i-print" shareaction="print">Print</a></li><li><a href="javascript:void(0);" class="icon i-googleplus" shareaction="googleplus">Google+</a></li><li><a href="javascript:void(0);" class="icon i-delicious" shareaction="delicious">Del.icio.us</a></li><li><a href="javascript:void(0);" class="icon i-digg" shareaction="digg">Digg</a></li><li><a href="javascript:void(0);" class="icon i-stumbleupon" shareaction="stumbleupon">StumbleUpon</a></li><li><a href="javascript:void(0);" class="icon i-reddit" shareaction="reddit">Reddit</a></li><li><a href="javascript:void(0);" class="icon i-technorati" shareaction="technorati">Technorati</a></li><li><a href="javascript:void(0);" class="icon i-pinterest" shareaction="pinterest">Pinterest</a></li><li><a href="javascript:void(0);" class="icon i-slashdot" shareaction="slashdot">Slashdot</a></li></ul></div></div></div></div></div>
+
+</header>
+
+<header class="storyHeader-2_0">
+	<div class="socials">
+		<span>SHARE:</span>
+		<a class="social-icons-1 i-b-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://www.zdnet.com/blog/government/itil-in-a-nutshell/1842" target="_blank"></a>
+		<a class="social-icons-1 i-b-twitter" href="https://twitter.com/share?url=http://www.zdnet.com/blog/government/itil-in-a-nutshell/1842" target="_blank"></a>
+		<a class="social-icons-1 i-b-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.zdnet.com/blog/government/itil-in-a-nutshell/1842&title=ITIL%20in%20a%20nutshell&summary=If%20you%20haven%27t%20heard%20about%20it%20yet%20you%20soon%20will.%20Here%27s%20the%20dope%20on%20the%20IT%20Infrastructure%20Library.&source=ZDNet" target="_blank"></a>
+
+		<div class="subscribe">
+			<span>SUBSCRIBE TO: CXO</span>
+			<a class="social-icons-1 i-r-email-alert" href="http://www.zdnet.com/membership/create-alert/?url=http%3A%2F%2Fwww.zdnet.com%2Ftopic-cxo%2Frss.xml&subject=CXO&frequency=weekly&source=http%3A%2F%2Fwww.zdnet.com%2Fblog%2Fgovernment%2Fitil-in-a-nutshell%2F1842" title="Create an Email Alert" rel="nofollow" data-member="gated" data-app_id="1101"></a>
+		</div>
+	</div>
+
+	<div class="topics">
+		<div class="topics-cont">
+			<span>TOPICS:</span>
+												<a href="http://www.zdnet.com/topic-cxo/">CXO</a>									</div>
+		<div class="comment-count">
+			1
+			<a href="http://www.zdnet.com/blog/government/itil-in-a-nutshell/1842#comments" class="social-icons-1 i-r-comment"></a>
+		</div>
+	</div>
+
+	<p class="meta" itemprop="author">By Ramon Padilla for <a href="http://www.zdnet.com/blog/government/" itemprop="articleSection">ZDNet Government</a> |					<time datetime="2005-10-17" itemprop="datePublished">October 17, 2005 -- 20:54 GMT (21:54 BST)</time>
+			</p>
+</header>
+										<div class="storyBody" itemprop="articleBody">
+		
+		
+		
+		
+						<font>If you do a quick search on "IT best practice frameworks," you will find no shortage of foundations and architectures on which to build your IT organization. <a target="_self" href="http://www.isaca.org/Template.cfm?Section=COBIT6&Template=/TaggedPage/TaggedPageDisplay.cfm&TPLID=55&ContentID=7981">COBIT</a> (Control Objectives for Information and Related Technology), <a href="http://www.iso.org/iso/en/iso9000-14000/index.html">ISO 9000</a> (International Standards Organization set of quality standards), <a href="http://www.sei.cmu.edu/cmmi/general/general.html">CMMI</a> (Capability Maturity Model Integration), and <a href="http://www.isixsigma.com/">Six Sigma</a> are just a few. Another framework which is gaining interest in the United States is <a href="http://www.itil.co.uk/">ITIL</a>, the IT Integration Library.<br> <br> Developed in Britain in the 1980s, ITIL is a framework that addresses service delivery and support of IT services. Widely accepted internationally, it is just beginning to make significant inroads in the US. Privately, IBM, EDS, HP, Mead, and GM have adopted the framework. In the public sector, the governments of Virginia, Wisconsin, Oklahoma City and others have embraced the framework. <p><strong>Why ITIL?</strong></p> So what makes ITIL so special? The consensus is that ITIL is unique because of its strict focus on service delivery and IT operations - as opposed to general techniques for quality management or the implementation of standards. Many&nbsp; folks who are involved with ITIL predict it will become the de facto standard for all IT shops in the US. One source I read recently claimed that the US andCanadian governments will soon require IT contractors to use ITIL, but I have not been able to confirm that. <p><strong>What is ITIL exactly, and how do I access the library?</strong></p> ITIL is a collection of best practices that has been developed into a series of eight books that run about $115 dollars each. They are: <br> <br> </font> <ul> <li><font><strong><a href="http://www.get-best-practice.co.uk/serviceDeliveryInformation.aspx"> Service Support</a>: </strong>Covers the basic processes involved with supporting the enterprise, such as Service Desk, Incident Management, Problem Management, Configuration Management, Change Management and Release Management.</font></li><li><font> <strong><a href="http://www.get-best-practice.co.uk/serviceDeliveryInformation.aspx">Service Delivery</a>:</strong> Focuses on the planning and delivery of services and includes topics such as Capacity Management, Financial Management for IT Services, Availability Management, Service Level Management, and IT Service Continuity Management. <strong></strong></font></li><li><strong><font><a href="http://www.get-best-practice.co.uk/serviceManagementInformation.aspx"><strong> Planning to Implement Service Management:</strong>&nbsp;</a> </font>Covers key issues issues to be considered when planning for the implementation of IT service management.<font> <strong></strong></font></strong></li><li><strong><strong><font><a href="http://www.get-best-practice.co.uk/ICTInfrastructureLibraryInformation.aspx"><strong><span style="font-weight: bold;">ICT </span>Infrastructure Management</strong>:</a> As the title infers, this book covers everything about managing your telecommunications infrastructure including Design and Planning, Deployment, Operations, and Technical Support. <strong></strong></font></strong></strong></li><li><strong><strong><strong><font><a href="http://www.get-best-practice.co.uk/applicationManagementInformation.aspx"><strong> Application Management:</strong> </a>Covers the management of applications from inception to retirement and everything in between.   <strong></strong></font></strong></strong></strong></li><li><strong><strong><strong><font><a href="http://www.get-best-practice.co.uk/softwareAssetManagementInformation.aspx"><strong> Software Asset Management</strong></a>: Seeks to explain what software asset management is, why it is important and how to manage them.   <strong></strong></font></strong></strong></strong></li><li><strong><strong><strong><font><a href="http://www.get-best-practice.co.uk/securityManagementInformation.aspx"><strong> Security Management:</strong></a> “This guide focuses on the process of implementing security requirements identified in the IT Service Level Agreement, rather than considering business issues of security policy.” <strong></strong></font></strong></strong></strong></li><li><strong><strong><strong><font><a href="http://www.get-best-practice.co.uk/businessPerspectiveInformation.aspx"><strong> The Business Perspective:</strong></a> "This book is concerned with helping business managers to understand IT service provision. Issues covered include Business Relationship Management, Partnerships and Outsourcing, and continuous improvement and exploitation of Information, Communication and Technology (ICT) for business advantage." </font></strong></strong></strong></li><strong><strong> </strong></strong></ul><strong><strong>  <font> <br> You can obtain these books at&nbsp; the&nbsp; <a href="http://www.get-best-practice.co.uk/serviceSupportInformation.aspx">Best Practice</a> website or via <a href="http://www.amazon.com/exec/obidos/tg/detail/-/0113300158/qid=1129608933/sr=2-1/ref=pd_bbs_b_2_1/002-8692351-9012847?v=glance&s=books">Amazon</a>.       <p><strong>Do you need another framework?</strong></p> I have to be honest with you, every time I read about another framework my first reaction is to roll my eyes. I have been around long enough to experience many "better than sliced bread" phenomena that--if only implemented--will make my organization a superstar. And, of course, there are always an army of consultants to be hired and classes that need to be taken and certifications to achieve in order to "realize the potential" of the framework. <br> <br> And in that sense ITIL is no different. You can invest the time and resources in understanding the framework to build up expertise in order to implement it (which several organizations have) or you can hire someone to help you along. Additionally, like many of the frameworks that have come into vogue before it, integrating the processes involved with ITIL takes time--usually measured in years. <br> <br>Having said all that, frameworks can prove beneficial. I think there are very few if any IT organizations that have no room for improvement. Most can stand some enhancements to their operations. The tough questions are: where can we improve and how do we go about doing it? That's where frameworks are beneficial. <br> <br> Personally, this framework intrigues me--partly, I guess, because it was originally written by government workers, and I intend to research it further. If you are similarly intrigued, here are some places, besides the books, that you can get information to see if ITIL is right for you and your organization: <br> <br></font> <ul> <li><font><a href="http://www.itilpeople.com/"> ITLPEOPLE.com</a>&nbsp;   </font></li><li><font><a href="http://www.itilcommunity.com/index.php"> The ITL Community Forum</a>&nbsp;   </font></li><li><font><a href="http://www.itsmf.com/index.asp"> The IT Service Management Forum</a> <br> </font></li> </ul>
+				
+	
+
+
+	</strong></strong></div><strong><strong>
+	
+
+
+							<p class="relatedTopics">
+									Topic: <a href="http://www.zdnet.com/topic-cxo/">CXO</a>						</p>
+
+								
+						<p class="fancy">Kick off your day with ZDNet's <a href="http://www.zdnet.com/newsletters/">daily email newsletter</a>. It's the freshest tech news and opinion, served hot. <a href="http://www.zdnet.com/newsletters/">Get it.</a></p>
+
+		</strong></strong></article><strong><strong>
+
+            
+    
+    <div class="YAD-06189959-3cf4-3976-8002-367a1439f9f9"><iframe frameborder="0" width="100%" height="590px" style="display:block" src="./ITIL in a nutshell   ZDNet_files/yad-iframe.eca118e.html"></iframe></div>
+    <script>
+        
+        (function(a,b,c,d,e,f){a[d]||(a[d]=
+        function(){(a[d].q=a[d].q||[]).push([arguments,+new Date])});
+        e=b.createElement(c);f=b.getElementsByTagName(c)[0];
+        e.src='https://s.yimg.com/uq/syndication/yad.js';e.async=true;
+        f.parentNode.insertBefore(e,f)}(window,document,'script','yad'));
+        yad('06189959-3cf4-3976-8002-367a1439f9f9');
+        
+    </script>
+    <div style="padding-bottom:20px"></div>
+	
+
+        
+		
+		<section id="comments" class="module">
+	<h2 class="heading"><span class="int">Talkback</span></h2>
+	<div class="head">
+		<div class="commentsCount"><span>1</span> comment</div>
+					<div class="fancy"><a href="http://www.zdnet.com/membership/log-in/?app_id=1101&path=http%3A%2F%2Fwww.zdnet.com%2Fblog%2Fgovernment%2Fitil-in-a-nutshell%2F1842" rel="nofollow" data-member="showLogIn"><strong>Log in</strong></a> or <a href="http://www.zdnet.com/membership/register/?app_id=1101&path=http%3A%2F%2Fwww.zdnet.com%2Fblog%2Fgovernment%2Fitil-in-a-nutshell%2F1842" rel="nofollow" data-omniture="{&quot;channel&quot;:&quot;cxo&quot;, &quot;reg_form_type&quot;:&quot;short&quot;, &quot;registration_driver&quot;:&quot;comments&quot;}" data-member="showRegister"><strong>register</strong></a> to join the discussion</div>
+			</div>
+	<ul class="commentsList">
+																				 
+	 
+
+<li id="comment-11679361" class="comment">
+	<div class="commentWrapper">
+		
+		
+					<h3 class="commentSubject">How To Implement ITIL Effectively </h3>
+						<div class="commentBody">Thanks for the very insightful article.<br>
+<br>
+As an experienced ITIL consultant I appreciate the 'fear factor' involved with learning about ITIL and getting to grips with exactly what this set of best practices can do for an organization.<br>
+<br>
+To assist anyone who's really interested in learning more - I recently interviewed US ITIL author Randy Steinberg for two hours on his 15 years experience with ITIL Implementations.<br>
+<br>
+We covered a lot of ground in that two hours, dealing with topics like:- <br>
+<br>
+- Selling ITIL through "lenses"<br>
+- Overcoming real-world objections<br>
+- How to calculate ITIL's ROI<br>
+- Maintaining momentum and buy-in<br>
+- Organizational Change (in waves)<br>
+- How to start ITIL from 'scratch'<br>
+- Nine things that just work<br>
+- ITIL for small organizations<br>
+- How to implement the CMDB from scratch<br>
+- How to implement a Service Catalog<br>
+<br>
+The interview was recorded digitally and available for free access, along with a fully edited 62 page call transcript. <br>
+<br>
+To listen to the interview or access the PDF transcript please visit:-<br>
+<br>
+http://www.asktheserviceexpert.com<br>
+<br>
+<br>
+Best Regards,<br>
+Robin Yearsley.<br>
+<br>
+http://www.ITServiceBlog.com</div>
+		<div class="commentMeta">
+			<div><img src="./ITIL in a nutshell   ZDNet_files/6a26b03ef4db6c4fb2e7cf4cb503b799" alt="" class="avatar" height="40" width="40"></div>
+																<div class="author">robin.yearsley9</div>
+										<time>25 September, 2006 02:56</time>
+		</div>
+		<div class="commentActions">
+							<a href="http://www.zdnet.com/membership/log-in/?app_id=1101&path=http%3A%2F%2Fwww.zdnet.com%2Fblog%2Fgovernment%2Fitil-in-a-nutshell%2F1842" rel="nofollow" data-member="showLogIn"><span class="icon reply"></span> Reply</a> 
+						<a href="http://www.zdnet.com/vote/" rel="nofollow" data-action="vote" data-asset-id="11679361" data-asset-content-type="comment" data-content-type="up"><span class="icon vote"></span> <span class="count"></span> <span class="suffix">Vote</span></a>
+								</div>
+	</div>
+	</li>
+
+															</ul>
+			
+	</section>
+		
+																				<script type="text/javascript">
+		    netseer_tag_id = "19254";
+		    netseer_ad_width = "620";
+		    netseer_ad_height = "230";
+		    netseer_task = "ad";
+		    netseer_imp_type = "1"; 
+		    netseer_imp_src = "2"; 
+		</script>
+		<script src="http://ps.ns-cdn.com/dsatserving2/scripts/netseerads.js" type="text/javascript"></script>
+	
+	</strong></strong></div><strong><strong>
+	<!-- //main -->
+	<aside id="secondary">
+					
+
+			
+            <div id="marquee" style="display: none;"><div id="google_ads_iframe_/8264/uk-zdnet/cxo_3__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8264/uk-zdnet/cxo_3" name="google_ads_iframe_/8264/uk-zdnet/cxo_3" width="300" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+	<script type="text/javascript">
+	$(function() {		if (adSlots["marquee"]) {
+			googletag.cmd.push(function() {
+				googletag.display("marquee");
+			});
+		};
+	});
+	</script>
+
+    
+			
+            <div id="vendor-text-link" style="display: none;"><div id="google_ads_iframe_/8264/uk-zdnet/cxo_11__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8264/uk-zdnet/cxo_11" name="google_ads_iframe_/8264/uk-zdnet/cxo_11" width="300" height="450" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+	<script type="text/javascript">
+	$(function() {		if (adSlots["vendor-text-link"]) {
+			googletag.cmd.push(function() {
+				googletag.display("vendor-text-link");
+			});
+		};
+	});
+	</script>
+
+    
+							
+            <div id="mpu-top" style="display: none;"><div id="google_ads_iframe_/8264/uk-zdnet/cxo_6__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8264/uk-zdnet/cxo_6" name="google_ads_iframe_/8264/uk-zdnet/cxo_6" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+	<script type="text/javascript">
+	$(function() {		if (adSlots["mpu-top"]) {
+			googletag.cmd.push(function() {
+				googletag.display("mpu-top");
+			});
+		};
+	});
+	</script>
+
+    
+
+	        
+            <div id="hotspot" style="display: none;"><div id="google_ads_iframe_/8264/uk-zdnet/cxo_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8264/uk-zdnet/cxo_0" name="google_ads_iframe_/8264/uk-zdnet/cxo_0" width="165" height="421" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+	<script type="text/javascript">
+	$(function() {		if (adSlots["hotspot"]) {
+			googletag.cmd.push(function() {
+				googletag.display("hotspot");
+			});
+		};
+	});
+	</script>
+
+    
+	        
+            <div id="resource-center" style="display: none;"><div id="google_ads_iframe_/8264/uk-zdnet/cxo_7__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8264/uk-zdnet/cxo_7" name="google_ads_iframe_/8264/uk-zdnet/cxo_7" width="300" height="261" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+	<script type="text/javascript">
+	$(function() {		if (adSlots["resource-center"]) {
+			googletag.cmd.push(function() {
+				googletag.display("resource-center");
+			});
+		};
+	});
+	</script>
+
+    
+	        																						<script type="text/javascript">
+		    netseer_tag_id = "19253";
+		    netseer_ad_width = "300";
+		    netseer_ad_height = "250";
+		    netseer_task = "ad";
+		    netseer_imp_type = "1"; 
+		    netseer_imp_src = "2"; 
+		</script>
+		<script src="http://ps.ns-cdn.com/dsatserving2/scripts/netseerads.js" type="text/javascript"></script>
+	
+			
+			
+				<section class="module" data-module="Related Stories" data-vr-zone="Latest Blog Posts">
+					<h2 class="heading"><span class="int">Related Stories</span></h2>
+				<div class="box">
+			<ul>
+															<li data-vr-contentbox="">
+															<div>
+									<a href="http://www.zdnet.com/enterprise-tech-vendors-sizing-up-the-next-gen-field-7000035317/" class="thumb">
+										<img src="./ITIL in a nutshell   ZDNet_files/enterprise-tech-vendors-sizing-up-the-next-gen-field-60x45.png" alt="Enterprise tech vendors: Sizing up the next gen field" width="60" height="45">
+									</a>
+								</div>
+														<div class="content">
+								<p><a href="http://www.zdnet.com/enterprise-tech-vendors-sizing-up-the-next-gen-field-7000035317/">Enterprise tech vendors: Sizing up the next gen field</a></p>
+								
+							</div>
+						</li>
+																				<li data-vr-contentbox="">
+															<div>
+									<a href="http://www.zdnet.com/the-internet-inside-the-enterprise-we-dont-have-it-and-we-need-it-7000035312/" class="thumb">
+										<img src="./ITIL in a nutshell   ZDNet_files/dion-hinchcliffe-60x45.jpg" alt="The Internet inside the enterprise: We don&#39;t have it, and we need it" width="60" height="45">
+									</a>
+								</div>
+														<div class="content">
+								<p><a href="http://www.zdnet.com/the-internet-inside-the-enterprise-we-dont-have-it-and-we-need-it-7000035312/">The Internet inside the enterprise: We don't have it, and we need it</a></p>
+								
+							</div>
+						</li>
+																				<li data-vr-contentbox="">
+															<div>
+									<a href="http://www.zdnet.com/six-clicks-scariest-tech-trends-of-2014-7000035270/" class="thumb">
+										<img src="./ITIL in a nutshell   ZDNet_files/six-clicks-scariest-tech-trends-of-2014-v3-60x45.jpg" alt="Six Clicks: Scariest Tech Trends of 2014" width="60" height="45">
+									</a>
+								</div>
+														<div class="content">
+								<p><a href="http://www.zdnet.com/six-clicks-scariest-tech-trends-of-2014-7000035270/">Six Clicks: Scariest Tech Trends of 2014</a></p>
+								
+							</div>
+						</li>
+																				<li data-vr-contentbox="">
+															<div>
+									<a href="http://www.zdnet.com/research-cio-relationships-and-priorities-remain-conflicted-7000035227/" class="thumb">
+										<img src="./ITIL in a nutshell   ZDNet_files/research-cio-relationships-and-priorities-are-conflicted-60x45.jpg" alt="Research: CIO relationships and priorities remain conflicted" width="60" height="45">
+									</a>
+								</div>
+														<div class="content">
+								<p><a href="http://www.zdnet.com/research-cio-relationships-and-priorities-remain-conflicted-7000035227/">Research: CIO relationships and priorities remain conflicted</a></p>
+								
+							</div>
+						</li>
+																</ul>
+		</div>
+	</section>
+
+			<section class="keepUp">
+	<h2 class="heading"><span class="int">The best of ZDNet, delivered</span></h2>
+	<div class="box">
+		<div class="newsletters">
+							<form action="" data-member="submitNewsletterLoggedOut" data-url="/membership/newsletters-widget/" data-omniture="{&quot;channel&quot;:&quot;cxo&quot;, &quot;reg_form_type&quot;:&quot;short&quot;, &quot;registration_driver&quot;:&quot;paint newsletter reg box&quot;, &quot;location&quot;:&quot;right-rail&quot;}">
+					<fieldset>
+					<h3>ZDNet Newsletters</h3>
+					<p>Get the best of ZDNet delivered straight to your inbox</p>
+                    <p class="mmode-msg">We're temporarily in maintenance mode, which means you won't be able to sign up for a newsletter. Please check back shortly to resume the subscription process. Thanks for your patience.</p>
+					<div class="mmode mmode-nls">
+						<input name="email" placeholder="Enter your email address" type="text" value="" required="">
+																																																							<label class="checkbox"><input name="subscribes[]" type="checkbox" checked="checked" value="e565:INTERNAL_NEWSLETTER"><b>ZDNet Must Read News Alerts - UK:</b> Major news is breaking. Are you ready? This newsletter has only the most important tech news nothing else. </label>
+																			<input class="button" type="submit" value="Subscribe Now">
+					</div>
+					</fieldset>
+				</form>
+					</div>
+		<div class="social">
+			<ul>
+				<li><a href="https://www.facebook.com/pages/ZDNet/5953112932" target="_blank" class="iconSocial facebook">Facebook</a></li>
+				<li><a href="http://twitter.com/#!/zdnet" target="_blank" class="iconSocial twitter">Twitter</a></li>
+				<li><a href="http://www.linkedin.com/today/zdnet.com" target="_blank" class="iconSocial linkedIn">LinkedIn</a></li>
+				<li><a href="https://plus.google.com/105074359186426139750" target="_blank" class="iconSocial google">Google+</a></li>
+				<li><a href="http://www.zdnet.com/rssfeeds/" target="_blank" class="iconSocial rss">RSS</a></li>
+				
+				<li><a href="https://play.google.com/store/apps/details?id=com.cbsinteractive.zdnet" target="_blank" class="iconSocial android">Android</a></li>
+				<li><a href="http://itunes.apple.com/au/app/zdnet/id425580940?mt=8#" target="_blank" class="iconSocial iphone">iPhone</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+			
+<section id="resourceCentre" class="module resourceCentre">
+	<div class="mboxDefault" style="visibility: visible; display: block;">
+		<div class="header">
+			<h2>Resource Centre</h2>
+			<p>Useful content from our premier sponsors</p>
+		</div>
+		<ul>
+						
+			
+			<li class="collapse">
+				<div><a href="javascript:LG.iau.adClicked(32964865);" class="thumb" target="_blank"><img src="./ITIL in a nutshell   ZDNet_files/cisco_logo_60x50_2013-07-09.gif" alt="2014 Cisco Annual Security Report" width="60" height="46"></a></div>				<h3><a href="javascript:LG.iau.adClicked(32964865);">2014 Cisco Annual Security Report</a></h3>
+				<p class="description"><a href="javascript:LG.iau.adClicked(32964865);">The Cisco 2014 Annual Security Report highlights the most current security concerns, such as shifts in malware, trends in vulnerabilities, and the revival of distributed denial-of-service (DDoS) attacks.</a></p>				<div class="more"><a href="javascript:LG.iau.adClicked(32964865);">Download now...</a></div>
+			</li>
+									
+			
+			<li class="collapse">
+				<div><a href="javascript:LG.iau.adClicked(32495416);" class="thumb" target="_blank"><img src="./ITIL in a nutshell   ZDNet_files/Symantec_logo_60x50.jpg" alt="Securing the Mobile App Market" width="60" height="46"></a></div>				<h3><a href="javascript:LG.iau.adClicked(32495416);">Securing the Mobile App Market</a></h3>
+				<p class="description"><a href="javascript:LG.iau.adClicked(32495416);">Learn more about how code signing mitigates security risks unique to mobile applications and helps build trust across the mobile computing ecosystem...</a></p>				<div class="more"><a href="javascript:LG.iau.adClicked(32495416);">Download Now...</a></div>
+			</li>
+									
+			
+			<li class="collapse">
+				<div><a href="javascript:LG.iau.adClicked(32574961);" class="thumb" target="_blank"><img src="./ITIL in a nutshell   ZDNet_files/workday_logo60x50.jpg" alt="The Simplification of Corporate IT" width="60" height="46"></a></div>				<h3><a href="javascript:LG.iau.adClicked(32574961);">The Simplification of Corporate IT</a></h3>
+				<p class="description"><a href="javascript:LG.iau.adClicked(32574961);">It's time to radically rethink the traditional on-premise enterprise resource planning / management model (ERP/M). This Workday white paper outlines how SaaS solutions can replace legacy enterprise software...</a></p>				<div class="more"><a href="javascript:LG.iau.adClicked(32574961);">Download now</a></div>
+			</li>
+									
+			 
+						
+			<li class="collapse">
+				<div><a href="http://www.zdnet.com/topic-why-business-leaders-must-be-security-leaders/" class="thumb" target="_blank"><img src="./ITIL in a nutshell   ZDNet_files/Sourcefire_Logo_Small.jpg" alt="Why business leaders must be security leaders" width="60" height="46"></a></div>				<h3><a href="http://www.zdnet.com/topic-why-business-leaders-must-be-security-leaders/" target="_blank">Why business leaders must be security leaders</a></h3>
+				<p class="description"><a href="http://www.zdnet.com/topic-why-business-leaders-must-be-security-leaders/" target="_blank">Why do many boards leave IT security primarily to security technicians, and why can’t techies convince their boards to spend scarce cash on protecting stakeholder information? We offer guidance on how to close the IT security governance gap.</a></p>				<div class="more"><a href="http://www.zdnet.com/topic-why-business-leaders-must-be-security-leaders/" target="_blank">Download now...</a></div>
+			</li>
+									
+			
+			<li class="collapse">
+				<div><a href="javascript:LG.iau.adClicked(32921991);" class="thumb" target="_blank"><img src="./ITIL in a nutshell   ZDNet_files/HP_Blue_RGB_61x50.jpg" alt="Advancing Business Value through Virtualization" width="60" height="46"></a></div>				<h3><a href="javascript:LG.iau.adClicked(32921991);" target="_blank">Advancing Business Value through Virtualization</a></h3>
+				<p class="description"><a href="javascript:LG.iau.adClicked(32921991);" target="_blank">This informative paper evaluates the prevalence and efficacy of data centre virtualization deployments, and the hardware that supports them, so that you can determine what adjustments your organization needs to make to satisfy your specific goals. </a></p>				<div class="more"><a href="javascript:LG.iau.adClicked(32921991);" target="_blank">Download now...</a></div>
+			</li>
+														</ul>
+	</div>
+	<script>
+		mboxCreate('mboxIAU');
+	</script><div id="mboxMarker-default-mboxIAU-0" style="visibility:hidden;display:none">&nbsp;</div><script src="./ITIL in a nutshell   ZDNet_files/standard" language="JavaScript"></script>
+</section>
+
+	        
+            <div id="power-center"></div>
+	<script type="text/javascript">
+	$(function() {		if (adSlots["power-center"]) {
+			googletag.cmd.push(function() {
+				googletag.display("power-center");
+			});
+		};
+	});
+	</script>
+
+    
+
+	        
+
+	        	        			<section class="module">
+	<h2 class="heading"><span class="int">Facebook Activity</span></h2>
+	<div class="fb-activity fb_iframe_widget" data-site="zdnet.com" data-width="300" data-max-age="7" data-height="300" data-header="false" data-recommendations="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;header=false&amp;height=300&amp;locale=en_US&amp;max_age=7&amp;recommendations=true&amp;sdk=joey&amp;site=zdnet.com&amp;width=300"><span style="vertical-align: bottom; width: 300px; height: 300px;"><iframe name="f83272f2c" width="300px" height="300px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:activity Facebook Social Plugin" src="./ITIL in a nutshell   ZDNet_files/activity.html" style="border: none; visibility: visible; width: 300px; height: 300px;" class=""></iframe></span></div>
+</section>
+
+								
+            <div id="mpu-middle" class="mpu" style="display: none;"><div id="google_ads_iframe_/8264/uk-zdnet/cxo_4__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8264/uk-zdnet/cxo_4" name="google_ads_iframe_/8264/uk-zdnet/cxo_4" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+	<script type="text/javascript">
+	$(function() {		if (adSlots["mpu-middle"]) {
+			googletag.cmd.push(function() {
+				googletag.display("mpu-middle");
+			});
+		};
+	});
+	</script>
+
+    
+
+						
+			
+<!-- original medusa -->
+	<section class="module medusa">
+		<h2 class="heading"><span class="int">White Papers, Webcasts, &amp; Resources</span></h2>
+		<div class="box">
+			<ul>
+										
+					<li>
+						<h3><a href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33023627&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fprotecting-printers-with-enterprise-grade-security%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">HP Protecting Printers With Enterprise Grade Security</a></h3>
+						<p>In this paper learn why HP has the ability to provide integrated security not just for their printers, but across the entire organisational spectrum including servers, storage, networking, personal computers, and tablets. This breadth of software, hardware and services is what makes HP unique in the security market. Learn more...</p>
+					</li>
+															
+					<li>
+						<h3><a href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=32981431&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fsymantec-cybercrime-survival-guide-german%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Symantec Cybercrime Survival Guide (German)</a></h3>
+						<p>Every website owner needs to understand the risks posed by cybercrime and how to prevent it. 
+<br><br>
+This essential survival guide will help you navigate the wilds and come out of the other side safe, sound and protected.
+</p>
+					</li>
+															
+					<li>
+						<h3><a href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33027011&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fbig-picture-global-survey%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Big Picture Global Survey: Dual Perspectives on ITaaS</a></h3>
+						<p>This global survey by IDG Research Services of more than 350 IT and business unit directors at enterprises of 1,000 employees or more reveals significant differences in the perception and priorities of business and IT when it comes to many aspects of running IT like a business.Find out more...
+
+
+
+</p>
+					</li>
+																					</ul>
+							<span style="display:none;">
+    <img src="./ITIL in a nutshell   ZDNet_files/redir" width="1" height="1">
+  </span>
+					</div>
+	</section>
+
+<!-- version blue -->
+	<section class="module medusa-blue">
+		<h2>White Papers, Webcasts, &amp; Downloads</h2>
+		
+			<article class="feature">
+				<div class="asset">
+					<div>
+						<span>White Papers | <a href="http://www8.hp.com/au/en/home.html">HP</a></span>
+					</div>
+
+					<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33023627&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fprotecting-printers-with-enterprise-grade-security%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">HP Protecting Printers With Enterprise Grade Security</a>
+
+											<img class="thumb" src="./ITIL in a nutshell   ZDNet_files/whitePapers_125x100.jpg" alt="" width="60" height="45">
+						<p>In this paper learn why HP has the ability to provide integrated security not just for their printers, but across the entire organisational spectrum including servers, storage, networking, personal computers, and tablets. This breadth of software, hardware and services is what makes HP unique in the security market. Learn more...</p>
+									</div>
+
+				<div class="asset-btn">
+					<a href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33023627&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fprotecting-printers-with-enterprise-grade-security%2F%3Fpromo%3D999516%26cval%3Dwhitepapers"><span>READ MORE</span></a>
+				</div>
+			</article>
+
+		
+			<article class="">
+				<div class="asset">
+					<div>
+						<span>White Papers | <a href="http://www.symantec.com/">Symantec</a></span>
+					</div>
+
+					<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=32981431&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fsymantec-cybercrime-survival-guide-german%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Symantec Cybercrime Survival Guide (German)</a>
+
+									</div>
+
+				<div class="asset-btn">
+					<a href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=32981431&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fsymantec-cybercrime-survival-guide-german%2F%3Fpromo%3D999516%26cval%3Dwhitepapers"><span>READ MORE</span></a>
+				</div>
+			</article>
+
+		
+			<article class="">
+				<div class="asset">
+					<div>
+						<span>White Papers | <a href="http://www.emc.com/">EMC</a></span>
+					</div>
+
+					<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33027011&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fbig-picture-global-survey%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Big Picture Global Survey: Dual Perspectives on ITaaS</a>
+
+									</div>
+
+				<div class="asset-btn">
+					<a href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33027011&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fbig-picture-global-survey%2F%3Fpromo%3D999516%26cval%3Dwhitepapers"><span>READ MORE</span></a>
+				</div>
+			</article>
+
+		
+			<article class="">
+				<div class="asset">
+					<div>
+						<span>Research | <a href="http://www.arbornetworks.com/">Arbor Networks</a></span>
+					</div>
+
+					<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33017473&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Ffrost-sullivan%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Frost &amp; Sullivan - Analysis of the Global Distributed Denial of Service (DDoS) Mitigation Market</a>
+
+									</div>
+
+				<div class="asset-btn">
+					<a href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33017473&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Ffrost-sullivan%2F%3Fpromo%3D999516%26cval%3Dwhitepapers"><span>READ MORE</span></a>
+				</div>
+			</article>
+
+			</section>
+
+<!-- version 1a -->
+	<section class="module medusa-v1a">
+		<h2>White Papers, Webcasts, &amp; Downloads</h2>
+									<article class="feature">
+					<div class="asset">
+													<img src="./ITIL in a nutshell   ZDNet_files/medusa-whitepaper.jpg" alt="whitepaper" width="300" height="169">
+						
+						<div class="title-box">
+							<span>White Papers | <a href="http://www8.hp.com/au/en/home.html">HP</a></span>
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33023627&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fprotecting-printers-with-enterprise-grade-security%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">HP Protecting Printers With Enterprise Grade Security</a>
+						</div>
+					</div>
+					
+					<p>In this paper learn why HP has the ability to provide integrated security not just for their printers, but across the entire organisational spectrum including servers, storage, networking, personal computers, and tablets. This breadth of software, hardware and services is what makes HP unique in the security market. Learn more...</p>
+
+					<div class="asset-btn-red">
+						<a href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33023627&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fprotecting-printers-with-enterprise-grade-security%2F%3Fpromo%3D999516%26cval%3Dwhitepapers"><span>Read More</span></a>
+					</div>
+				</article>
+																					</section>
+
+<!-- version 1b -->
+	<section class="module medusa-v1b">
+		<h2>White Papers, Webcasts, &amp; Downloads</h2>
+									<article class="feature">
+					<div class="asset">
+													<img src="./ITIL in a nutshell   ZDNet_files/medusa-whitepaper.jpg" alt="whitepaper" width="300" height="169">
+						
+						<div class="title-box">
+							<span>White Papers | <a href="http://www8.hp.com/au/en/home.html">HP</a></span>
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33023627&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fprotecting-printers-with-enterprise-grade-security%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">HP Protecting Printers With Enterprise Grade Security</a>
+						</div>
+					</div>
+					
+					<p>In this paper learn why HP has the ability to provide integrated security not just for their printers, but across the entire organisational spectrum including servers, storage, networking, personal computers, and tablets. This breadth of software, hardware and services is what makes HP unique in the security market. Learn more...</p>
+
+					<div class="asset-btn-red">
+						<a href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33023627&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fprotecting-printers-with-enterprise-grade-security%2F%3Fpromo%3D999516%26cval%3Dwhitepapers"><span>Read More</span></a>
+					</div>
+				</article>
+																					</section>
+
+<!-- version 1c -->
+	<section class="module medusa-v1c">
+		<h2 class="heading"><span class="int">White Papers, Webcasts, &amp; Downloads</span></h2>
+							
+					<article class="feature">
+						<div class="asset">
+													<img src="./ITIL in a nutshell   ZDNet_files/medusa-whitepaper.jpg" alt="whitepaper" width="300" height="169">
+						
+							<div class="title-box">
+								<span>White Papers | <a href="http://www8.hp.com/au/en/home.html">HP</a></span>
+								<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33023627&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fprotecting-printers-with-enterprise-grade-security%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">HP Protecting Printers With Enterprise Grade Security</a>
+							</div>
+						</div>
+					</article>
+																													</section>
+
+<!-- versions 2a -->
+	<section class="module medusa-v2a">
+		<h2 class="heading"><span class="int">White Papers, Webcasts, &amp; Downloads</span></h2>
+									<article class="feature">
+					<div class="asset">
+													<img src="./ITIL in a nutshell   ZDNet_files/medusa-whitepaper.jpg" alt="whitepaper" width="300" height="169">
+						
+						<div class="title-box">
+							<span>White Papers | <a href="http://www8.hp.com/au/en/home.html">HP</a></span>
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33023627&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fprotecting-printers-with-enterprise-grade-security%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">HP Protecting Printers With Enterprise Grade Security</a>
+						</div>
+					</div>
+
+					<div class="asset-btn-red">
+						<a href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33023627&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fprotecting-printers-with-enterprise-grade-security%2F%3Fpromo%3D999516%26cval%3Dwhitepapers"><span>Read More</span></a>
+					</div>
+				</article>
+												<article class="feature">
+					<div class="asset">
+													<img src="./ITIL in a nutshell   ZDNet_files/medusa-whitepaper.jpg" alt="whitepaper" width="300" height="169">
+						
+						<div class="title-box">
+							<span>White Papers | <a href="http://www.symantec.com/">Symantec</a></span>
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=32981431&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fsymantec-cybercrime-survival-guide-german%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Symantec Cybercrime Survival Guide (German)</a>
+						</div>
+					</div>
+
+					<div class="asset-btn-red">
+						<a href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=32981431&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fsymantec-cybercrime-survival-guide-german%2F%3Fpromo%3D999516%26cval%3Dwhitepapers"><span>Read More</span></a>
+					</div>
+				</article>
+												<article class="feature">
+					<div class="asset">
+													<img src="./ITIL in a nutshell   ZDNet_files/medusa-whitepaper.jpg" alt="whitepaper" width="300" height="169">
+						
+						<div class="title-box">
+							<span>White Papers | <a href="http://www.emc.com/">EMC</a></span>
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33027011&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fbig-picture-global-survey%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Big Picture Global Survey: Dual Perspectives on ITaaS</a>
+						</div>
+					</div>
+
+					<div class="asset-btn-red">
+						<a href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33027011&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fbig-picture-global-survey%2F%3Fpromo%3D999516%26cval%3Dwhitepapers"><span>Read More</span></a>
+					</div>
+				</article>
+											</section>
+
+<!-- version 2b -->
+	<section class="module medusa-v2b">
+		<h2 class="heading"><span class="int">White Papers, Webcasts, &amp; Downloads</span></h2>
+									<article class="feature">
+					<div class="asset">
+													<img src="./ITIL in a nutshell   ZDNet_files/medusa-whitepaper.jpg" alt="whitepaper" width="300" height="169">
+												<div class="title-box">
+							<span>White Papers | <a href="http://www8.hp.com/au/en/home.html">HP</a></span>
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33023627&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fprotecting-printers-with-enterprise-grade-security%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">HP Protecting Printers With Enterprise Grade Security</a>
+						</div>
+					</div>
+				</article>
+												<article class="feature">
+					<div class="asset">
+													<img src="./ITIL in a nutshell   ZDNet_files/medusa-whitepaper.jpg" alt="whitepaper" width="300" height="169">
+												<div class="title-box">
+							<span>White Papers | <a href="http://www.symantec.com/">Symantec</a></span>
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=32981431&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fsymantec-cybercrime-survival-guide-german%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Symantec Cybercrime Survival Guide (German)</a>
+						</div>
+					</div>
+				</article>
+												<article class="feature">
+					<div class="asset">
+													<img src="./ITIL in a nutshell   ZDNet_files/medusa-whitepaper.jpg" alt="whitepaper" width="300" height="169">
+												<div class="title-box">
+							<span>White Papers | <a href="http://www.emc.com/">EMC</a></span>
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33027011&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fbig-picture-global-survey%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Big Picture Global Survey: Dual Perspectives on ITaaS</a>
+						</div>
+					</div>
+				</article>
+											</section>
+
+<!-- version 2c -->
+	<section class="module medusa-v2c">
+		<h2 class="heading"><span class="int">White Papers, Webcasts, &amp; Downloads</span></h2>
+												<article class="feature">
+						<div class="asset">
+							<div>
+								<span>White Papers | <a href="http://www8.hp.com/au/en/home.html">HP</a></span>
+							</div>
+
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33023627&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fprotecting-printers-with-enterprise-grade-security%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">HP Protecting Printers With Enterprise Grade Security</a>
+
+							<img class="thumb" src="./ITIL in a nutshell   ZDNet_files/whitePapers_125x100.jpg" alt="" width="60" height="45">
+							<p>In this paper learn why HP has the ability to provide integrated security not just for their printers, but across the entire organisational spectrum including servers, storage, networking, personal computers, and tablets. This breadth of software, hardware and services is what makes HP unique in the security market. Learn more...</p>
+						</div>
+					</article>
+					<hr>
+																<article class="feature">
+						<div class="asset">
+							<div>
+								<span>White Papers | <a href="http://www.symantec.com/">Symantec</a></span>
+							</div>
+
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=32981431&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fsymantec-cybercrime-survival-guide-german%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Symantec Cybercrime Survival Guide (German)</a>
+
+							<img class="thumb" src="./ITIL in a nutshell   ZDNet_files/whitePapers_125x100.jpg" alt="" width="60" height="45">
+							<p>Every website owner needs to understand the risks posed by cybercrime and how to prevent it. 
+<br><br>
+This essential survival guide will help you navigate the wilds and come out of the other side safe, sound and protected.
+</p>
+						</div>
+					</article>
+					<hr>
+																<article class="feature">
+						<div class="asset">
+							<div>
+								<span>White Papers | <a href="http://www.emc.com/">EMC</a></span>
+							</div>
+
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33027011&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fbig-picture-global-survey%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Big Picture Global Survey: Dual Perspectives on ITaaS</a>
+
+							<img class="thumb" src="./ITIL in a nutshell   ZDNet_files/whitePapers_125x100.jpg" alt="" width="60" height="45">
+							<p>This global survey by IDG Research Services of more than 350 IT and business unit directors at enterprises of 1,000 employees or more reveals significant differences in the perception and priorities of business and IT when it comes to many aspects of running IT like a business.Find out more...
+
+
+
+</p>
+						</div>
+					</article>
+					<hr>
+															</section>
+
+<!-- version 3a -->
+	<section class="module medusa-v3a">
+		<h2 class="heading"><span class="int">White Papers, Webcasts, &amp; Downloads</span></h2>
+												<article class="feature">
+						<div class="asset">
+							<div>
+								<span>White Papers | <a href="http://www8.hp.com/au/en/home.html">HP</a></span>
+							</div>
+
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33023627&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fprotecting-printers-with-enterprise-grade-security%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">HP Protecting Printers With Enterprise Grade Security</a>
+
+							<p>In this paper learn why HP has the ability to provide integrated security not just for their printers, but across the entire organisational spectrum including servers, storage, networking, personal computers, and tablets. This breadth of software, hardware and services is what makes HP unique in the security market. Learn more...</p>
+						</div>
+					</article>
+																<article class="feature">
+						<div class="asset">
+							<div>
+								<span>White Papers | <a href="http://www.symantec.com/">Symantec</a></span>
+							</div>
+
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=32981431&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fsymantec-cybercrime-survival-guide-german%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Symantec Cybercrime Survival Guide (German)</a>
+
+							<p>Every website owner needs to understand the risks posed by cybercrime and how to prevent it. 
+<br><br>
+This essential survival guide will help you navigate the wilds and come out of the other side safe, sound and protected.
+</p>
+						</div>
+					</article>
+																<article class="feature">
+						<div class="asset">
+							<div>
+								<span>White Papers | <a href="http://www.emc.com/">EMC</a></span>
+							</div>
+
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33027011&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fbig-picture-global-survey%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Big Picture Global Survey: Dual Perspectives on ITaaS</a>
+
+							<p>This global survey by IDG Research Services of more than 350 IT and business unit directors at enterprises of 1,000 employees or more reveals significant differences in the perception and priorities of business and IT when it comes to many aspects of running IT like a business.Find out more...
+
+
+
+</p>
+						</div>
+					</article>
+																<article class="feature">
+						<div class="asset">
+							<div>
+								<span>Research | <a href="http://www.arbornetworks.com/">Arbor Networks</a></span>
+							</div>
+
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33017473&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Ffrost-sullivan%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Frost &amp; Sullivan - Analysis of the Global Distributed Denial of Service (DDoS) Mitigation Market</a>
+
+							<p>Businesses of all size have proven to be susceptible to DDoS attacks and the potential for damage is at an all-time high. <a href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33017473&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Ffrost-sullivan%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">This Frost &amp; Sullivan</a> study comes at a time when DDoS attacks are accelerating in sophistication, scale and frequency.
+</p>
+						</div>
+					</article>
+								</section>
+
+<!-- version 3b -->
+	<section class="module medusa-v3b">
+		<h2 class="heading"><span class="int">White Papers, Webcasts, &amp; Downloads</span></h2>
+												<article class="feature">
+						<div class="asset">
+							<div>
+								<span>White Papers | <a href="http://www8.hp.com/au/en/home.html">HP</a></span>
+							</div>
+
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33023627&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fprotecting-printers-with-enterprise-grade-security%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">HP Protecting Printers With Enterprise Grade Security</a>
+						</div>
+					</article>
+																<article class="feature">
+						<div class="asset">
+							<div>
+								<span>White Papers | <a href="http://www.symantec.com/">Symantec</a></span>
+							</div>
+
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=32981431&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fsymantec-cybercrime-survival-guide-german%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Symantec Cybercrime Survival Guide (German)</a>
+						</div>
+					</article>
+																<article class="feature">
+						<div class="asset">
+							<div>
+								<span>White Papers | <a href="http://www.emc.com/">EMC</a></span>
+							</div>
+
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33027011&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fbig-picture-global-survey%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Big Picture Global Survey: Dual Perspectives on ITaaS</a>
+						</div>
+					</article>
+																<article class="feature">
+						<div class="asset">
+							<div>
+								<span>Research | <a href="http://www.arbornetworks.com/">Arbor Networks</a></span>
+							</div>
+
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33017473&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Ffrost-sullivan%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Frost &amp; Sullivan - Analysis of the Global Distributed Denial of Service (DDoS) Mitigation Market</a>
+						</div>
+					</article>
+								</section>
+
+<!-- version 3c -->
+	<section class="module medusa-v3c">
+		<h2 class="heading"><span class="int">White Papers, Webcasts, &amp; Downloads</span></h2>
+												<article class="feature">
+						<div class="asset">
+							<img class="thumb" src="./ITIL in a nutshell   ZDNet_files/whitePapers_125x100.jpg" alt="" width="60" height="45">
+							<div>
+								<span>White Papers | <a href="http://www8.hp.com/au/en/home.html">HP</a></span>
+							</div>
+
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33023627&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fprotecting-printers-with-enterprise-grade-security%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">HP Protecting Printers With Enterprise Grade Security</a>
+						</div>
+					</article>
+																<article class="feature">
+						<div class="asset">
+							<img class="thumb" src="./ITIL in a nutshell   ZDNet_files/whitePapers_125x100.jpg" alt="" width="60" height="45">
+							<div>
+								<span>White Papers | <a href="http://www.symantec.com/">Symantec</a></span>
+							</div>
+
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=32981431&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fsymantec-cybercrime-survival-guide-german%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Symantec Cybercrime Survival Guide (German)</a>
+						</div>
+					</article>
+																<article class="feature">
+						<div class="asset">
+							<img class="thumb" src="./ITIL in a nutshell   ZDNet_files/whitePapers_125x100.jpg" alt="" width="60" height="45">
+							<div>
+								<span>White Papers | <a href="http://www.emc.com/">EMC</a></span>
+							</div>
+
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33027011&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Fbig-picture-global-survey%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Big Picture Global Survey: Dual Perspectives on ITaaS</a>
+						</div>
+					</article>
+																<article class="feature">
+						<div class="asset">
+							<img class="thumb" src="./ITIL in a nutshell   ZDNet_files/whitePapers_125x100.jpg" alt="" width="60" height="45">
+							<div>
+								<span>Research | <a href="http://www.arbornetworks.com/">Arbor Networks</a></span>
+							</div>
+
+							<a class="title" href="http://dw.cbsi.com/redir?tag=medccnbwp&siteId=55&ptid=8301&onid=800010&q=&ctype=docids&cval=33017473&destUrl=http%3A%2F%2Fwww.techrepublic.com%2Fresource-library%2Fwhitepapers%2Ffrost-sullivan%2F%3Fpromo%3D999516%26cval%3Dwhitepapers">Frost &amp; Sullivan - Analysis of the Global Distributed Denial of Service (DDoS) Mitigation Market</a>
+						</div>
+					</article>
+								</section>
+
+
+			
+							
+		    		    					
+		<script>
+		  			  
+			  $(document).ready(function(){
+			    $("#sticker").sticky({topSpacing:50,bottomSpacing:530});
+			  });
+			  
+		  		  		</script>
+	
+	<div id="sticker-sticky-wrapper" class="sticky-wrapper" style="height: 250px;"><div id="sticker">
+		
+            <div id="mpu-bottom" class="mpu" style="display: none;"><div id="google_ads_iframe_/8264/uk-zdnet/cxo_5__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8264/uk-zdnet/cxo_5" name="google_ads_iframe_/8264/uk-zdnet/cxo_5" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+	
+
+    
+	</div></div>
+
+				    
+
+	</aside>
+	<!-- //secondary -->
+
+
+			</strong></strong></div><strong><strong>
+							
+    
+	<div id="leaderBottom" class="leader">
+    <div class="container">
+            <div id="leaderboard-bottom" style="display: none;"><div id="google_ads_iframe_/8264/uk-zdnet/cxo_2__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8264/uk-zdnet/cxo_2" name="google_ads_iframe_/8264/uk-zdnet/cxo_2" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+	<script type="text/javascript">
+	$(function() {		if (adSlots["leaderboard-bottom"]) {
+			googletag.cmd.push(function() {
+				googletag.display("leaderboard-bottom");
+			});
+		};
+	});
+	</script>
+
+    		</div>
+	</div>
+
+						<div class="social-footer">
+	<div class="cont">
+
+		<div>
+			<span>Follow us on:</span>
+			<a href="https://www.facebook.com/pages/ZDNet/5953112932" class="social-icons-1 i-w-facebook" target="_blank"></a>
+			<a href="http://twitter.com/#!/zdnet" class="social-icons-1 i-w-twitter" target="_blank"></a>
+			<a href="https://plus.google.com/105074359186426139750" class="social-icons-1 i-w-google-plus" target="_blank"></a>
+			<a href="http://www.linkedin.com/today/zdnet.com" class="social-icons-1 i-w-linkedin" target="_blank"></a>
+		</div>
+
+		<div>
+			<span>Subscribe:</span>
+			<a href="http://www.zdnet.com/rssfeeds/" class="social-icons-1 i-w-email-alert" target="_blank"></a>
+			<a href="http://www.zdnet.com/rssfeeds/" class="social-icons-1 i-w-rss" target="_blank"></a>
+		</div>
+
+	</div>
+</div>
+		</strong></strong></div><strong><strong>
+	</strong></strong></div><strong><strong>
+<!-- //mantle skin -->
+
+<footer role="contentinfo">
+	<div class="container">
+		
+					<div class="row" data-vr-zone="Featured Articles">
+				<div class="column-8 siteHighlights">
+					<h2>Featured Articles</h2>
+					<div class="row">
+													<article class="column-2" data-vr-contentbox="">
+																	<div>
+										<a href="http://www.zdnet.com/bulletproof-eyes-services-boost-in-au3-9m-acquisition-proposal-7000035322/" class="thumb">
+											<img src="./ITIL in a nutshell   ZDNet_files/bulletproof-eyes-services-boost-in-3-9m-acquisition-proposal-v1-140x105.jpg" data-src="http://cdn-static.zdnet.com/i/r/story/70/00/035322/bulletproof-eyes-services-boost-in-3-9m-acquisition-proposal-v1-60x45.jpg?hash=BGH4ATAyA2&amp;upscale=1" data-src-768="http://cdn-static.zdnet.com/i/r/story/70/00/035322/bulletproof-eyes-services-boost-in-3-9m-acquisition-proposal-v1-140x105.jpg?hash=ZJR1MJZjAw&amp;upscale=1" alt="Bulletproof eyes services boost in AU$3.9m acquisition proposal" class="lazyload" width="" height="">
+										</a>
+									</div>
+																<h3><a href="http://www.zdnet.com/bulletproof-eyes-services-boost-in-au3-9m-acquisition-proposal-7000035322/">Bulletproof eyes services boost in AU$3.9m acquisition proposal</a></h3>
+								
+							</article>
+																									<article class="column-2" data-vr-contentbox="">
+								<div>
+									<a href="http://downloads.zdnet.com/product/2239-10019223/" class="thumb">
+										<img src="./ITIL in a nutshell   ZDNet_files/download-btn-140x105.jpg" data-src="http://cdn-static.zdnet.com/i/r/library/download-btn-60x45.jpg?hash=BGLkAGDmZG&amp;upscale=1" data-src-768="http://cdn-static.zdnet.com/i/r/library/download-btn-140x105.jpg?hash=AwLmMzDjLG&amp;upscale=1" alt="Avast Free Antivirus 2015" class="lazyload" width="" height="">
+									</a>
+								</div>
+
+								<h3><a href="http://downloads.zdnet.com/product/2239-10019223/">Avast Free Antivirus 2015</a></h3>
+							</article>
+																			<article class="column-2" data-vr-contentbox="">
+																	<div>
+										<a href="http://www.zdnet.com/apple-iphone-6-plus-64gb-review-a-classy-iphablet-7000035095/" class="thumb">
+											<img src="./ITIL in a nutshell   ZDNet_files/apple-iphone-6-plus-64gb-review-a-classy-iphablet-140x105.jpg" data-src="http://cdn-static.zdnet.com/i/r/story/70/00/035095/apple-iphone-6-plus-64gb-review-a-classy-iphablet-60x45.jpg?hash=AQquAmMuLw&amp;upscale=1" data-src-768="http://cdn-static.zdnet.com/i/r/story/70/00/035095/apple-iphone-6-plus-64gb-review-a-classy-iphablet-140x105.jpg?hash=MzIvL2L4ZT&amp;upscale=1" alt="Apple iPhone 6 Plus (64GB) review: A classy &#39;iPhablet&#39;" class="lazyload" width="" height="">
+										</a>
+									</div>
+																<h3><a href="http://www.zdnet.com/apple-iphone-6-plus-64gb-review-a-classy-iphablet-7000035095/">Apple iPhone 6 Plus (64GB) review: A classy 'iPhablet'</a></h3>
+								
+							</article>
+																	</div>
+				</div>
+				<nav class="column-2 footerMap">
+					<h2>Around ZDNet</h2>
+					<ul>
+						<li><a href="http://www.zdnet.com/topic/">Topics</a></li>
+						<li><a href="http://www.zdnet.com/broadband-speedtest/">Broadband Speed Test</a></li>
+						<li><a href="http://www.zdnet.com/eventscalendar/">Events Calendar</a></li>
+						<li><a href="http://www.zdnet.com/meet-the-team/">Meet the Team</a></li>
+						<li><a href="http://www.zdnet.com/about/">About ZDNet</a></li>
+						<li><a href="http://www.zdnet.com/sitemap/">Site Map</a></li>
+					</ul>
+				</nav>
+				<nav class="column-2 footerMap">
+					<h2>Services</h2>
+					<ul>
+													<li><a href="http://www.zdnet.com/membership/log-in/?app_id=1101&path=http%3A%2F%2Fwww.zdnet.com%2Fblog%2Fgovernment%2Fitil-in-a-nutshell%2F1842" rel="nofollow" data-member="showLogIn">Log In</a> | <a href="http://www.zdnet.com/membership/register/?app_id=1101&path=http%3A%2F%2Fwww.zdnet.com%2Fblog%2Fgovernment%2Fitil-in-a-nutshell%2F1842" rel="nofollow" data-omniture="{&quot;channel&quot;:&quot;cxo&quot;, &quot;reg_form_type&quot;:&quot;short&quot;, &quot;registration_driver&quot;:&quot;footer&quot;}" data-member="showRegister">Join ZDNet</a></li>
+												<li><a href="http://www.zdnet.com/membership/" rel="nofollow">Membership</a></li>
+						<li><a href="http://www.zdnet.com/newsletters/">Newsletters</a></li>
+						<li><a href="http://www.zdnet.com/rssfeeds/">RSS Feeds</a></li>
+						<li><a href="http://www.zdnet.com/mobile-apps/">ZDNet Mobile</a></li>
+						<li><a href="https://cbsi.secure.force.com/CBSi/knowledgehome">Site Assistance</a></li>
+					</ul>
+				</nav>
+			</div>
+		
+				<p class="copyright">© 2014 CBS Interactive. All rights reserved. <a href="http://legalterms.cbsinteractive.com/privacy" rel="nofollow" target="_blank">Privacy Policy</a> | <a href="http://legalterms.cbsinteractive.com/cookies" rel="nofollow" target="_blank">Cookies</a> | <a href="http://legalterms.cbsinteractive.com/adchoice" rel="nofollow" target="_blank">Ad Choice</a> |  <a href="http://www.zdnet.com/advertise" rel="nofollow" target="_blank">Advertise</a> | <a href="http://legalterms.cbsinteractive.com/terms-of-use" rel="nofollow" target="_blank">Terms of Use</a> | <a href="http://legalterms.cbsinteractive.com/eula" rel="nofollow" target="_blank">Mobile User Agreement</a></p>
+					<div class="networkSites">
+				<form>
+					<label for="siteTarget">Visit other CBS Interactive sites</label>
+					<select id="siteTarget" name="target" onchange="window.location=document.getElementById(&#39;siteTarget&#39;).options[document.getElementById(&#39;siteTarget&#39;).selectedIndex].value; return false">
+						<option selected="selected" value="">Select Site</option>
+						<option value="http://www.cbscares.com">CBS Cares</option>
+						<option value="http://www.cbsfilms.com">CBS Films</option>
+						<option value="http://www.cbsradio.com/streaming/index.html">CBS Radio</option>
+						<option value="http://www.cbs.com">CBS.com</option>
+						<option value="http://www.cbsinteractive.com">CBSInteractive</option>
+						<option value="http://www.cbsnews.com">CBSNews.com</option>
+						<option value="http://www.cbssports.com">CBSSports.com</option>
+						<option value="http://www.chow.com">CHOW</option>
+						<option value="http://www.clicker.com">Clicker</option>
+						<option value="http://www.cnet.com">CNET</option>
+						<option value="http://collegenetwork.cbssports.com">College Network</option>
+						<option value="http://www.gamespot.com">GameSpot</option>
+						<option value="http://www.last.fm">Last.fm</option>
+						<option value="http://www.maxpreps.com">MaxPreps</option>
+						<option value="http://www.metacritic.com">Metacritic.com</option>
+						<option value="http://www.cbsnews.com/moneywatch/">Moneywatch</option>
+						<option value="http://www.mysimon.com">mySimon</option>
+						<option value="http://www.radio.com">Radio.com</option>
+						<option value="http://www.search.com">Search.com</option>
+						<option value="http://www.shopper.com">Shopper.com</option>
+						<option value="http://www.sho.com">Showtime</option>
+						<option value="http://www.smartplanet.com">SmartPlanet</option>
+						<option value="http://www.techrepublic.com">TechRepublic</option>
+						<option value="http://www.theinsider.com">The Insider</option>
+						<option value="http://www.tv.com">TV.com</option>
+						<option value="http://www.urbanbaby.com">UrbanBaby.com</option>
+						<option value="http://www.zdnet.com">ZDNet</option>
+					</select>
+				</form>
+			</div>
+			</div>
+</footer>
+
+
+<script src="./ITIL in a nutshell   ZDNet_files/jquery.sticky.js" type="text/javascript"></script>
+<script src="./ITIL in a nutshell   ZDNet_files/iau-min-76485.js"></script>
+
+<script src="./ITIL in a nutshell   ZDNet_files/build-core.js"></script>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+  js.async = true;
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+ window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+    js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+
+twttr.ready(function (twttr)
+{
+	var opts   = {event  : 'share',
+		      eventt : 'socialsite',
+		      wdloc  : 'unknown'};
+	var params = {ssite: 'twitter'};
+
+	twttr.events.bind('follow', function(event)
+	{
+		var dom_element = event.target;
+		//CBSI.EventTracking.trackEvent({
+	        //	ssite  : params.ssite,
+	        //        event  : 'follow',
+        	//        eventt : params.eventt || opts.eventt,
+                //	wdloc  : params.wdloc || opts.wdloc,
+	        //        wd     : params.wd || 'sharedropdown',
+        	//        tasid  : DW.pageParams.asid || 0,
+                //	tastid : DW.pageParams.astid || 0,
+	        //        turl   : this.url,
+        	//        tname  : this.title
+		//});
+	});
+});
+</script>
+
+
+<script type="text/javascript" src="./ITIL in a nutshell   ZDNet_files/apex.js"></script>
+<script type="text/javascript">
+	var cbsiAdGlobal = {
+		"SITE" : "55",
+		"NCAT" : "800010",
+		"PTYPE" : "8301",
+		"CID" : "6057001842",
+		"NODE" : "800010",
+		"BRAND" : "2",
+		"STAGING" : "0",
+		"CNET-PAGE-GUID" : page_guid,
+		"TAG" : "CXO",
+		"regSys" : "1",
+		"regId" : "",
+		"buyingcycle" : "discover",
+		"lgnSts" : "0",
+		"BK_REGION" : "uk"
+	};
+	cbsiRunApexTargets(cbsiAdGlobal, 1000);
+</script>
+
+	
+            <div id="interstitial" style="display: none;"><div id="google_ads_iframe_/8264/uk-zdnet/cxo_12__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8264/uk-zdnet/cxo_12" name="google_ads_iframe_/8264/uk-zdnet/cxo_12" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+	<script type="text/javascript">
+	$(function() {		if (adSlots["interstitial"]) {
+			googletag.cmd.push(function() {
+				googletag.display("interstitial");
+			});
+		};
+	});
+	</script>
+
+    
+<div id="omnitureTracking" style="display: none; height: 1px; width: 1px; top: 0px; left: 0px;">
+<!-- SiteCatalyst code version: H.1.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script type="text/javascript">
+if (s)
+{
+	s.pageName = 'zdgl:ITIL in a nutshell:p1:text:CXO';
+	s.channel = 'cxo';
+	s.server = 'zdnet.com';
+	s.pageType = '';
+	
+	s.hier1 = 'zdgl:cxo,text';
+
+	s.prop1 = 'zdnet';	s.prop2 = 'uk';	s.prop3 = 'responsive web';	s.prop7 = 'D=g';	s.prop8 = 'ITIL in a nutshell | ZDNet';	s.prop9 = 'D=User-Agent';	s.prop10 = 'story';	s.prop11 = 'D=ch+\":\"+c10';	s.prop12 = '8301';	s.prop20 = 'ITIL in a nutshell';	s.prop21 = 'ITIL in a nutshell';	s.prop22 = 'text';	s.prop23 = 'CXO';	s.prop24 = page_guid;	s.prop26 = 'zdgl_10084920';	s.prop30 = 'zdgl_6057001842';	s.prop65 = 'discover';
+	s.eVar1 = 'D=c1';
+	s.eVar2 = 'D=c2';
+	s.eVar3 = 'D=c3';
+	s.eVar7 = 'D=g';
+	s.eVar8 = 'D=c8';
+	s.eVar10 = 'D=c10';
+	s.eVar11 = 'D=ch+\":\"+c10';
+	s.eVar12 = 'D=c12';
+	s.eVar15 = '';
+	s.eVar20 = 'D=c20';
+	s.eVar21 = 'D=c21';
+	s.eVar22 = 'D=c22';
+	s.eVar23 = 'D=c23';
+	s.eVar24 = 'D=c24';
+	s.eVar26 = 'D=c26';
+	s.eVar30 = 'D=c30';
+	s.eVar32 = 'D=c32';
+	s.eVar63 = 'D=c63';
+	s.eVar65 = 'D=c65';
+	s.eVar69 = 'D=c69';
+
+	s.list2 = 'zdgl:800010';
+	s.list3 = '10000036';
+
+	s.events = 'event30';
+
+}
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.1. -->
+</div>
+
+<iframe name="__bkframe" height="0" width="0" frameborder="0" src="javascript:void(0)"></iframe><script type="text/javascript" src="./ITIL in a nutshell   ZDNet_files/bk-coretag.js"></script><script type="text/javascript">
+bk_addPageCtx("anon_id", $.cookie('XCLGFbrowser'));
+bk_addPageCtx("site", "cnetzdnetglobalsite");
+bk_addPageCtx("region", "uk");
+bk_addPageCtx("ptype", "article");
+bk_addPageCtx("ch", "cxo");
+bk_addPageCtx("path", "uk-zdnet/cxo")
+bk_addPageCtx("buyingcycle", "discover");
+bk_addPageCtx("tag", "cxo");
+bk_ignore_meta = true;
+bk_doJSTag(3319, 4);
+</script>
+
+<div id="DWClickTracking" style="display: none; height: 1px; width: 1px; top: 0px; left: 0px;">
+	<script type="text/javascript">
+				DW.clear();
+        DW.trackClicks(DW.noTagClickHandler);
+	</script>
+</div>
+
+
+
+
+<!-- CBSi Content Checker -->
+	<!-- ClickTale Bottom part -->
+	<script type="text/javascript">
+	    document.write(unescape("%3Cscript%20src='" +
+	                            (document.location.protocol == 'https:' ?
+	                             'https://clicktalecdn.sslcs.cdngc.net/' :
+	                             'http://cdn.clicktale.net/') +
+	                            "www09/ptc/5a999966-75a6-4b89-a92c-23702f4d9c94.js'%20type='text/javascript'%3E%3C/script%3E"));
+	</script><script src="./ITIL in a nutshell   ZDNet_files/5a999966-75a6-4b89-a92c-23702f4d9c94(1).js" type="text/javascript"></script><script type="text/javascript">// Copyright 2006-2014 ClickTale Ltd., US Patent Pending
+// PID: 9056
+// WR destination: www09
+// WR version: 14.17
+// Recording ratio: 0.1
+// Generated on: 10/31/2014 9:41:15 PM (UTC 11/1/2014 2:41:15 AM)
+
+
+function ClickTaleCDNHTTPSRewrite(u)
+{
+	try
+	{
+		var scripts = document.getElementsByTagName('script');
+		if(scripts.length)
+		{
+			var script = scripts[ scripts.length - 1 ], s='https://clicktalecdn.sslcs.cdngc.net/';
+			if(script.src && script.src.substr(0,s.length)==s )
+				return u.replace('https://cdnssl.clicktale.net/',s);
+		}
+	}
+	catch(e)
+	{
+	}
+	return u;
+} 
+
+var ClickTaleIsXHTMLCompliant = false;
+
+	
+document.write(unescape("%3Cscript%20src='"+
+(document.location.protocol=='https:'?
+ClickTaleCDNHTTPSRewrite('https://cdnssl.clicktale.net/www09/pcc/5a999966-75a6-4b89-a92c-23702f4d9c94.js?DeploymentConfigName=Release_30012014&Version=2'):
+'http://cdn.clicktale.net/www09/pcc/5a999966-75a6-4b89-a92c-23702f4d9c94.js?DeploymentConfigName=Release_30012014&Version=2')+
+"'%20type='text/javascript'%3E%3C/script%3E"));
+	
+var ClickTalePrevOnReady;
+if(typeof ClickTaleOnReady == 'function')
+{
+	ClickTalePrevOnReady=ClickTaleOnReady;
+	ClickTaleOnReady=undefined;
+}
+
+if (typeof window.ClickTaleScriptSource == 'undefined')
+{
+	window.ClickTaleScriptSource=(document.location.protocol=='https:'
+		?ClickTaleCDNHTTPSRewrite('https://cdnssl.clicktale.net/www/')
+		:'http://cdn.clicktale.net/www/');
+}
+
+
+// Start of user-defined pre WR code (PreLoad)b
+window.ClickTaleSettings = { XHRWrapper: { Enable: true, MaxResponseSize: 1000000} };
+// End of user-defined pre WR code
+
+
+var ClickTaleOnReady = function()
+{
+	var PID=9056, 
+		Ratio=0.1, 
+		PartitionPrefix="www09";
+	
+	if (window.navigator && window.navigator.loadPurpose === "preview") {
+       return; //in preview
+	   };
+		
+	
+	// Start of user-defined header code (PreInitialize)
+	var uaType = ClickTaleDetectAgent();
+//exclude IE 8 and 7
+if(uaType.t == uaType.IE && uaType.v <= 8){
+	return;
+}
+ClickTaleFetchFromWithCookies.setFromCookie("zdregion");
+ClickTaleFetchFrom = ClickTaleFetchFromWithCookies.constructFetchFromUrl();
+	// End of user-defined header code (PreInitialize)
+    
+	
+	
+	window.ClickTaleSSL=1;
+	
+	ClickTale(PID, Ratio, PartitionPrefix);
+	
+	if((typeof ClickTalePrevOnReady == 'function') && (ClickTaleOnReady.toString() != ClickTalePrevOnReady.toString()))
+	{
+    	ClickTalePrevOnReady();
+	}
+	
+	
+	// Start of user-defined footer code
+	
+	// End of user-defined footer code
+	
+}; 
+document.write(unescape("%3Cdiv%20id%3D%22ClickTaleDiv%22%20style%3D%22display%3A%20none%3B%22%3E%3C/div%3E"));
+
+document.write(unescape("%3Cscript%20src='"+window.ClickTaleScriptSource+"tc/WRe17.js"+"'%20type='text/javascript'%3E%3C/script%3E"));
+
+
+</script><script src="./ITIL in a nutshell   ZDNet_files/5a999966-75a6-4b89-a92c-23702f4d9c94(2).js" type="text/javascript"></script><div id="ClickTaleDiv" style="display: none;"></div><script src="./ITIL in a nutshell   ZDNet_files/WRe17.js" type="text/javascript"></script>
+	<!-- ClickTale end of Bottom part -->
+
+
+
+</strong></strong><script type="text/javascript" async="true" src="./ITIL in a nutshell   ZDNet_files/apexTarget"></script><div class="YAD-INSTR yad-empty" style="display:none !important"><iframe frameborder="0" width="100%" height="0" style="display: none;" src="./ITIL in a nutshell   ZDNet_files/yad-iframe.eca118e.html"></iframe></div><iframe id="destination_publishing_iframe_cbsi_0" src="./ITIL in a nutshell   ZDNet_files/dest4.html" style="display: none; width: 0px; height: 0px;"></iframe><iframe id="__ef_pixel_details" src="./ITIL in a nutshell   ZDNet_files/pixel_details.html" height="0" width="0" frameborder="0" style="display: none;"></iframe><script type="text/javascript" src="./ITIL in a nutshell   ZDNet_files/saved_resource(1)"></script><img width="1" height="1" src="./ITIL in a nutshell   ZDNet_files/v" style="display: none;"><script language="Javascript" type="text/javascript" src="./ITIL in a nutshell   ZDNet_files/js"></script></body></html>
