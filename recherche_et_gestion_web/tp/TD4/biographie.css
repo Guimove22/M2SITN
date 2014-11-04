@@ -1,6 +1,73 @@
-biographie{
-
+.sujet{display:block;
+      color: violet;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 100;
+    font-variant: small-caps;
 }
-b,sujet,acteur{
-    color:blue;
+table{   color: black;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    vertical-align: middle;
+    text-align: justify;
+    word-spacing: 1px;
+}
+.realisateur{
+    font-style: italic;
+            font-weight: bold;
+            color:blue;
+    direction: inherit;
+    font-family: 'Courier New',Courier,monospace;
+    
+    font-size: 16px;
+}
+.acteur{display:inline;
+    color:blueviolet;}
+
+
+.titre{ 
+    color:gold;
+    font-size: 20px;
+    font-style: inherit;
+    font-weight: bold;
+    direction: inherit;
+    font-weight: bold;
+}
+
+.livre .titre{ 
+    color:brown;
+    font-size: 20px;
+    font-style: inherit;
+    font-weight: bold;
+    direction: inherit;
+    font-weight: bold;
+}
+.nom{ color:red;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+}
+.film{ color:gold;
+    font-family: Georgia,'Times New Roman',times,serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: normal;
+}
+.livre{ color:orange;
+    font-family: Georgia,'Times New Roman',times,serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.parution{ color:yellow;
+    font-family: Georgia,'Times New Roman',times,serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
 }

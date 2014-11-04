@@ -2,7 +2,7 @@
   <xsl:output method="html"/>
   <xsl:include href="biographie-courte.xsl"/>
   <xsl:include href="biographie-image.xsl"/>
-  <xsl:include href="biographie-contenu.xsl"/>
+  <!--<xsl:include href="biographie-contenu.xsl"/>-->
   <xsl:include href="traiteImage.xsl"/>
   
   <xsl:template match="/">
