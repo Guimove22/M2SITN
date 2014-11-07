@@ -1,0 +1,6 @@
+<xsd:simpleType name="latitude">
+	<xsd:restriction base="xsd:float">
+	<xsd:length value="11"/>
+	<xsd:pattern value="\d{2}-\d{2}-\d{2}-\d{2}"/>
+	</xsd:restriction>
+</xsd:simpleType>
