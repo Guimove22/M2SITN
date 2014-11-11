@@ -1,0 +1,33 @@
+<!--<?xml version="1.0" encoding="UTF-8"?> 
+
+<!ENTITY % pasLien " IGNORE ">
+<!ENTITY % lien " INCLUDE ">
+
+<![%lien; [
+	<!ENTITY % img " CDATA ">
+]]>
+
+<![%pasLien; [
+	<!ENTITY % img " ENTITY ">
+	<!ENTITY LEHANNE SYSTEM "/Users/Axel/Desktop/Coucou.jpg" NDATA JPEG >
+]]>
+
+<!ELEMENT image EMPTY>
+<!ATTLIST image source %img; #REQUIRED><!---->
+
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!ENTITY % pasLien " IGNORE ">
+<!ENTITY % lien " INCLUDE ">
+
+<![%lien; [
+	<!ENTITY % img " CDATA ">
+]]>
+
+<![%pasLien; [
+	<!ENTITY % img " ENTITY ">
+	<!ENTITY LEHANNE SYSTEM "/Users/Axel/Desktop/Coucou.jpg" NDATA JPEG >
+]]>
+
+<!ELEMENT image EMPTY>
+<!ATTLIST image source %img; #REQUIRED>

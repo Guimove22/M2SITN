@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE biographie [
-	<!ENTITY % bio SYSTEM "/Documents/M2_SITN/M2SITN/recherche_et_gestion_web/tp/TD4//biographie.dtd">
-	%bio;
-	<!ENTITY % TDImage SYSTEM "/Documents/M2_SITN/M2SITN/recherche_et_gestion_web/tp/TD4/TDImage.dtd">
-	%TDImage;
-	<!ENTITY % lien " IGNORE ">
-	<!ENTITY % pasLien " INCLUDE ">
+<?xml-stylesheet type= "text/xsl" href= "biographie-1.xsl" ?>
+
+<!DOCTYPE biographie SYSTEM "TDImage.dtd"[
+	<!ENTITY % IMAGE-CDATA "IGNORE">
+	<!ENTITY % IMAGE-ENTITY "INCLUDE">
+	<!NOTATION JPEG SYSTEM "image/jpg">
+	<!ENTITY LEHANE SYSTEM "////Users/Axel/Desktop/Coucou.jpg" NDATA JPEG>
 ]>
-
-
 <biographie>
     <sujet> Biographie de Dennis Lehanne </sujet>
     <image source='LEHANE'/>
-    &DENNIS;
+&DENNIS;
 </biographie>

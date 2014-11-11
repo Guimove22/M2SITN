@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+	<servlet>
+		<servlet-name>Test</servlet-name>
+		<servlet-class>com.td_cdai.servlets.Test</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Factorielle</servlet-name>
+		<servlet-class>com.td_cdai.servlets.Factorielle</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.td_cdai.servlets.Login</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Index</servlet-name>
+		<servlet-class>com.td_cdai.servlets.Index</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CreationContact</servlet-name>
+		<servlet-class>com.td_cdai.servlets.CreationContact</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CreationEntreprise</servlet-name>
+		<servlet-class>com.td_cdai.servlets.CreationEntreprise</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/toto</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Factorielle</servlet-name>
+		<url-pattern>/factorielle</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Index</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+
+	
+	<servlet-mapping>
+		<servlet-name>CreationContact</servlet-name>
+		<url-pattern>/creationContact</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CreationEntreprise</servlet-name>
+		<url-pattern>/creationEntreprise</url-pattern>
+	</servlet-mapping>
+
+ 
+</web-app>

@@ -45,11 +45,17 @@
 			</body>
 		</html>
 	</xsl:template>
+<<<<<<< HEAD
 	<xsl:template name="affichage">
 					<li> 
 						<xsl:copy-of select="./nom"/> 
 					</li> 
 					
+=======
+	<xsl:template name="ligne">
+					<td> <i> <xsl:value-of select="concat(@id, ' :')" /> </i> </td>
+					<td> <xsl:copy-of select="./titre" /></td> 
+>>>>>>> FETCH_HEAD
 				</xsl:template>
 </xsl:stylesheet>
 

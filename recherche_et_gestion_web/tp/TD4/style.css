@@ -1,0 +1,11 @@
+personnel_dauphine {
+display:inline-block; margin-left:0pt; background-color: aliceblue;}
+personne{
+display: block; font-size:16pt; margin-bottom: 40pt; font-family:Courier; color : grey;}
+bureau{
+display: block; font-size:22pt; margin-bottom: 20pt; color : greenyellow; font-family:Gill;}
+telephone{
+display: block; margin-bottom: 13pt;color : black;font-size:30pt; font-family:Helvetica;}
+service{display: block; margin-bottom: 15pt;color : black;font-size:10pt; font-family:italic Palatina; color :green;}
+etage{display: block; margin-bottom: 16pt;color : black;font-size:10pt; font-family:Palatina; color :orangered; }
+raison_administrative{display: block;color: grey ;margin-right: 10px}
