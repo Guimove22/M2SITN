@@ -6,23 +6,33 @@
 	<xsl:template match="/">
 		<html>
 			<head> 
-				<title> titre du document resultat </title>
+				<title> Personnel Dauphine </title>
 			</head>
 			<body>
 				
 				
-				 
+				 <table>
+				 	<thead>
+				 		<tr>
+				 			<th>
+				 				
+				 			</th>
+				 		</tr>
+				 	</thead>
+				 	<tbody>
+				 		<tr>
+				 			<td>
+				 				
+				 			</td>
+				 		</tr>
+				 	</tbody>
+				 </table>
 			 
 
 				<ul>
 					<xsl:for-each select="personnel_dauphine/personne">
 					 	
-					 	<li>
-					 		<div>
-					 			<p><xsl:value-of select="nom" /></p>
-					 			<p><xsl:value-of select="prenom" /></p>
-					 		</div>
-					 	</li>
+					 	<xsl:call-template name="affichage"/>
 				<!-- traitement du noeud livre courant -->
 					</xsl:for-each>
 				</ul>
@@ -35,9 +45,17 @@
 			</body>
 		</html>
 	</xsl:template>
+<<<<<<< HEAD
+	<xsl:template name="affichage">
+					<li> 
+						<xsl:copy-of select="./nom"/> 
+					</li> 
+					
+=======
 	<xsl:template name="ligne">
 					<td> <i> <xsl:value-of select="concat(@id, ' :')" /> </i> </td>
 					<td> <xsl:copy-of select="./titre" /></td> 
+>>>>>>> FETCH_HEAD
 				</xsl:template>
 </xsl:stylesheet>
 
