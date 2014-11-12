@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation="util.xsd" />
+   
+    <xs:element name="personne" type="PersonneType">
+        
+    </xs:element>
+
+    <xs:complexType name="PersonneType">
+        <xs:group ref="PersonneGroup" minOccurs="1" maxOccurs="1"/>
+    </xs:complexType>
+
+    <xs:group name="PersonneGroup">
+        <xs:sequence>
+            <xs:element name="prenom" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="nom" type="nomType" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="naissance" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:simpleType name="prenomType">
+        <xs:restriction base="xs:normalizedString">
+            
+            <xs:minLength value="2"/>
+            <xs:maxLength value="150"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="nomType">
+        <xs:restriction base="prenomType">
+            <xs:maxLength value="60"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    
+    <xs:element name="acteur" substitutionGroup="personne"/>
+
+
+ 
+
+
+    
+
+
+
+<xsd:element name="acteur" type="PersonneType"/>
+    <xsd:complexType name= "PersonneType2"> 
+        <xs:restriction base="PersonneType">
+        <xsd:sequence>
+            <xs:element name="prenom" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="nom" type="nomType" minOccurs="1" maxOccurs="1"/>
+            
+    </xsd:sequence> 
+</xsd:complexType>
+

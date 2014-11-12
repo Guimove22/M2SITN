@@ -1,0 +1,8 @@
+<personne xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="personne.xsd">
+<!-- personne.xml : instance du schema  XML personne.xsd -->
+	<nom>Lehane</nom>
+	<prenom>Denis</prenom>
+	<naissance>Dennis Lehane est écrivain américain 
+		d'origine irlandaise, né le 4 aout 1965 à 
+		Dorchester dans le Massachusetts</naissance>
+</personne>

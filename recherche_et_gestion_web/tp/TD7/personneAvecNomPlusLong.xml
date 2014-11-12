@@ -1,0 +1,10 @@
+<personne xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="personne.xsd">
+<!-- personne.xml : instance du schema  XML personne.xsd -->
+	<nom>Pourroy de L'Auberivi�re de Quinsonas-Oudinot de Reggio</nom>
+	<prenom>Napu AmoHalla Ona Ona Aneka Vehi Vehi Ona Hivea Nena Vava Keho Onka Kahe HeaLeka Ea Ona Ney Nana Nia Keko Oa Oga Vanao</prenom>
+	<naissance> Le  nom fran�ais le plus long (47 lettres+6 blancs): Pourroy de L'Auberivi�re de Quinsonas-Oudinot de Reggio. 
+            A Hawai, des parents ont choisi pour leur fille un dr�le de pr�nom (102 lettres+23 blancs): 
+Napu AmoHalla Ona Ona Aneka Vehi Vehi Ona Hivea Nena Vava Keho Onka Kahe HeaLeka Ea Ona Ney Nana Nia Keko Oa Oga Vanao.
+     </naissance>
+</personne>
