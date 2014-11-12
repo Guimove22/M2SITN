@@ -188,7 +188,12 @@ Exemples : rue Lamartine, boulevard De Lattre De Tassigny.
     <xs:union memberTypes="VoieIndentType LieuNameType" />
 </xs:simpleType>
 
-<xs:simpleType name="Vo">
+<xs:simpleType name="VoieIndentType">
+    <xs:restriction base="xs:NMTOKEN">
+        <xs:enumeration value="rue" />
+        <xs:enumeration value="avenue" />
+        <xs:enumeration value="impasse" />
+    </xs:restriction>
 </xs:simpleType>
 
 
