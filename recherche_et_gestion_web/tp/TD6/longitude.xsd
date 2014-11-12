@@ -1,6 +1,17 @@
-<xsd:simpleType name="latitude">
-	<xsd:restriction base="xsd:float">
-	<xsd:length value="11"/>
-	<xsd:pattern value="\d{2}-\d{2}-\d{2}-\d{2}"/>
-	</xsd:restriction>
-</xsd:simpleType>
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name= "longitude"> 
+	    <xsd:restriction base="xsd:decimal">
+	    	<xsd:fractionDigits value="6"/>
+		    <xsd:minInclusive value="-90"/>
+		    <xsd:maxInclusive value="90"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name= "latitude"> 
+		<xsd:restriction base="longitude">
+			<xsd:minInclusive value="-90"/>
+			<xsd:maxInclusive value="90"/> 
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>
