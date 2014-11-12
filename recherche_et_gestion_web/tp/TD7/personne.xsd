@@ -33,7 +33,7 @@
     </xs:simpleType>
 
     
-    <xs:element name="acteur" substitutionGroup="personne"/>
+    <xs:element name="acteur" substitutionGroup="personne" type="PersonneType2"/>
 
 
  
@@ -41,15 +41,13 @@
 
     
 
-
-
-<xsd:element name="acteur" type="PersonneType"/>
-    <xsd:complexType name= "PersonneType2"> 
+    <xs:complexType name= "PersonneType2"> 
         <xs:restriction base="PersonneType">
-        <xsd:sequence>
+        <xs:sequence>
             <xs:element name="prenom" minOccurs="1" maxOccurs="1"/>
             <xs:element name="nom" type="nomType" minOccurs="1" maxOccurs="1"/>
-            
-    </xsd:sequence> 
-</xsd:complexType>
+    </xs:sequence> 
+    </xs:restriction>
+</xs:complexType>
 
+</xs:schema>
