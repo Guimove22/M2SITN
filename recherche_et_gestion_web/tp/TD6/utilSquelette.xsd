@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:annotation>
+        <xs:documentation>
+            Ce type permet de tester tous les types d'éléments définis dans ce schéma:
+            DateType_F, LieuNameType, TelephoneType, VoieType, NaissanceType, CodeType, NumeroType, AdresseType
+        </xs:documentation>
+    </xs:annotation>
+    
+    <xs:element name="testUtil" >
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="date"      minOccurs="0"    maxOccurs="unbounded"/>
+                <xs:element ref="lieu"      minOccurs="0"    maxOccurs="unbounded"/>
+                <xs:element ref="ville"     minOccurs="0"    maxOccurs="unbounded"/>
+                <xs:element ref="pays"      minOccurs="0"    maxOccurs="unbounded"/>
+                <xs:element ref="code"      minOccurs="0"    maxOccurs="unbounded"/>
+                <xs:element ref="voie"      minOccurs="0"    maxOccurs="unbounded"/>
+                <xs:element ref="numero"    minOccurs="0"    maxOccurs="unbounded"/>
+                <xs:element name="naissance" type="NaissanceType" minOccurs="0"     maxOccurs="unbounded"/>
+                <xs:element ref="telephone" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="adresse" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="subway" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="transportation" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+    <!-- Définition de transportation --> 
+    <xs:element name="transportation" type="transportationType"/>
+    <xs:element name="subway" type="xs:string"/>
+    <xs:element name="metro" substitutionGroup="subway"  type="xs:string"/>
+    
+    <xs:complexType name= "transportationType">
+        <xs:sequence>
+             <xs:element ref="subway"/>
+        </xs:sequence>
+    </xs:complexType>
+        
+    <xs:complexType name= "transportType">
+        <xs:complexContent>
+            <xs:extension base="transportationType">
+                <xs:sequence  minOccurs="0">
+                    <xs:element name="ligne" type="xs:integer"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+<xs:element name= "transport" substitutionGroup="transportation" type="transportType"/>
+
+<!-- Définition des éléments de base --> 
+<xs:element name="date" type="DateType_F"/>
+<xs:element name="lieu" >
+
+<xs:complexType >
+	<xs:group ref="LieuGroup"/>
+	</xs:complexType>
+</xs:element>
+	
+		
+<xs:element name="ville"        type="LieuNameType"/>
+<xs:element name="pays"         type="LieuNameType"/>
+<xs:element name="code"         type="CodeType"/>
+<xs:element name="voie"         type="VoieType"/>
+<xs:element name="numero"       type="NumeroType"/>
+<xs:element name="telephone"    type="TelephoneType"/>
+<xs:element name="adresse"      type="AdresseType"/>
+
+<!-- Comprend des types utilisés ultérieurement pour décrire des personnes auteurs emprunteurs employés.
+    NaissanceType
+    DateType_F
+    LieuType
+    -->
+<xs:complexType name="NaissanceType" mixed="true">
+	<xs:sequence minOccurs="0" maxOccurs="1">
+        <xs:element ref="date"      minOccurs="0"    maxOccurs="unbounded"/>
+        <xs:element ref="date" />
+        <xs:element ref="lieu" />
+    </xs:sequence>
+</xs:complexType>
+
+<!--Format français des dates jour/mois/siècleAnnée prenant des dates de 1600 à 2012
+	Ce format pouvant être utilisé ultérieurement pour les auteurs et leur biographie, 
+	j'étends l'intervalle de définition à 1600.
+	 Ici sont prises en compte les dates comprises entre 01/01/1600 et 31/12/2012. 
+	 C’est un type dérivé de token.
+         <xs:pattern value="(0[1-9]|[1,2][0-9]|(30|31))/(01|0[3-9]|1[0-2])/(1[6-9][0-9]{2}|200[0-9]|201[0-2])"/>
+	-->
+<xs:simpleType name="DateType_F">
+    <xs:pattern value="(0[1-9]|[1,2][0-9]|(30|31))/(01|0[3-9]|1[0-2])/(1[6-9][0-9]{2}|200[0-9]|201[0-4])"/> <!-- sans février -->
+    
+    <xs:pattern value="(0[1-9]|[1,2][0-9]|30)       /(0(4|6|9)|11)            /(1[6-9][0-9]{2}|200[0-9]|201[0-4])"/> <!-- mois en 30 -->
+    <xs:pattern value="(0[1-9]|[1,2][0-9]|(30|31)   /(0(1|3|5|7|8)|(10|12))  /(1[6-9][0-9]{2}|200[0-9]|201[0-4])"/> <!-- mois en 31 -->
+    <xs:pattern value="(0[1-9]|[1,2][0-9])/02/(1[6-9][0-9]{2}|200[0-9]|201[0-4])"/><!-- fevrier -->
+
+</xs:simpleType>
+
+<!-- LieuType caractérise une ville, un pays un lieu de naissance, 
+	c'est une chaîne de caractères normalisée 
+	d’au moins 2 caractères et pouvant comporter de 1 à 4 mots.
+Exemples : Paris, Lo, Villeneuve sur lot, Saint Faust du haut, France
+  -->
+<xs:simpleType name="LieuNameType">
+    <xs:restriction base="xs:normalizedString">
+        <xs:pattern value="\p(L)+(\s(\p(L))+){0,3}">
+        <xs:minLength value="2">
+    </xs:restriction>
+</xs:simpleType>
+
+
+	
+	<!-- groupement utilisé dans LieuType et AdresseType utilisé
+pour la naissance d'une personne et non l'adresse du domicile -->
+<!-- type utilisé pour la naissance d'une personne et non l'adresse 
+du domicile -->
+	<xs:complexType name="LieuType">
+        <xs:group ref="LieuGroup" minOccurs="1" maxOccurs="1">
+    </xs:complexType>
+	
+	<xs:group name="LieuGroup">
+		<xs:sequence>
+            <xs:element ref="ville" minOccurs="1" maxOccurs="1" />
+            <xs:element ref="pays"  minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+    </xs:group>
+
+        
+<!-- telephone
+		caractérise les numéros de téléphones suivant la nomenclature 
+                française 
+		qui peuvent commencer 
+		par 01, 02, 03,04, 05, 06, 09, 08, 07. 
+		l’international est également pris en compte.
+		exemples: 0625305967 ou 033147607890
+		-->
+	<xs:simpleType name="TelephoneType">
+        <xs:restriction base="xs:token">
+            <xs:pattern value="(0|(\+\|00)33)[1-9][0-9]{8}"/>
+            <xs:pattern value="0[1-9][0-9]{8}"/>
+            <xs:pattern value="0033[1-9][0-9]{8}"/>
+            <xs:pattern value="+33[1-9][0-9]{8}"/>
+    </xs:restriction>
+</xs:simpleType>
+
+
+<!-- 
+	le code postal est un nombre de 5 caractères allant de 01000 à 98999
+	exemple : 01000 BOURG EN BRESSE,  98890 PAITA, 
+	988 représentant le code de la Nouvelle Calédonie
+	01 Ain ... 95 Val d Oise
+	971 Guadeloupe 972 Martinique 973 Guyane 974 Reunion
+	975 St-Pierre-et-Miquelon 976 Mayotte
+	986 Wallis et Futuna 987 Polynesie Francaise 988 Nouvelle-Caledonie
+	-->
+<xs:simpleType name="CodeType" >
+    <xs:pattern value="[0-9][0-8]\d{3}|9[0-5]\d{3}|97[1-6]\d{2}|98[6-8]\d{2} "/>
+</xs:simpleType>
+
+<!-- NumeroType est un type simple compris entre [1,9999]-->
+<xs:simpleType name="NumeroType" >
+    <xs:restriction base="xs:integer">
+        <xs:minInclusive value="1"/>
+        <xs:pattern value="[1-9]\d{0-3}"/>
+        
+    </xs:restriction>
+</xs:simpleType>
+
+<!-- 2.	La voie est de type VoieType qui est un type simple 
+	commençant par un des mots  rue ou avenue ou impasse ou boulevard 
+	suivi du nom de la voir qui est défini par au minimum un mot et au maximum 4 mots.
+Exemples : rue Lamartine, boulevard De Lattre De Tassigny.
+	-->
+<xs:simpleType name="VoieCategorieType" >
+<!--[..A compléter.....]-->
+</xs:simpleType>
+
+
+<xs:simpleType name="VoieType2">
+     <xs:restriction base="xs:normalizedString">
+         <xs:pattern value="(rue|avenue|impasse|boulevard|place)\s(\p(L)+){0-3}"/>
+     </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="VoieType">    
+    <xs:union memberTypes="VoieIndentType LieuNameType" />
+</xs:simpleType>
+
+<xs:simpleType name="VoieIndentType">
+    <xs:restriction base="xs:NMTOKEN">
+        <xs:enumeration value="rue" />
+        <xs:enumeration value="avenue" />
+        <xs:enumeration value="impasse" />
+    </xs:restriction>
+</xs:simpleType>
+
+
+<xs:complexType name="AdresseType">
+	<xsd:sequence minOccurs="1" maxOccurs="5">
+        <xsd:element minOccurs="0" ref="numero" minOccurs="0" maxOccurs="1"/>
+        <xsd:element minOccurs="0" ref="voie" minOccurs="0" maxOccurs="1"/>
+        <xsd:element minOccurs="0" ref="code" minOccurs="0" maxOccurs="1"/>
+        <xs:group ref="LieuGroup">
+    </xsd:sequence>
+</xs:complexType>
+
+</xs:schema>
