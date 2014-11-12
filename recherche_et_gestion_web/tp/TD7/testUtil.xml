@@ -1,0 +1,57 @@
+
+<testUtil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:noNamespaceSchemaLocation="util.xsd">
+	
+    
+	<!-- vérifie le domaine de définition sur les dates 
+		erreurs 26/13/1780, 35/02/1900 30/01/2013 31/12/1590 30/02/2012-->
+	 <!--Format français des dates jour/mois/siècleAnnée prenant des dates de 1600 à 2012
+	Ce format pouvant être utilisé ultérieurement pour les auteurs et leur biographie, 
+	j'étends l'intervalle de définition à 1600.
+	 Ici sont prises en compte les dates comprises entre 01/01/1600 et 31/12/2012. 
+	 C’est un type dérivé de token.
+	-->
+	 <date>01/01/1600</date><date>29/02/2012</date> <date>31/01/1900</date>
+ <!-- vérifie le domaine sur les villes pays 
+ 	erreur : nom de ville superieure a quatre,espagne1 -->
+<ville>Villeurbanne</ville> <ville>Villeneuve sur lot</ville><ville>Po</ville> 
+<ville>Saint Faust du haut</ville> 
+<pays>France</pays> <pays>Coree du sud</pays>
+
+<!-- vérifie les différentes formes d'un lieu : soit juste une ville soit une ville et un pays 
+	erreur: <lieu><pays>France</pays></lieu>, -->
+<lieu>
+<ville>Saint Faust du haut</ville></lieu>
+<lieu><ville>Villeurbanne</ville><pays>France</pays></lieu>
+
+<!-- vérifie les différentes formes d'un numéro téléphonique -->
+<telephone>0625305967</telephone> <telephone>0925305967</telephone><telephone>0125305967</telephone><telephone>033147607890</telephone>
+
+<!-- vérifie le code postal d'un lieu français
+	le code postal est un nombre de 5 caractères allant de 01000 à 98999
+	exemple : 01000 BOURG EN BRESSE,  98890 PAITA, 
+	988 représentant le code de la Nouvelle Calédonie
+	01 Ain ... 95 Val d Oise
+	971 Guadeloupe 972 Martinique 973 Guyane 974 Reunion
+	975 St-Pierre-et-Miquelon 976 Mayotte
+	986 Wallis et Futuna 987 Polynesie Francaise 988 Nouvelle-Caledonie
+	Erreurs:00987, 100987, 96578
+	-->
+	<code>01000</code><code>98890</code><code>75098</code><code>97578</code>
+	<!-- vérifie les informations liées à la voie, c'est à dire le type VoieType qui est un type simple 
+	commençant par un des mots  rue ou avenue ou impasse ou boulevard 
+	suivi du nom de la voie qui est défini par au minimum un mot et au maximum 4 mots.
+Exemples : rue Lamartine, boulevard De Lattre De Tassigny.-->
+
+<voie>impasse du four</voie> <voie>boulevard du crepuscule</voie><voie>rue Lamartine</voie><voie>avenue Lannes</voie>
+ <voie>boulevard de Lattre de Tassigny</voie>
+
+<!-- vérifie le format associé à une adresse -->
+<adresse>
+	<numero>178</numero>
+	<voie>boulevard du crepuscule</voie>
+	<code>75011</code>
+	<ville>Paris</ville>
+	<pays>France</pays>
+</adresse>
+</testUtil>
