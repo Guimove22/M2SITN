@@ -1,0 +1,20 @@
+<auteur  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="auteur2.xsd"
+
+	  id="DenisLehane" >
+<nom>Lehane</nom>
+<prenom>Denis</prenom>
+<naissance>Dennis Lehane est écrivain américain d'origine irlandaise,
+	 né le 4 août 1965 à Dorchester dans le Massachusetts</naissance>
+<biographie>Dennis Lehane est écrivain américain d'origine irlandaise,
+né le 4 août 1965 à Dorchester dans le Massachusetts.
+Un de ses romans,<livre><titre>Mystic river</titre><parution>2001</parution></livre>, a inspiré
+le film oscarisé du même nom
+(Mystic River), réalisé par Clint Eastwood avec Sean Penn et Tim Robbins.
+<livre><titre>Gone Baby Gone</titre><parution>1998</parution> </livre> a inspiré le film éponyme
+Gone Baby Gone réalisé par Ben Affleck et dont le personnage principal est
+tenu par son propre frère, Casey Affleck. Enfin,
+<livre><titre>Shutter Island</titre><parution>2003</parution> </livre>,
+a inspiré le film éponyme
+Shutter Island, réalisé par Martin Scorsese avec Leonardo DiCaprio.</biographie>
+</auteur>
