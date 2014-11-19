@@ -1,5 +1,5 @@
 <acteur xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:noNamespaceSchemaLocation="personne.xsd">
+	xsi:noNamespaceSchemaLocation="personne_copie.xsd">
 <!-- personne.xml : instance du schema  XML personne.xsd -->
 	
 	<prenom>Clint</prenom>

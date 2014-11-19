@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
 <bibliotheque 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:noNamespaceSchemaLocation="consult2.xsd">$*
+	xsi:noNamespaceSchemaLocation="consult.xsd">
 <livres>
 <livre id='AJ02'  ref="AustenJane">
 <titre>Persuasion</titre>

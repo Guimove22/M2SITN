@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.biblio.org" xmlns="http://www.biblio.org" elementFormDefault="qualified">
-<xsd:include schemaLocation="personne.xsd"/>
-<xsd:include schemaLocation="auteur.xsd"/>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.biblio.org" xmlns="http://www.biblio.org" elementFormDefault="qualified">-->
+<!--<xsd:include schemaLocation="personne.xsd"/>-->
+<xsd:redefine schemaLocation="auteur.xsd"/>
 
 	<xsd:element name="bibliotheque" type="BibliothequeType"/>
 	<xsd:element name="livres" type="LivresType"/>
-	<xsd:element name="livre" type="LivreType" minOccurs="1" maxOccurs="unbounded" />
+	<xsd:element name="livre" type="LivreType" />
 
 
-	
+	<xsd:complexType name="BibliothequeType">
+    	<xsd:complexContent> 
+            <xsd:sequence ></xsd:sequence>
+    	</xsd:complexContent>
+    </xsd:complexType>
+
     <xsd:complexType name="DefaultLivreType">
     	<xsd:complexContent> 
 			<xsd:sequence >
@@ -38,7 +44,7 @@
     </xsd:attributeGroup>
 
     <xsd:element name="defautLivre" type="DefaultLivreType" />
-    <xsd:element name="livre" substitutionGroup="defautLivre" />
+    <!--<xsd:element name="livre" substitutionGroup="defautLivre" />-->
     <xsd:element name="traduction" substitutionGroup="nomType" />
     <xsd:element name="editeur" substitutionGroup="EditeurType" />
 
@@ -49,12 +55,12 @@
     </xsd:simpleType>
 
     <xsd:attributeGroup name="Association1NGroup" >
-		<xsd:sequence >
-			<xsd:element ref="id"  minOccurs="1" maxOccurs="1"/>
-			<xsd:element ref="livres" minOccurs="0" maxOccurs="1"/>
-			<xsd:element ref="idref"   minOccurs="1" maxOccurs="1"/>
+		<xsd:sequence > 
+			<xsd:element ref="id"  minOccurs="1" maxOccurs="1" use="required"/>
+			<!--<xsd:element ref="livres" minOccurs="0" maxOccurs="1" use="optional"/>-->
+			<xsd:element ref="idrefs"   minOccurs="1" maxOccurs="1" use="required"/>
 		</xsd:sequence>
-	</xsd:group>
+	</xsd:attributeGroup>
 
 
 
