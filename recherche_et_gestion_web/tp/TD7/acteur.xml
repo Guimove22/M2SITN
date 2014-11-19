@@ -1,0 +1,7 @@
+<acteur xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="personne.xsd">
+<!-- personne.xml : instance du schema  XML personne.xsd -->
+	
+	<prenom>Clint</prenom>
+        <nom>Eastwood</nom>
+</acteur>

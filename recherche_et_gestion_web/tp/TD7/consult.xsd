@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.biblio.org" xmlns="http://www.biblio.org" elementFormDefault="qualified">
+<xsd:include schemaLocation="personne.xsd"/>
+<xsd:include schemaLocation="auteur.xsd"/>
+
+	<xsd:element name="bibliotheque" type="BibliothequeType"/>
+	<xsd:element name="livres" type="LivresType"/>
+	<xsd:element name="livre" type="LivreType" minOccurs="1" maxOccurs="unbounded" />
+
+
+	
+    <xsd:complexType name="DefaultLivreType">
+    	<xsd:complexContent> 
+			<xsd:sequence >
+				<xsd:element name="titre" minOccurs="1" maxOccurs="1"/>
+            	<xsd:element name="parution" minOccurs="1" maxOccurs="1"/>
+			</xsd:sequence>
+    	</xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="LivreType">
+    	<xsd:complexContent> 
+    		<xsd:extension base="DefaultLivreType">
+                <xsd:sequence >
+                	<xsd:element name="titre" minOccurs="1" maxOccurs="1"/>
+            		<xsd:element name="traduction" minOccurs="0" maxOccurs="1"/>
+            		<xsd:element name="editeur" minOccurs="1" maxOccurs="1"/>
+            		<xsd:element name="parution" minOccurs="1" maxOccurs="1"/>
+                   
+                </xsd:sequence>
+    	 </xsd:extension>
+    	</xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:attributeGroup name="StatutGroup">
+    	<xsd:attributeGroup ref="Association1NGroup" />
+    	<xsd:attribute name="status" type="StatusType" use="optional" default="disponible" />
+    </xsd:attributeGroup>
+
+    <xsd:element name="defautLivre" type="DefaultLivreType" />
+    <xsd:element name="livre" substitutionGroup="defautLivre" />
+    <xsd:element name="traduction" substitutionGroup="nomType" />
+    <xsd:element name="editeur" substitutionGroup="EditeurType" />
+
+     <xsd:simpleType name="EditeurType">
+        <xsd:restriction base="xsd:normalizedString">
+            <xsd:maxLength value="50"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:attributeGroup name="Association1NGroup" >
+		<xsd:sequence >
+			<xsd:element ref="id"  minOccurs="1" maxOccurs="1"/>
+			<xsd:element ref="livres" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="idref"   minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:group>
+
+
+
+</xsd:schema>

@@ -1,0 +1,18 @@
+<xsd:redefine schemaLocation="personne.xsd"> 
+	
+
+	<xsd:group name="PersonneGroup" >
+		<xsd:sequence>
+			<xsd:element ref="nom"  minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="prenom" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="naissance"   minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="biographie"   minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="mort"  type="NaissanceType" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:group>
+
+	<xsd:complexType name="PersonneType">
+       <xsd:attributeGroup ref="Association1NGroup">
+    </xsd:complexType>
+    
+</xsd:redefine>

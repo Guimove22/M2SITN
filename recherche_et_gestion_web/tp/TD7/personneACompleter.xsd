@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:include schemaLocation="util.xsd"/>
+        <!-- personne.xsd : schema XML définissant l'élément personne de  type PersonneType -->
+    <!--ENTITY % PERSONNE "nom,prenom,naissance"-->
+    <xsd:element name="personne" type="PersonneType"/>
+
+    <xsd:complexType name="PersonneType">
+        <xsd:group ref="PersonneGroup"/>
+    </xsd:complexType>
+
+
+    <xsd:group name="PersonneGroup" >
+        <xsd:sequence >
+            <xsd:element ref="nom"  minOccurs="0" maxOccurs="1"/>
+            <xsd:element ref="prenom" minOccurs="0" maxOccurs="1"/>
+            <xsd:element ref="naissance"   minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:group>
+    <!-- A Hawai, des parents ont choisi pour leur fille un drôle de prénom (102 lettres+23 blancs): 
+    Napu AmoHalla Ona Ona Aneka Vehi Vehi Ona Hivea Nena Vava Keho Onka Kahe HeaLeka Ea Ona Ney Nana Nia Keko Oa Oga Vanao.-->
+    <!-- Li Ming , Antonio-Manuel , Maélys-->
+    <xsd:simpleType name="PrenomType">
+        <xsd:restriction base="xsd:normalizedString">
+            
+            <xsd:minLength value="2"/>
+            <xsd:maxLength value="150"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="NomType">
+        <xsd:restriction base="PrenomType">
+            <xsd:maxLength value="60"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="TempNomPersonneType">
+    	<xsd:complexContent> 
+    		<xsd:restriction base="PersonneType">
+                <xsd:sequence >
+                    
+                </xsd:sequence>
+    	 </xsd:restriction>
+    	</xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="NomPersonneType">
+    	<xsd:complexContent> 
+    		<xsd:extension base="TempNomPersonneType">
+                <xsd:sequence >
+                    <xsd:element ref="prenom" minOccurs="1" maxOccurs="1"/>
+                    <xsd:element ref="nom"  minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+    	 </xsd:extension>
+    	</xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:element name="acteur" substitutionGroup="personne" type="NomPersonneType" />
+    <xsd:element name="realisateur" substitutionGroup="personne" type="NomPersonneType" />
+    <xsd:element name="naissance" type="NaissanceType" />
+    <xsd:element name="nom" type="NomType"/>
+    <xsd:element name="prenom" type="PrenomType"/>
+    <!--nom français le plus long (47 lettres+6 blancs): Pourroy de L'Auberivière de Quinsonas-Oudinot de Reggio-->
+    
+    
+</xsd:schema>

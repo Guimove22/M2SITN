@@ -1,39 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:include schemaLocation="util.xsd" />
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:include schemaLocation="util.xsd" />
    
-    <xs:element name="personne" type="PersonneType">
+   
+    <xsd:element name="personne" type="PersonneType">
         
-    </xs:element>
+    </xsd:element>
 
-    <xs:complexType name="PersonneType">
-        <xs:group ref="PersonneGroup" minOccurs="1" maxOccurs="1"/>
-    </xs:complexType>
+    <xsd:complexType name="PersonneType">
+        <xsd:group ref="PersonneGroup" minOccurs="1" maxOccurs="1"/>
+    </xsd:complexType>
 
-    <xs:group name="PersonneGroup">
-        <xs:sequence>
-            <xs:element name="prenom" minOccurs="1" maxOccurs="1"/>
-            <xs:element name="nom" type="nomType" minOccurs="1" maxOccurs="1"/>
-            <xs:element name="naissance" minOccurs="0" maxOccurs="1"/>
-        </xs:sequence>
-    </xs:group>
+    <xsd:group name="PersonneGroup">
+        <xsd:sequence>
+            <xsd:element name="prenom" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="nom" type="nomType" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="naissance" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:group>
 
-    <xs:simpleType name="prenomType">
-        <xs:restriction base="xs:normalizedString">
+    <xsd:simpleType name="prenomType">
+        <xsd:restriction base="xsd:normalizedString">
             
-            <xs:minLength value="2"/>
-            <xs:maxLength value="150"/>
-        </xs:restriction>
-    </xs:simpleType>
+            <xsd:minLength value="2"/>
+            <xsd:maxLength value="150"/>
+        </xsd:restriction>
+    </xsd:simpleType>
 
-    <xs:simpleType name="nomType">
-        <xs:restriction base="prenomType">
-            <xs:maxLength value="60"/>
-        </xs:restriction>
-    </xs:simpleType>
+    <xsd:simpleType name="nomType">
+        <xsd:restriction base="prenomType">
+            <xsd:maxLength value="60"/>
+        </xsd:restriction>
+    </xsd:simpleType>
 
     
-    <xs:element name="acteur" substitutionGroup="personne" type="PersonneType2"/>
+    <xsd:element name="acteur" substitutionGroup="personne" type="PersonneType2"/>
 
 
  
@@ -41,13 +42,13 @@
 
     
 
-    <xs:complexType name= "PersonneType2"> 
-        <xs:restriction base="PersonneType">
-        <xs:sequence>
-            <xs:element name="prenom" minOccurs="1" maxOccurs="1"/>
-            <xs:element name="nom" type="nomType" minOccurs="1" maxOccurs="1"/>
-    </xs:sequence> 
-    </xs:restriction>
-</xs:complexType>
+    <xsd:complexType name= "PersonneType2"> 
+        <xsd:restriction base="PersonneType">
+        <xsd:sequence>
+            <xsd:element name="prenom" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="nom" type="nomType" minOccurs="1" maxOccurs="1"/>
+    </xsd:sequence> 
+    </xsd:restriction>
+</xsd:complexType>
 
-</xs:schema>
+</xsd:schema>
