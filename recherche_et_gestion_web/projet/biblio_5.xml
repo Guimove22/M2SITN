@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<bibliotheque
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="biblio_emprunt.xsd">
+   	<livres>
+<livre id='AJ02'  ref="AustenJane">
+<titre>Persuasion</titre>
+<parution>1980</parution>
+<traduction>André Belamich</traduction>
+<editeur>Christian Bourgois Éditeur</editeur>
+</livre>
+<livre id="DL01"  ref="DenisLehane">
+<titre>Gone, Baby Gone</titre>
+<parution>2003</parution>
+<traduction>Isabelle Maillet</traduction>
+<editeur>Rivages/Thriller</editeur>
+</livre>
+<livre id="DL02"  ref="DenisLehane">
+<titre>Prières pour la pluie, (Prayers for Rain)</titre>
+<parution>2004</parution>
+<editeur>Rivages/Thriller</editeur>
+</livre>
+<livre id="DL03"  ref="DenisLehane">
+<titre>Ténèbres, prenez-moi la main, (Darkness, Take My Hand)</titre>
+<parution>2000</parution>
+<editeur>Rivages\Thriller</editeur>
+</livre>
+<livre id="DL04"  ref="DenisLehane">
+<titre>Un dernier verre avant la guerre (A Drink Before the War)</titre>
+<parution>1999</parution>
+<traduction>Mona de Pracontal</traduction>
+<editeur>Rivages\Thriller</editeur>
+</livre>
+</livres>
+<!-- Definition des entites generales -->
+<auteur id="AustenJane" ref="AJ02"> 
+	<nom>Austen</nom>
+	<prenom>Jane</prenom>
+	<naissance>née le 16 décembre 1775 à Steventon, 
+		dans le Hampshire en Angleterre</naissance>
+	<mort>morte le 18 juillet 1817 à Winchester </mort>
+</auteur>
+<auteur  id="DenisLehane" ref="DL02 DL03 DL04">
+<nom>Lehane</nom>
+<prenom>Denis</prenom>
+<naissance>Dennis Lehane est écrivain américain d'origine irlandaise, né le 
+4 aout 1965 à  Dorchester dans le Massachusetts
+</naissance>
+<biographie>Dennis Lehane est écrivain américain d'origine irlandaise,
+né le 4 aout 1965 à  Dorchester dans le Massachusetts.
+Un de ses romans,
+    <livre>
+        <titre>Mystic river</titre>
+        <parution>2001</parution> 
+    </livre>, a inspiré
+le film oscarisé du même  nom
+(Mystic River), réalisé par
+ <realisateur><prenom>Clint</prenom><nom>Eastwood</nom></realisateur> 
+avec les acteurs principaux  
+<acteur><prenom>Sean</prenom> <nom>Penn</nom></acteur>
+et <acteur><prenom>Tim </prenom><nom>Robbins</nom></acteur>.
+<livre><titre>Gone Baby Gone</titre><parution>1998</parution> </livre> 
+a inspiré le film éponyme
+Gone Baby Gone réalisé par 
+<realisateur>
+    <prenom>Ben</prenom>
+    <nom>Affleck</nom>
+</realisateur> 
+et dont le personnage principal est
+tenu par son propre frère, 
+<acteur>
+    <prenom>Casey </prenom>
+    <nom>Affleck</nom>
+</acteur>. 
+Son 
+<livre>
+    <titre>Shutter Island</titre>
+    <parution>2003</parution> 
+</livre>,
+a inspiré le film 
+Shutter Island, réalisé par 
+    <realisateur>
+        <prenom>Martin</prenom>
+        <nom>Scorsese</nom>
+    </realisateur> 
+avec 
+    <acteur>
+        <prenom>Leonardo</prenom> 
+        <nom>DiCaprio</nom>
+    </acteur>. 
+Enfin, mercredi 12 novembre 2014 le film the Drop  réalisé par
+     <realisateur>
+         <prenom>Michael R.</prenom>
+         <nom>Roskam</nom>
+     </realisateur>
+est tiré de sa nouvelle intitulée dans sa version française 
+                      <livre>
+                            <titre>Sauve qui peut</titre>
+                            <parution>2014</parution>
+                      </livre>. 
+</biographie>
+</auteur>
+
+<emprunteur id='LagaffeGaston' ref="e2">
+	<nom>Lagaffe</nom>
+	<prenom>Gaston</prenom>
+	<naissance> 
+		<date>10/01/1950</date>
+                <lieu>
+                    <ville>Bruxelle</ville>
+                </lieu>
+	</naissance>
+	<adresse>
+		<numero>3</numero> 
+		<voie>rue Jean de la lune</voie>
+		<code>75003</code>
+                <ville>Paris</ville>
+	</adresse>
+	<telephone>0633333333</telephone>
+</emprunteur>
+	
+<emprunteur id="MontesLola" ref="e1">
+	<nom>Montes</nom>
+	<prenom>Lola</prenom>
+	<naissance> 
+		<date>12/06/1980</date> 
+                <lieu>
+                    <ville>Saint Faust du haut</ville>
+                </lieu>
+	</naissance>
+	<adresse>
+		<numero>27</numero> 
+		<voie>avenue Foch</voie>
+		<code>75016</code>
+                <ville>Paris</ville>
+	</adresse>
+	<telephone>0144444444</telephone>
+</emprunteur>
+
+<emprunt id="e1" livre="AJ02" emprunteur='MontesLola' >
+	<date-emprunt>01/10/2011</date-emprunt>
+	<date-retour>03/10/2011</date-retour>	
+	</emprunt>
+
+<emprunt id="e2" livre="AJ02" emprunteur='LagaffeGaston' >
+	<date-emprunt>01/06/2014</date-emprunt>
+	<date-retour>03/07/2014</date-retour>	
+	</emprunt>	
+ </bibliotheque>
+
