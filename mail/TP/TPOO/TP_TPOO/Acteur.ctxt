@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Acteur()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Acteur\n
+comment1.params=
+comment1.target=java.lang.String\ getNomActeur()
+comment2.params=
+comment2.target=java.lang.String\ getPrenomActeur()
+comment3.params=
+comment3.target=java.util.List\ getListeFilms()
+comment4.params=unFilm
+comment4.target=void\ ajouterFilm(Film)
+numComments=5
